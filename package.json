@@ -9,6 +9,7 @@
     "watch:css": "tailwindcss -i src/input.css -o dist/output.css --watch"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.0",
     "jquery": "^3.6.0"
   }
 }

@@ -9,11 +9,11 @@ module.exports = {
             ...defaultTheme.screens,
         },
         fontSize: {
-            xs: ['12px', '20px'],
-            base: ['14px', '22px'],
-            lg: ['18px', '28px'],
-            xl: ['20px', '32px']
-        }
+            xs: ["12px", "20px"],
+            base: ["14px", "22px"],
+            lg: ["18px", "28px"],
+            xl: ["20px", "32px"],
+        },
     },
-    plugins: [],
+    plugins: [require("@tailwindcss/line-clamp")],
 };

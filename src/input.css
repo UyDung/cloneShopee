@@ -4,15 +4,15 @@
 
 @layer components {
     .card {
-        @apply w-20 flex flex-col items-center;
+        @apply w-20 h-20 flex flex-col items-center 
     }
 
     .card > img {
-        @apply w-10 h-10;
+        @apply w-10 h-10 
     }
 
     .card > p {
-        @apply text-xs text-center;
+        @apply text-xs text-center  font-medium  line-clamp-2
     }
 
     .swiper-slide {
