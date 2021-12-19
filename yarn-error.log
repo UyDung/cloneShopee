@@ -1,0 +1,44 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add ơwl.carousel jquery
+
+PATH: 
+  C:\Python310\Scripts\;C:\Python310\;C:\Python39\Scripts\;C:\Python39\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Users\ACER NITRO 5\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\;C:\Users\ACER NITRO 5\AppData\Local\GitHubDesktop\bin;C:\Users\ACER NITRO 5\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_UNESCAPED_CHARACTERS]: https://registry.yarnpkg.com/ơwl.carousel: Request path contains unescaped characters
+      at new NodeError (node:internal/errors:371:5)
+      at new ClientRequest (node:_http_client:154:13)
+      at Object.request (node:https:353:10)
+      at Request.module.exports.Request.start (C:\Program Files\nodejs\node_modules\yarn\lib\cli.js:141445:32)
+      at Request.module.exports.Request.end (C:\Program Files\nodejs\node_modules\yarn\lib\cli.js:142204:10)
+      at end (C:\Program Files\nodejs\node_modules\yarn\lib\cli.js:141258:14)
+      at Immediate.<anonymous> (C:\Program Files\nodejs\node_modules\yarn\lib\cli.js:141272:7)
+      at processImmediate (node:internal/timers:464:21)
+
+npm manifest: 
+  {
+    "devDependencies": {
+      "tailwindcss": "^3.0.7"
+    },
+    "scripts": {
+      "start": "npm watch:css ",
+      "build": "npm build:css ", 
+      "build:css": "tailwindcss -i src/input.css -o dist/output.css",
+      "watch:css": "tailwindcss -i src/input.css -o dist/output.css --watch"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

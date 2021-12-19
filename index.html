@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        
+        <link rel="stylesheet" href="./dist/output.css" />
+        <title>Clone Shopee</title>
+    </head>
+    <body>
+        <!-- 1 header -->
+        <header class="w-screen h-32 bg-red-500/80 space-y-0">
+            <!-- mobile nav -->
+            <nav class="flex items-center justify-around fixed z-50 top-2 w-full px-3 space-x-2">
+                <div class="search flex items-center justify-center bg-white rounded py-1 px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input type="text" class="w-full bg-white rounded pl-2" placeholder="GIẢM GIÁ ĐẾN 90%" />
+                </div>
+                <div class="badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                        />
+                    </svg>
+                </div>
+                <div class="user">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </div>
+            </nav>
+            <!-- mobile nav end -->
+
+            <!-- slideShow -->
+            <div class="swiper w-full h-full m-auto text-gray-800">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide object-cover" src="./images/ads1.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads2.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads3.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads4.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads5.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads6.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads7.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads8.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads9.png" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads10.png" alt="" />
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+            <script>
+              
+            </script>
+            
+            <!-- slideShow end -->
+        </header>
+        <!-- 1 header end -->
+
+
+        <script src="./js/swiper.js"></script>
+    </body>
+</html>

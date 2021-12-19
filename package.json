@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  },
+  "scripts": {
+    "start": "npm watch:css ",
+    "build": "npm build:css ",
+    "build:css": "tailwindcss -i src/input.css -o dist/output.css",
+    "watch:css": "tailwindcss -i src/input.css -o dist/output.css --watch"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
