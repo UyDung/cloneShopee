@@ -6,19 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
         
+        
         <link rel="stylesheet" href="./dist/output.css" />
         <title>Clone Shopee</title>
     </head>
-    <body>
+    <body class="text-gray-600 space-y-4">
+          <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <!-- 1 header -->
-        <header class="w-screen h-32 bg-red-500/80 space-y-0">
+        <header class="h-32 bg-red-500/80 space-y-0 overflow-hidden">
             <!-- mobile nav -->
-            <nav class="flex items-center justify-around fixed z-50 top-2 w-full px-3 space-x-2">
+            <nav class="flex items-center justify-around fixed z-50 top-2 px-3 space-x-2">
                 <div class="search flex items-center justify-center bg-white rounded py-1 px-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <input type="text" class="w-full bg-white rounded pl-2" placeholder="GIẢM GIÁ ĐẾN 90%" />
+                    <input type="text" class="w-full bg-white rounded pl-2 placeholder:text-red-400" placeholder="GIẢM GIÁ ĐẾN 90%" />
                 </div>
                 <div class="badge">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,13 +41,13 @@
             <!-- mobile nav end -->
 
             <!-- slideShow -->
-            <div class="swiper w-full h-full m-auto text-gray-800">
+            <div class="nav-swiper w-full   m-auto text-gray-800">
                 <div class="swiper-wrapper">
                     <img class="swiper-slide object-cover" src="./images/ads1.jpeg" alt="" />
                     <img class="swiper-slide object-cover" src="./images/ads2.jpeg" alt="" />
                     <img class="swiper-slide object-cover" src="./images/ads3.jpeg" alt="" />
                     <img class="swiper-slide object-cover" src="./images/ads4.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads5.jpeg" alt="" />
+                    <img class="swiper-slide object-cover" src="./images/ads5.gif" alt="" />
                     <img class="swiper-slide object-cover" src="./images/ads6.jpeg" alt="" />
                     <img class="swiper-slide object-cover" src="./images/ads7.jpeg" alt="" />
                     <img class="swiper-slide object-cover" src="./images/ads8.jpeg" alt="" />
@@ -53,18 +55,114 @@
                     <img class="swiper-slide object-cover" src="./images/ads10.png" alt="" />
                 </div>
 
-                <div class="swiper-pagination"></div>
-            </div>
-            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-            <script>
-              
-            </script>
-            
+                <div class="swiper-pagination border-2"></div>
+            </div> 
             <!-- slideShow end -->
         </header>
         <!-- 1 header end -->
 
+        <!-- 2 main -->
+        <main class="space-y-2">
+            <div class="slogan-swiper h-56 w-screen overflow-hidden">
+                <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-wrapper grid  grid-rows-2 auto-cols-max grid-flow-col h-full justify-center">
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Khung Giờ Săn Sale</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/2.png" alt="" />
+                        <p>Shopee Premium</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/3.png" alt="" />
+                        <p>Nạp Thẻ, Hóa Đơn & E-voucher</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
+                    </div>
 
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Hàng Hiệu -50%</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/2.png" alt="" />
+                        <p>Nhận Free 200K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/3.png" alt="" />
+                        <p>Gì Cũng Rẻ - 1K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Nhận Free 250K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Deal Gần Bạn - Chỉ Từ 1K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Khung Giờ Săn Sale</p>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/2.png" alt="" />
+                        <p>Shopee Premium</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/3.png" alt="" />
+                        <p>Nạp Thẻ, Hóa Đơn & E-voucher</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Hàng Hiệu -50%</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/2.png" alt="" />
+                        <p>Nhận Free 200K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/3.png" alt="" />
+                        <p>Gì Cũng Rẻ - 1K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/4.png" alt="" />
+                        <p>Nhận Free 250K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Deal Gần Bạn - Chỉ Từ 1K</p>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="./images/menuItems/one.png" alt="" />
+                        <p>Deal Gần Bạn - Chỉ Từ 1K</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination bg-red-500"></div>
+            </div>
+        </main>
+        <!-- 2 main end -->
+
+      
         <script src="./js/swiper.js"></script>
     </body>
 </html>

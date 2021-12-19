@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const navSwiper = new Swiper(".nav-swiper", {
     speed: 500,
     slidesPerView: 1,
     autoplay: {
@@ -9,4 +9,13 @@ const swiper = new Swiper(".swiper", {
     },
 });
 
-swiper.autoPlay();
+const sloganSwiper = new Swiper(".slogan-swiper", {
+    speed: 500,
+    slidesPerView: 4,
+    autoplay: {
+        delay: 5000,
+    },
+    grid: {
+        row: 2
+    }
+});

@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .card {
+        @apply w-20 flex flex-col items-center;
+    }
+
+    .card > img {
+        @apply w-10 h-10 
+    }
+
+    .card > p {
+        @apply text-xs text-center
+    }
+
+    
+}
