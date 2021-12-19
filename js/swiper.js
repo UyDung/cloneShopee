@@ -5,17 +5,19 @@ const navSwiper = new Swiper(".nav-swiper", {
         delay: 4000,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: "#swiper-pagination-1",
     },
 });
 
 const sloganSwiper = new Swiper(".slogan-swiper", {
-    speed: 500,
-    slidesPerView: 4,
-    autoplay: {
-        delay: 5000,
-    },
+    autoplay: false,
     grid: {
-        row: 2
-    }
+        rows: 2,
+        fill: "column",
+    },
+    slidesPerView: 4,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+    },
 });

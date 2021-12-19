@@ -8,12 +8,26 @@
     }
 
     .card > img {
-        @apply w-10 h-10 
+        @apply w-10 h-10;
     }
 
     .card > p {
-        @apply text-xs text-center
+        @apply text-xs text-center;
     }
 
-    
+    .swiper-slide {
+        @apply flex flex-col items-center;
+    }
+
+    .swiper-pagination-bullet {
+        @apply rounded-none !important w-10 h-10 bg-red-500 ;
+    }
 }
+
+ 
+.slogan-swiper > .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 0;
+    background: red;
+    margin: 0 !important;    
+}
+ 
