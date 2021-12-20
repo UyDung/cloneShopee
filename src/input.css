@@ -27,6 +27,9 @@
         @apply w-32   justify-between   !important;
     }
 
+    .search-item {
+        @apply w-32 !important;
+    }
     p.had-sale {
         @apply bg-gray-200 rounded-full flex-nowrap text-xs !important;
     }

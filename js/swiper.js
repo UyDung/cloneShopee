@@ -19,10 +19,11 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
 });
 
 const flashSwiper = new Swiper(".product-container", {
-    autoplay: {
-        delay: 2000,
-    },
-    speed: 800,
+    autoplay: false,    
+});
 
-    slidesPerView: 3,
+
+const topSearchSwiper = new Swiper(".top-search-container", {
+    autoplay: false,
+     
 });
