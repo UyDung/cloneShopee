@@ -4,15 +4,15 @@
 
 @layer components {
     .card {
-        @apply w-20 h-20 flex flex-col items-center 
+        @apply w-20 h-20 flex flex-col items-center;
     }
 
     .card > img {
-        @apply w-10 h-10 
+        @apply w-10 h-10;
     }
 
     .card > p {
-        @apply text-xs text-center  font-medium  line-clamp-2
+        @apply text-xs text-center  font-medium  line-clamp-2;
     }
 
     .swiper-slide {
@@ -20,14 +20,22 @@
     }
 
     .swiper-pagination-bullet {
-        @apply rounded-none !important w-10 h-10 bg-red-500 ;
+        @apply rounded-none !important w-10 h-10 bg-red-500;
     }
+
+    .product {
+        @apply w-32   justify-between   !important;
+    }
+
+    p.had-sale {
+        @apply bg-gray-200 rounded-full flex-nowrap text-xs !important;
+    }
+
+   
 }
 
- 
 .slogan-swiper > .swiper-pagination .swiper-pagination-bullet {
     border-radius: 0;
     background: red;
-    margin: 0 !important;    
+    margin: 0 !important;
 }
- 

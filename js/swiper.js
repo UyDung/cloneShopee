@@ -16,8 +16,13 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
         fill: "column",
     },
     slidesPerView: 4,
-    pagination: {
-        el: ".swiper-pagination",
-        type: "bullets",
+});
+
+const flashSwiper = new Swiper(".product-container", {
+    autoplay: {
+        delay: 2000,
     },
+    speed: 800,
+
+    slidesPerView: 3,
 });
