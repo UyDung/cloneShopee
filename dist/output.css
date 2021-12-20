@@ -644,6 +644,10 @@ p.had-sale {
   width: 8rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .flex-none {
   flex: none;
 }

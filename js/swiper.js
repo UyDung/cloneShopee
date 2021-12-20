@@ -20,10 +20,11 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
 
 const flashSwiper = new Swiper(".product-container", {
     autoplay: false,    
+    slidesPerView: 3,
 });
 
 
 const topSearchSwiper = new Swiper(".top-search-container", {
     autoplay: false,
-     
+     slidesPerView: 3,
 });
