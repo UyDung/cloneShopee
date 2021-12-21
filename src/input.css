@@ -37,8 +37,14 @@
    
 }
 
+.swiper-pagination-bullet {
+    background: red;
+}
+
 .slogan-swiper > .swiper-pagination .swiper-pagination-bullet {
     border-radius: 0;
     background: red;
     margin: 0 !important;
 }
+
+ 
