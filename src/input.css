@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
+    
     .card {
         @apply w-20 h-20 flex flex-col items-center;
     }
@@ -34,7 +36,9 @@
         @apply bg-gray-200 rounded-full flex-nowrap text-xs !important;
     }
 
-   
+   img {
+       @apply object-cover
+   }
 }
 
 .swiper-pagination-bullet {
