@@ -15,8 +15,7 @@ const navSwiper = new Swiper(".nav-swiper", {
 });
 
 const sloganSwiper = new Swiper(".slogan-swiper", {
-    autoplay: false,
-    speed: 100,
+    autoplay: false,    
     grid: {
         rows: 2,
         fill: "column",
@@ -74,4 +73,17 @@ const thienthan = new Swiper(".favorities-list", {
    watchSlidesProgress: true,
     slidesPerView: 'auto',
      
+});
+
+const categoryList = new Swiper(".category-list", {
+    grid: {
+        rows: 2,
+        fill: "column",
+    },
+    slidesPerView: "auto",
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button.prev"
+    }
 });
