@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./dist/output.css" />
         <title>Clone Shopee</title>
     </head>
-    <body class="text-gray-600 space-y-4">
+    <body class="text-gray-600 space-y-4 relative">
         <!-- 1 header -->
         <header class="h-32 relative bg-red-500/80 overflow-hidden">
             <!-- mobile nav -->
@@ -64,7 +64,7 @@
         <!-- 1 header end -->
 
         <!-- 2 main -->
-        <main class="flex flex-col gap-2 bg-gray-200">
+        <main class="flex flex-col gap-2 bg-gray-100">
             <!-- Slogan -->
             <section class="slogan-swiper h-48 overflow-hidden bg-white relative">
                 <!-- <div class="swiper-wrapper"> -->
@@ -1403,7 +1403,7 @@
 
                 <!-- category list -->
                 <div class="category-list relative w-screen">
-                    <div class="swiper-wrapper w-full h-full   grid grid-rows-2 grid-flow-col items-start gap-x-2 ">
+                    <div class="swiper-wrapper w-full h-full grid grid-rows-2 grid-flow-col items-start gap-x-2">
                         <a class="category-item swiper-slide flex flex-col items-center w-28">
                             <img src="./images/categories/1.png" alt="" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Nam</p>
@@ -1513,16 +1513,14 @@
 
                     <div class="swiper-button-next absolute right-10"></div>
                     <div class="swiper-button-prev absolute left-40 rounded-full bg-gray-300 border w-6 h-6"></div>
-
                 </div>
                 <!-- category list end -->
             </div>
             <!-- Category end -->
 
             <!-- Today' Suggest -->
-            <div class="today-suggest bg-white mb-1 overflow-hidden space-y-2  h-full">
-             
-                <div class="  sticky top-0  h-full flex items-center justify-between w-full p-2">
+            <div class="today-suggest flex flex-col items-center mb-1 overflow-hidden space-y-2 h-full pb-16 ">
+                <div class="sticky top-0 bg-white h-full flex items-center justify-between w-full p-2">
                     <p class="uppercase text-red-500 font-semibold">Gợi Ý Hôm Nay</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
                         >Xem thêm
@@ -1533,9 +1531,24 @@
                 </div>
 
                 <!-- suggest Items -->
-                <div class="suggest_items w-full h-full grid justify-center items-stretch  p-1 md:p-2  grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-1 gap-y-2 md:gap-4">
-                  
-                    <div class="suggest_item flex flex-col   items-center border rounded gap-2">
+                <div
+                    class="
+                        suggest_items
+                        w-full
+                        h-full
+                        grid
+                        justify-center
+                         
+                        p-1
+                        md:p-2
+                        grid-cols-2
+                        md:grid-cols-3
+                        lg:grid-cols-5
+                        gap-x-2 gap-y-4
+                        md:gap-4
+                    "
+                >
+                    <div class="suggest_item bg-white flex flex-col items-center border rounded gap-2">
                         <div class="suggest_item_image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
                             <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
@@ -1543,7 +1556,7 @@
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                         </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left ">
+                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left">
                             <p class="description text-xs line-clamp-2 text-black">
                                 Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
                                 atque!
@@ -1556,7 +1569,7 @@
                         </div>
                     </div>
 
-                    <div class="suggest_item flex flex-col border rounded gap-2">
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
                         <div class="suggest_item_image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
                             <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
@@ -1566,9 +1579,11 @@
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
                         <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
+                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">
+                                RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="bg-orange-400 flex items-center h-4 text-white">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
                                     <path
                                         d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
                                         stroke-width="1"
@@ -1578,7 +1593,7 @@
                                     ></path>
                                 </svg>
                                 <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
                                     <path
                                         d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
                                         stroke-width="1"
@@ -1595,8 +1610,88 @@
                         </div>
                     </div>
 
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
+                        <div class="suggest_item_header relative">
+                            <img src="./images/today_suggest/3.jpeg" alt="" />
+                            <div class="sale-percent flex flex-col bg-yellow-400 text-xs items-center px-1 font-bold absolute top-0 right-0">
+                                <p class="text-red-500">20%</p>
+                                <p class="text-white uppercase">Giảm</p>
+                            </div>
+                            <img src="./images/today_suggest/2_1.png" alt="" class="suggest-item-tag absolute bottom-0 right-0" />
+                            <div
+                                class="
+                                    bg-orange-500
+                                    absolute
+                                    left-0
+                                    top-2
+                                    px-2
+                                    flex
+                                    items-center
+                                    justify-center
+                                    before:content-['']
+                                    before:inline-block
+                                    before:absolute
+                                    before:lef-0
+                                    before:bottom-4
+                                    before:border-t-2
+                                    before:border-l-2
+                                "
+                            >
+                                <span class="text-white text-xs"> Yêu thích </span>
+                            </div>
+                        </div>
+                        <div class="suggest-item-content w-full h-full px-2 flex flex-col items-center justify-between">
+                            <p class="text-black text-xs line-clamp-2">Tai nghe BASS khủng Driver Dynamic 14mm Lorem ipsum dolor sit amet.</p>
+                            <div class="sale-amount w-full flex items-center justify-between">
+                                <strong class="text-red-500 truncate">đ12.000.000</strong>
+                                <span class="text-gray-500 text-xs whitespace-nowrap"> Đã bán 14,6k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
+                        <div class="suggest_item_image relative">
+                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
+                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                                <span class="percent text-red-500 font-semibold">49%</span>
+                                <span class="text-white text-base">Giảm</span>
+                            </div>
+                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
+                        </div>
+                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">
+                                RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="bg-orange-400 flex items-center h-4 text-white">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
+                                    <path
+                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
+                                        stroke-width="1"
+                                        transform=""
+                                        stroke="currentColor"
+                                        fill="#f69113"
+                                    ></path>
+                                </svg>
+                                <p class="text-white text-xs">Giảm đ 3k</p>
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
+                                    <path
+                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
+                                        stroke-width="1"
+                                        transform="rotate(180) translate(-3 -15)"
+                                        stroke="currentColor"
+                                        fill="#f69113"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="w-full flex justify-between items-center text-sm">
+                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
+                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
+                            </div>
+                        </div>
+                    </div>
                     <!--  -->
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
+
+                    <div class="suggest_item bg-white flex flex-col items-center border rounded gap-2">
                         <div class="suggest_item_image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
                             <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
@@ -1617,7 +1712,7 @@
                         </div>
                     </div>
 
-                    <div class="suggest_item flex flex-col border rounded gap-2">
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
                         <div class="suggest_item_image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
                             <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
@@ -1627,9 +1722,11 @@
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
                         <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
+                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">
+                                RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="bg-orange-400 flex items-center h-4 text-white">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
                                     <path
                                         d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
                                         stroke-width="1"
@@ -1639,7 +1736,7 @@
                                     ></path>
                                 </svg>
                                 <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
                                     <path
                                         d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
                                         stroke-width="1"
@@ -1655,7 +1752,8 @@
                             </div>
                         </div>
                     </div>
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
+
+                    <div class="suggest_item bg-white flex flex-col items-center border rounded gap-2">
                         <div class="suggest_item_image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
                             <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
@@ -1676,7 +1774,7 @@
                         </div>
                     </div>
 
-                    <div class="suggest_item flex flex-col border rounded gap-2">
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
                         <div class="suggest_item_image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
                             <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
@@ -1686,9 +1784,11 @@
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
                         <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
+                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">
+                                RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="bg-orange-400 flex items-center h-4 text-white">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
                                     <path
                                         d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
                                         stroke-width="1"
@@ -1698,7 +1798,7 @@
                                     ></path>
                                 </svg>
                                 <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
                                     <path
                                         d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
                                         stroke-width="1"
@@ -1714,276 +1814,53 @@
                             </div>
                         </div>
                     </div>
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">50%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                        </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
-                            <p class="description text-xs line-clamp-2 text-black">
-                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-                                atque!
-                            </p>
-
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="suggest_item flex flex-col border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">49%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
-                        </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform=""
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                                <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform="rotate(180) translate(-3 -15)"
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">50%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                        </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
-                            <p class="description text-xs line-clamp-2 text-black">
-                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-                                atque!
-                            </p>
-
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="suggest_item flex flex-col border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">49%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
-                        </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform=""
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                                <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform="rotate(180) translate(-3 -15)"
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">50%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                        </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
-                            <p class="description text-xs line-clamp-2 text-black">
-                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-                                atque!
-                            </p>
-
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="suggest_item flex flex-col border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">49%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
-                        </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform=""
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                                <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform="rotate(180) translate(-3 -15)"
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">50%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                        </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
-                            <p class="description text-xs line-clamp-2 text-black">
-                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-                                atque!
-                            </p>
-
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="suggest_item flex flex-col border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">49%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
-                        </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
-                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.</p>
-                            <div class="bg-orange-400 flex items-center   h-4 text-white">
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform=""
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                                <p class="text-white text-xs">Giảm đ 3k</p>
-                                <svg class="h-full  " viewBox="-0.5 -0.5 4 16">
-                                    <path
-                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
-                                        stroke-width="1"
-                                        transform="rotate(180) translate(-3 -15)"
-                                        stroke="currentColor"
-                                        fill="#f69113"
-                                    ></path>
-                                </svg>
-                            </div>
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="suggest_item flex flex-col   items-center border rounded gap-2">
-                        <div class="suggest_item_image relative">
-                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
-                                <span class="percent text-red-500 font-semibold">50%</span>
-                                <span class="text-white text-base">Giảm</span>
-                            </div>
-                        </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
-                            <p class="description text-xs line-clamp-2 text-black">
-                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
-                                atque!
-                            </p>
-
-                            <div class="w-full flex justify-between items-center text-sm">
-                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
-                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-               
-
-                
-
-                    
                 </div>
                 <!-- suggest Items end -->
-                
+                <button class=" w-11/12  h-8 border-2 rounded border-red-500 bg-white text-center text-red-500">Xem thêm</button>
             </div>
             <!-- Today' Suggest end -->
         </main>
         <!-- 2 main end -->
+
+        <!-- 3 Footer -->
+        <footer class="footer   flex flex-col items-center justify-between   pt-0 p-2">
+            <div class="role  grid grid-cols-2  place-content-center  w-full gap-4 h-full  ">
+                <a class="role-item flex items-center gap-1 whitespace-nowrap text-least  justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                        />
+                    </svg>
+                    <span class="uppercase text-gray-600  ">Chính Sách bảo mật</span>
+                </a>
+                <a href="#" class="role-item flex items-center gap-1  whitespace-nowrap text-least  justify-center">
+                    <img src="./images/footer/2.png" alt="" class="w-4 h-4">
+                    <span class="uppercase text-gray-600">Quy Chế hoạt động</span>
+                </a>
+                <a href="#" class="role-item flex items-center gap-1   whitespace-nowrap text-least justify-center"><img src="./images/footer/3.png" alt="" class="w-4 h-4"><span class="uppercase text-gray-600">Chính sách vận chuyển</span></a>
+                <a href="#" class="role-item flex items-center gap-1  text-least justify-center"><img src="./images/footer/4.png" alt="" class="w-4 h-4"><span class="uppercase text-gray-600 text-center">Quy trình giải quyết tranh chấp</span></a>
+            </div>
+
+            <div class="grid grid-cols-2  grid-rows-2 items-center  place-content-center w-full gap-2  px-4 mb-2" >
+                <img src="./images/footer/5.png" alt="" class="row-start-1 col-start-1">
+                <img src="./images/footer/5.png" alt="" class=" row-start-1 col-start-2">
+               <div class="row-start-2  col-span-full  flex justify-center">
+                    <img src="./images/footer/6.png" alt="" class="">
+               </div>
+            </div>
+
+            <div class="text-center text-black text-least space-y-1">
+                <p class="mb-2">Công ty TNHH Shopee</p>
+                <P>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội</P>
+                <p>Tổng đài hỗ trợ: 19001221 - Email: support@shopee.vn</p>
+                <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                <p>&copy; 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+            </div>
+        </footer>
+        <!-- 3 Footer end -->
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script src="./js/swiper.js"></script>
