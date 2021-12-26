@@ -15,9 +15,9 @@
         <link rel="stylesheet" href="./dist/output.css" />
         <title>Clone Shopee</title>
     </head>
-    <body class="text-gray-600 space-y-4 relative">
+    <body class="text-gray-600  relative">
         <!-- 1 header -->
-        <header class="h-32 md:h-36 md:fixed   md:z-50 md:top-0 md:left-0 md:right-0 relative bg-red-500  overflow-hidden md:px-40">
+        <header class="md:h-32 h-10 md:z-50 md:top-0 md:left-0 md:right-0 md:mb-7 bg-orange-600 relative overflow-hidden md:px-40">
             <!-- mobile nav -->
             <nav class="sm:hidden flex absolute top-2 z-50 items-center justify-around px-3 space-x-2">
                 <div class="search flex items-center justify-center bg-white rounded py-1 px-2">
@@ -50,7 +50,7 @@
             <!-- mobile nav end -->
 
             <!-- laptop nav -->
-            <nav class="laptop-nav flex justify-between items-center text-[13px] py-2 text-white">
+            <nav class="laptop-nav hidden md:flex justify-between items-center text-[13px] py-2 text-white">
                 <div class="left flex items-center gap-2">
                     <a href="#" class="transition-all hover:opacity-60 flex gap-2 items-center after:content-['|'] after:h-full after:text-gray-200"
                         >Kênh Người Bán</a
@@ -108,21 +108,40 @@
             <!-- laptop nav end -->
 
             <!-- second -->
-            <div class="second flex justify-between items-center text-white h-20 overflow-visible   ">
-                <div class="logo  h-full flex items-center gap-2 ">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="second hidden md:flex justify-between items-center text-white h-20">
+                <div class="logo h-full flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                     </svg>
-                    <h1 class="text-3xl ">Shopee</h1>
+                    <h1 class="text-3xl">Shopee</h1>
                 </div>
-                <div class="search flex flex-col items-center    flex-1 mx-10  bg-white text-gray-800 relative rounded ">
-                    <input type="text" placeholder="Book Club Săn Quà Chính Hãng" class=" p-2  w-full border-none focus:outline-0  rounded " />
-                    <button aria-label="search" class="cursor-pointer   rounded  w-14 h-7 text-white p-4 font-bold bg-red-500 absolute top-1/2 right-[2px] -translate-y-1/2 flex items-center justify-center  ">
+                <div class="search flex flex-col items-center flex-1 mx-10 bg-white text-gray-800 relative rounded">
+                    <input type="text" placeholder="Book Club Săn Quà Chính Hãng" class="p-2 px-4 w-full border-none focus:outline-0 rounded" />
+                    <button
+                        aria-label="search"
+                        class="
+                            cursor-pointer
+                            rounded
+                            w-14
+                            h-7
+                            text-white
+                            p-4
+                            font-bold
+                            bg-red-500
+                            absolute
+                            top-1/2
+                            right-[2px]
+                            -translate-y-1/2
+                            flex
+                            items-center
+                            justify-center
+                        "
+                    >
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 font-bold" fill="none" viewBox="0 0 20 20" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="{2}" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <nav class="flex items-center gap-3 absolute -bottom-1/2   text-gray-100 text-[13px]  self-start  ">
+                    <nav class="flex items-center gap-3 absolute -bottom-1/2 text-gray-100 text-[13px] self-start">
                         <a href="#">Tất</a>
                         <a href="#">Sữa Rửa Mặt</a>
                         <a href="#">Mặt Nạ</a>
@@ -134,7 +153,7 @@
                     </nav>
                 </div>
                 <div class="badge cursor-pointer relative group">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -142,156 +161,153 @@
                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                         />
                     </svg>
-                    <div class="cart bg-white w-96 h-96 absolute  z-50    right-0  hidden group-hover:flex">
+                    <div class="cart bg-white w-96 h-96 absolute z-50 right-0 hidden group-hover:flex">
                         <h3 class="text-sky-700">Chưa có sản phẩm</h3>
                     </div>
                 </div>
             </div>
             <!-- second end -->
-
-            <!-- slideShow -->
-            <div class="nav-swiper relative h-32 w-full m-auto text-gray-800">
-                <div class="swiper-wrapper">
-                    <img class="swiper-slide object-cover" src="./images/ads1.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads2.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads3.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads4.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads5.gif" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads6.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads7.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads8.jpeg" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads9.png" alt="" />
-                    <img class="swiper-slide object-cover" src="./images/ads10.png" alt="" />
-                </div>
-                <div class="swiper-pagination-1 absolute z-50 text-center"></div>
-            </div>
-            <!-- slideShow end -->
         </header>
         <!-- 1 header end -->
 
         <!-- 2 main -->
-        <main class="flex flex-col gap-2 bg-gray-100">
-            <!-- Slogan -->
-            <section class="slogan-swiper h-48 overflow-hidden bg-white relative  md:px-40 ">
-                <!-- <div class="swiper-wrapper"> -->
-                <div class="swiper-wrapper m-0 p-0 w-full h-full md:flex md:items-center grid grid-rows-2 grid-flow-col items-start gap-x-2">
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Khung Giờ Săn Sale</p>
+        <main class="flex flex-col gap-2 md:gap-0 md:space-y-4 bg-gray-100 w-screen overflow-hidden">
+           
+            <div class="flex flex-col items-center gap-2 md:gap-0 md:space-y-4 bg-white overflow-hidden md:px-40">
+                <!-- baner -->
+                <div class="banner    w-full   md:h-56  md:gap-1   flex items-center bg-white  ">
+                    <!-- main banner -->
+                    <div class="main-banner  relative overflow-hidden  rounded  h-32  md:h-full  w-2/3  text-gray-800">
+                        <div class="swiper-wrapper  h-full">
+                            <img class="swiper-slide object-cover" src="./images/ads1.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads2.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads3.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads4.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads5.gif" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads6.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads7.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads8.jpeg" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads9.png" alt="" />
+                            <img class="swiper-slide object-cover" src="./images/ads10.png" alt="" />
+                        </div>
+                        <div class="swiper-pagination-1 absolute z-50 text-center"></div>
                     </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Deal Gần Bạn - Chỉ Từ 1K</p>
+                    <!-- main banner end -->
+                    <!-- right banner -->
+                    <div class="right-banner hidden h-32 md:h-full rounded  overflow-hidden   w-1/3 md:flex flex-col items-start gap-1">
+                        <img src="./images/right-banner-1.png" alt="" class="h-1/2 w-full object-cover" >
+                        <img src="./images/right-banner-2.png" alt="" class="h-1/2 w-full object-cover">
                     </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Gì Cũng Rẻ - Từ 1K</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Nhận Free 20K</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Ưu Đãi Thành Viên Mới</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Shopee Premium</p>
-                    </div>
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Shopee Mart - Siêu Thị 0Đ</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Miễn Phí Vận Chuyển</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Ưu Đãi Đối Tác</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Mã Giảm Giá</p>
-                    </div>
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>ShopeeFood - Đại Tiệc - 50%</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>ShopeePay Gần Bạn</p>
-                    </div>
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p class="">Tech Zone - Siêu Thị Điện Tử, Siêu Sale Cuối Năm</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Hoàn Xu 20% - Đơn Từ 0Đ</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Nạp Thẻ, Hóa Đơn & Eco</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Hàng Hiệu - 50%</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Hàng Quốc Tế - Deal x9K</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/2.png" alt="" />
-                        <p>Nghiện Săn Sale</p>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Giải Thưởng Shopee</p>
-                    </div>
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Shopee Mall</p>
-                    </div>
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>Săn Xu Mỗi Ngày</p>
-                    </div>
-                    <div class="swiper-slide card">
-                        <img src="./images/menuItems/4.png" alt="" />
-                        <p>KOL Club</p>
-                    </div>
+                    <!-- right banner end -->
+                    
+                    <!-- baner end -->
                 </div>
-
-                <div class="swiper-pagination-slogan swiper-pagination absolute z-50 bottom-0 text-center"></div>
-            </section>
-            <!-- Slogan end -->
+                
+                <!-- Slogan -->
+                <section class="slogan-swiper h-48  md:h-28 flex md:justify-center flex-col    w-full   md:pt-2  md:w-full   overflow-hidden relative  ">
+                    <!-- <div class="swiper-wrapper"> -->
+                        <div class="swiper-wrapper  m-0 p-0 h-full  grid grid-rows-2    md:flex md:items-center  grid-flow-col items-start gap-x-2 md:gap-x-3 ">
+                            <div class="swiper-slide card    ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Khung Giờ Săn Sale</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Deal Gần Bạn - Chỉ Từ 1K</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Gì Cũng Rẻ - Từ 1K</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Nhận Free 20K</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Freeship Xtra Đến 70K Mỗi Ngày</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Ưu Đãi Thành Viên Mới</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Shopee Premium</p>
+                            </div>
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Shopee Mart - Siêu Thị 0Đ</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Miễn Phí Vận Chuyển</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Ưu Đãi Đối Tác</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Mã Giảm Giá</p>
+                            </div>
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>ShopeeFood - Đại Tiệc - 50%</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>ShopeePay Gần Bạn</p>
+                            </div>
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p class="">Tech Zone - Siêu Thị Điện Tử, Siêu Sale Cuối Năm</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Hoàn Xu 20% - Đơn Từ 0Đ</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Nạp Thẻ, Hóa Đơn & Eco</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Hàng Hiệu - 50%</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Hàng Quốc Tế - Deal x9K</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/2.png" alt="" />
+                                <p>Nghiện Săn Sale</p>
+                            </div>                            
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Giải Thưởng Shopee</p>
+                            </div>
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Shopee Mall</p>
+                            </div>
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>Săn Xu Mỗi Ngày</p>
+                            </div>
+                            <div class="swiper-slide card ">
+                                <img src="./images/menuItems/4.png" alt="" />
+                                <p>KOL Club</p>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-pagination-slogan sm:hidden swiper-pagination absolute z-50 bottom-0 text-center"></div>
+                    </section>
+                    <!-- Slogan end -->
+            </div>
 
             <!-- Flash Sale -->
-
-            <section class="flash-sale flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40">
+            <section class="flash-sale flex flex-col space-y-2 md:px-4 p-2 mb-1 bg-white md:mx-40">
                 <div class="flex justify-between items-center px-2">
                     <img src="./images/flash_sale/logo.png" alt="" class="h-6" />
                     <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
@@ -303,9 +319,9 @@
                 </div>
 
                 <!-- product container -->
-                <div class="product-container overflow-hidden">
-                    <ul class="swiper-wrapper space-x-2">
-                        <li class="product swiper-slide">
+                <div class="product-container  h-44 overflow-hidden">
+                    <ul class="swiper-wrapper h-full space-x-2  md:grid  md:grid-cols-6   md:gap-4  ">
+                        <li class="product swiper-slide h-44 ">
                             <div class="logo bg-yellow-400 w-10 h-14 uppercase text-xs flex flex-col items-center px-2 absolute right-0 top-0 z-50">
                                 <span class="text-red-500">64%</span> Giảm
                             </div>
@@ -326,7 +342,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44 ">
                             <div
                                 class="
                                     badge
@@ -361,7 +377,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44 ">
                             <div
                                 class="
                                     badge
@@ -396,7 +412,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44 ">
                             <div
                                 class="
                                     badge
@@ -431,7 +447,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44 ">
                             <div
                                 class="
                                     badge
@@ -466,7 +482,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44">
                             <div
                                 class="
                                     badge
@@ -501,7 +517,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44">
                             <div
                                 class="
                                     badge
@@ -536,7 +552,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44">
                             <div
                                 class="
                                     badge
@@ -571,7 +587,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44">
                             <div
                                 class="
                                     badge
@@ -606,7 +622,7 @@
                                 <p class="had-sale rounded-full px-4 text-xs bg-gray-200 font-bold text-white uppercase text-center">Đã bán 2</p>
                             </div>
                         </li>
-                        <li class="product swiper-slide">
+                        <li class="product swiper-slide h-44">
                             <div
                                 class="
                                     badge
@@ -666,7 +682,7 @@
             <!-- Flash Sale end -->
 
             <!-- Top Search -->
-            <section class="top-search flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40 overflow-hidden">
+            <section class="top-search flex flex-col space-y-2 p-2 mb-1 bg-white md:mx-40 overflow-hidden">
                 <div class="flex justify-between items-center px-2">
                     <p class="text-red-500 uppercase font-semibold">Tìm kiếm hàng đầu</p>
                     <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
@@ -679,8 +695,8 @@
 
                 <!-- top search container -->
                 <div class="top-search-container w-full overflow-hidden">
-                    <ul class="swiper-wrapper space-x-2 w-full">
-                        <li class="search-item swiper-slide border w-32 rounded">
+                    <ul class="swiper-wrapper md:grid md:grid-cols-6 h-44 space-x-2 md:space-x-0   w-full">
+                        <li class="search-item swiper-slide border w-32 h-44 rounded">
                             <a href="#" class="w-full">
                                 <img src="./images/top_search/1.jpeg" class="" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -693,7 +709,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#">
                                 <img src="./images/top_search/4.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -704,7 +720,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#">
                                 <img src="./images/top_search/3.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -715,7 +731,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44 overflow-hidden rounded">
                             <a href="#" class="w-full inline-block">
                                 <img src="./images/top_search/2.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -725,7 +741,7 @@
                                 <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
                             </a>
                         </li>
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#">
                                 <img src="./images/top_search/1.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -738,7 +754,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#">
                                 <img src="./images/top_search/4.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -749,7 +765,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#">
                                 <img src="./images/top_search/3.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -760,7 +776,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#" class="w-full inline-block">
                                 <img src="./images/top_search/2.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -770,7 +786,7 @@
                                 <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
                             </a>
                         </li>
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44  overflow-hidden rounded">
                             <a href="#">
                                 <img src="./images/top_search/3.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -781,7 +797,7 @@
                             </a>
                         </li>
 
-                        <li class="search-item swiper-slide border w-32 overflow-hidden rounded">
+                        <li class="search-item swiper-slide border w-32 h-44 overflow-hidden rounded">
                             <a href="#" class="w-full inline-block">
                                 <img src="./images/top_search/2.jpeg" class="w-full" />
                                 <div class="description py-1 px-2 bg-gray-200">
@@ -816,7 +832,7 @@
             <!-- Top Search end -->
 
             <!-- Shoppe Mall -->
-            <section class="shopee-mall flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40 overflow-hidden">
+            <section class="shopee-mall flex flex-col space-y-2 p-2 mb-1 bg-white md:mx-40 overflow-hidden">
                 <div class="flex items-center justify-between pb-2 border-b">
                     <p class="uppercase text-red-500 font-semibold">shopee mall</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -827,7 +843,7 @@
                     </a>
                 </div>
 
-                <ul class="flex items-center justify-between gap-2 ">
+                <ul class="flex items-center justify-between gap-2">
                     <li class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -935,7 +951,7 @@
             <!-- Shoppe Mall end -->
 
             <!-- Shopee Live -->
-            <section class="shopee-live flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40">
+            <section class="shopee-live flex flex-col space-y-2 p-2 mb-1 bg-white md:mx-40">
                 <div class="flex items-center justify-between">
                     <p class="uppercase text-red-500 font-semibold">Shopee Live</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1244,7 +1260,7 @@
             <!-- Shopee Live end -->
 
             <!-- Fluently search -->
-            <div class="fluently-search flex flex-col mb-1 p-2 px-3 overflow-hidden bg-white md:px-40">
+            <div class="fluently-search flex flex-col mb-1 p-2 px-3 overflow-hidden bg-white md:mx-40">
                 <div class="flex justify-between items-center text-red-500 w-full">
                     <p class="title uppercase font-semibold">Tìm Kiếm Phổ Biến</p>
                     <button class="flex items-center gap-1">
@@ -1261,8 +1277,8 @@
                 </div>
 
                 <!-- fluently-search-list -->
-                <div class="fluently-search-list flex justify-center flex-wrap">
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border w-1/2">
+                <div class="fluently-search-list grid grid-cols-2  md:grid-cols-4 justify-center ">
+                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border  ">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Kem Chống Nắng</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">210k+ Sản phẩm cùng loại</p>
@@ -1271,8 +1287,7 @@
                             <img src="./images/fluently_search/1.jpeg" alt="" />
                         </div>
                     </div>
-
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border w-1/2">
+                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border  ">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Áo Cardigan</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">196k+ Sản phẩm cùng loại</p>
@@ -1281,7 +1296,7 @@
                             <img src="./images/fluently_search/2.jpeg" alt="" />
                         </div>
                     </div>
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border w-1/2">
+                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border  ">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Son Nội Địa Nhật</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">12k+ Sản phẩm cùng loại</p>
@@ -1290,7 +1305,7 @@
                             <img src="./images/fluently_search/3.jpeg" alt="" />
                         </div>
                     </div>
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border w-1/2">
+                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border  ">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Bomber</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">81k+ Sản phẩm cùng loại</p>
@@ -1305,7 +1320,7 @@
             <!-- Fluently search end -->
 
             <!-- Favorites gallery -->
-            <div class="favorites-gallery space-y-4 p-2 overflow-hidden flex flex-col bg-white md:px-40">
+            <div class="favorites-gallery space-y-4 p-2 overflow-hidden flex flex-col bg-white md:mx-40">
                 <div class="flex items-center justify-between w-full">
                     <p class="uppercase text-red-500 font-semibold">Bộ sưu tập yêu thích</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1480,7 +1495,7 @@
             <!-- Favorites gallery end -->
 
             <!-- Category -->
-            <div class="category flex flex-col p-2 px-3 overflow-hidden bg-white mb-1 md:px-40">
+            <div class="category flex flex-col p-2 px-3 overflow-hidden bg-white mb-1 md:mx-40">
                 <div class="flex items-center justify-between w-full">
                     <p class="uppercase text-red-500 font-semibold">Danh mục</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1493,7 +1508,7 @@
 
                 <!-- category list -->
                 <div class="category-list relative w-full overflow-hidden">
-                    <div class="swiper-wrapper w-full h-full  md:grid-rows-1  grid grid-rows-2 grid-flow-col items-start gap-x-2">
+                    <div class="swiper-wrapper w-full h-full md:grid-rows-1 grid grid-rows-2 grid-flow-col items-start gap-x-2">
                         <a class="category-item swiper-slide flex flex-col items-center w-28">
                             <img src="./images/categories/1.png" alt="" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Nam</p>
@@ -2028,14 +2043,31 @@
                     </div>
                 </div>
                 <!-- suggest Items end -->
-                <button class="w-11/12 md:block md:w-1/3 hover:bg-sky-700 md:border-0 hover:text-white h-8 border-2 rounded border-red-500 bg-white text-center text-red-500 md:text-gray-800 ">Xem thêm</button>
+                <button
+                    class="
+                        w-11/12
+                        md:block md:w-1/3
+                        hover:bg-sky-700
+                        md:border-0
+                        hover:text-white
+                        h-8
+                        border-2
+                        rounded
+                        border-red-500
+                        bg-white
+                        text-center text-red-500
+                        md:text-gray-800
+                    "
+                >
+                    Xem thêm
+                </button>
             </div>
             <!-- Today' Suggest end -->
         </main>
         <!-- 2 main end -->
 
         <!-- 3 Footer -->
-        <footer class="footer flex flex-col items-center justify-between pt-0 p-2  md:px-40">
+        <footer class="footer flex flex-col items-center justify-between pt-0 p-2 md:px-40">
             <div class="role grid grid-cols-2 md:grid-cols-4 place-content-center w-full gap-4 h-full">
                 <a class="role-item flex items-center gap-1 whitespace-nowrap text-least justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -2062,10 +2094,24 @@
                 >
             </div>
 
-            <div class="grid   grid-cols-2 md:grid-cols-3 md:grid-rows-1 grid-rows-2 items-center place-content-center w-full max-w-content gap-2 md:gap-0 px-4 mb-2">
+            <div
+                class="
+                    grid grid-cols-2
+                    md:grid-cols-3 md:grid-rows-1
+                    grid-rows-2
+                    items-center
+                    place-content-center
+                    w-full
+                    max-w-content
+                    gap-2
+                    md:gap-0
+                    px-4
+                    mb-2
+                "
+            >
                 <img src="./images/footer/5.png" alt="" class="row-start-1 col-start-1 border" />
                 <img src="./images/footer/5.png" alt="" class="row-start-1 col-start-2 border" />
-                <div class="row-start-2 md:row-start-1 md:col-span-1 md:col-start-3  col-span-full flex justify-center">
+                <div class="row-start-2 md:row-start-1 md:col-span-1 md:col-start-3 col-span-full flex justify-center">
                     <img src="./images/footer/6.png" alt="" class="" />
                 </div>
             </div>
@@ -2080,8 +2126,10 @@
 
             <div class="sm:block hidden text-center text-gray-800 text-xs space-y-2">
                 <p class="mb-6">Công ty TNHH Shopee</p>
-                <p>Địa chỉ: Tầng 4-5-6, Tòa nhà trung tâm Lotte Hà Nội, số 29 Liễu Giai, phường Ngọc Khánh, Quận Ba Đình,  Thành phố Hà Nội, Việt Nam
-                Tổng đài hỗ trợ: 19001221 - Email: support@shopee.vn</p>
+                <p>
+                    Địa chỉ: Tầng 4-5-6, Tòa nhà trung tâm Lotte Hà Nội, số 29 Liễu Giai, phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam
+                    Tổng đài hỗ trợ: 19001221 - Email: support@shopee.vn
+                </p>
                 <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
                 <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư Hà Nội cấp lần đầu ngày 10/02/2015</p>
                 <p>&copy; 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>

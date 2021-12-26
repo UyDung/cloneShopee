@@ -1,4 +1,4 @@
-const navSwiper = new Swiper(".nav-swiper", {
+const navSwiper = new Swiper(".main-banner", {
     speed: 700,
     slidesPerView: 1,
     watchSlidesProgress : true,

@@ -6,15 +6,15 @@
 @layer components {
     
     .card {
-        @apply w-20 h-20 flex flex-col items-center;
+        @apply w-20   gap-2 h-20 md:h-full md:w-32 flex flex-col items-center justify-start  cursor-pointer  ;
     }
 
     .card > img {
-        @apply w-10 h-10;
+        @apply w-10 h-10 ;
     }
 
     .card > p {
-        @apply text-xs text-center  font-medium  line-clamp-2;
+        @apply text-xs text-center  font-medium  line-clamp-2  md:text-sm  ;
     }
 
     .swiper-slide {
