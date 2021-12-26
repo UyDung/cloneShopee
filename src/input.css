@@ -43,11 +43,13 @@
 
 .swiper-pagination-bullet {
     background: red;
+    width: 14px;
+    height: 14px;
 }
 
 .slogan-swiper > .swiper-pagination .swiper-pagination-bullet {
     border-radius: 0;
-    background: red;
+    background: white;   
     margin: 0 !important;
 }
 
