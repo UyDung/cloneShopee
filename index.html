@@ -5,15 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="./dist/output.css" />
         <title>Clone Shopee</title>
     </head>
     <body class="text-gray-600 space-y-4 relative">
         <!-- 1 header -->
-        <header class="h-32 relative bg-red-500/80 overflow-hidden">
+        <header class="h-32 md:h-36 md:fixed   md:z-50 md:top-0 md:left-0 md:right-0 relative bg-red-500  overflow-hidden md:px-40">
             <!-- mobile nav -->
-            <nav class="flex absolute top-2 z-50 items-center justify-around px-3 space-x-2">
+            <nav class="sm:hidden flex absolute top-2 z-50 items-center justify-around px-3 space-x-2">
                 <div class="search flex items-center justify-center bg-white rounded py-1 px-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -43,6 +49,106 @@
             </nav>
             <!-- mobile nav end -->
 
+            <!-- laptop nav -->
+            <nav class="laptop-nav flex justify-between items-center text-[13px] py-2 text-white">
+                <div class="left flex items-center gap-2">
+                    <a href="#" class="transition-all hover:opacity-60 flex gap-2 items-center after:content-['|'] after:h-full after:text-gray-200"
+                        >Kênh Người Bán</a
+                    >
+                    <a href="#" class="transition-all hover:opacity-60 flex gap-2 items-center after:content-['|'] after:h-full after:text-gray-200"
+                        >Trở thành Người bán Shopee</a
+                    >
+                    <a href="#" class="transition-all hover:opacity-60 flex gap-2 items-center after:content-['|'] after:text-gray-200"
+                        >Tải ứng dụng</a
+                    >
+                    <div href="#" class="transition-all hover:opacity-60">
+                        <span>Kết nối</span>
+                        <a href="#" class="transition-all hover:opacity-60"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="transition-all hover:opacity-60"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="right flex items-center gap-2">
+                    <a href="#" class="transition-all hover:opacity-60 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                            />
+                        </svg>
+                        <span>Thông báo</span>
+                    </a>
+                    <a href="#" class="transition-all hover:opacity-60 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
+                        </svg>
+                        <span>Hỗ trợ</span>
+                    </a>
+                    <a href="#" class="transition-all hover:opacity-60 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                            />
+                        </svg>
+                        <span>Tiếng Việt</span>
+                    </a>
+                    <a href="#" class="transition-all hover:opacity-60 flex items-center gap-2 after:content-['|'] after:text-gray-200"> Đăng Ký </a>
+                    <a href="#" class="transition-all hover:opacity-60">Đăng Nhập</a>
+                </div>
+            </nav>
+            <!-- laptop nav end -->
+
+            <!-- second -->
+            <div class="second flex justify-between items-center text-white h-20 overflow-visible   ">
+                <div class="logo  h-full flex items-center gap-2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    <h1 class="text-3xl ">Shopee</h1>
+                </div>
+                <div class="search flex flex-col items-center    flex-1 mx-10  bg-white text-gray-800 relative rounded ">
+                    <input type="text" placeholder="Book Club Săn Quà Chính Hãng" class=" p-2  w-full border-none focus:outline-0  rounded " />
+                    <button aria-label="search" class="cursor-pointer   rounded  w-14 h-7 text-white p-4 font-bold bg-red-500 absolute top-1/2 right-[2px] -translate-y-1/2 flex items-center justify-center  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 font-bold" fill="none" viewBox="0 0 20 20" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="{2}" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <nav class="flex items-center gap-3 absolute -bottom-1/2   text-gray-100 text-[13px]  self-start  ">
+                        <a href="#">Tất</a>
+                        <a href="#">Sữa Rửa Mặt</a>
+                        <a href="#">Mặt Nạ</a>
+                        <a href="#">Set Đồ Nữ</a>
+                        <a href="#">Vòng Tay</a>
+                        <a href="#">Balo</a>
+                        <a href="#">Nồi Chiên Không Dầu</a>
+                        <a href="#">Sweater</a>
+                    </nav>
+                </div>
+                <div class="badge cursor-pointer relative group">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                        />
+                    </svg>
+                    <div class="cart bg-white w-96 h-96 absolute  z-50    right-0  hidden group-hover:flex">
+                        <h3 class="text-sky-700">Chưa có sản phẩm</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- second end -->
+
             <!-- slideShow -->
             <div class="nav-swiper relative h-32 w-full m-auto text-gray-800">
                 <div class="swiper-wrapper">
@@ -66,9 +172,9 @@
         <!-- 2 main -->
         <main class="flex flex-col gap-2 bg-gray-100">
             <!-- Slogan -->
-            <section class="slogan-swiper h-48 overflow-hidden bg-white relative">
+            <section class="slogan-swiper h-48 overflow-hidden bg-white relative  md:px-40 ">
                 <!-- <div class="swiper-wrapper"> -->
-                <div class="swiper-wrapper m-0 p-0 w-full h-full grid grid-rows-2 grid-flow-col items-start gap-x-2">
+                <div class="swiper-wrapper m-0 p-0 w-full h-full md:flex md:items-center grid grid-rows-2 grid-flow-col items-start gap-x-2">
                     <div class="swiper-slide card">
                         <img src="./images/menuItems/2.png" alt="" />
                         <p>Khung Giờ Săn Sale</p>
@@ -185,7 +291,7 @@
 
             <!-- Flash Sale -->
 
-            <section class="flash-sale flex flex-col space-y-2 p-2 mb-1 bg-white">
+            <section class="flash-sale flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40">
                 <div class="flex justify-between items-center px-2">
                     <img src="./images/flash_sale/logo.png" alt="" class="h-6" />
                     <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
@@ -200,23 +306,7 @@
                 <div class="product-container overflow-hidden">
                     <ul class="swiper-wrapper space-x-2">
                         <li class="product swiper-slide">
-                            <div
-                                class="
-                                    logo
-                                    bg-yellow-400
-                                    w-10
-                                    h-14
-                                    uppercase
-                                    text-white text-xs
-                                    flex flex-col
-                                    items-center
-                                    px-2
-                                    absolute
-                                    right-0
-                                    top-0
-                                    z-50
-                                "
-                            >
+                            <div class="logo bg-yellow-400 w-10 h-14 uppercase text-xs flex flex-col items-center px-2 absolute right-0 top-0 z-50">
                                 <span class="text-red-500">64%</span> Giảm
                             </div>
                             <a href="#" class="relative">
@@ -576,7 +666,7 @@
             <!-- Flash Sale end -->
 
             <!-- Top Search -->
-            <section class="top-search flex flex-col space-y-2 p-2 mb-1 bg-white">
+            <section class="top-search flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40 overflow-hidden">
                 <div class="flex justify-between items-center px-2">
                     <p class="text-red-500 uppercase font-semibold">Tìm kiếm hàng đầu</p>
                     <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
@@ -588,7 +678,7 @@
                 </div>
 
                 <!-- top search container -->
-                <div class="top-search-container w-screen overflow-hidden">
+                <div class="top-search-container w-full overflow-hidden">
                     <ul class="swiper-wrapper space-x-2 w-full">
                         <li class="search-item swiper-slide border w-32 rounded">
                             <a href="#" class="w-full">
@@ -726,7 +816,7 @@
             <!-- Top Search end -->
 
             <!-- Shoppe Mall -->
-            <section class="shopee-mall flex flex-col space-y-2 p-2 mb-1 bg-white">
+            <section class="shopee-mall flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40 overflow-hidden">
                 <div class="flex items-center justify-between pb-2 border-b">
                     <p class="uppercase text-red-500 font-semibold">shopee mall</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -737,7 +827,7 @@
                     </a>
                 </div>
 
-                <ul class="flex items-center justify-between gap-2">
+                <ul class="flex items-center justify-between gap-2 ">
                     <li class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -845,7 +935,7 @@
             <!-- Shoppe Mall end -->
 
             <!-- Shopee Live -->
-            <section class="shopee-live flex flex-col space-y-2 p-2 mb-1 bg-white">
+            <section class="shopee-live flex flex-col space-y-2 p-2 mb-1 bg-white md:px-40">
                 <div class="flex items-center justify-between">
                     <p class="uppercase text-red-500 font-semibold">Shopee Live</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1154,7 +1244,7 @@
             <!-- Shopee Live end -->
 
             <!-- Fluently search -->
-            <div class="fluently-search flex flex-col mb-1 p-2 px-3 overflow-hidden bg-white">
+            <div class="fluently-search flex flex-col mb-1 p-2 px-3 overflow-hidden bg-white md:px-40">
                 <div class="flex justify-between items-center text-red-500 w-full">
                     <p class="title uppercase font-semibold">Tìm Kiếm Phổ Biến</p>
                     <button class="flex items-center gap-1">
@@ -1215,7 +1305,7 @@
             <!-- Fluently search end -->
 
             <!-- Favorites gallery -->
-            <div class="favorites-gallery space-y-4 p-2 overflow-hidden flex flex-col bg-white">
+            <div class="favorites-gallery space-y-4 p-2 overflow-hidden flex flex-col bg-white md:px-40">
                 <div class="flex items-center justify-between w-full">
                     <p class="uppercase text-red-500 font-semibold">Bộ sưu tập yêu thích</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1390,7 +1480,7 @@
             <!-- Favorites gallery end -->
 
             <!-- Category -->
-            <div class="category flex flex-col p-2 px-3 overflow-hidden bg-white mb-1">
+            <div class="category flex flex-col p-2 px-3 overflow-hidden bg-white mb-1 md:px-40">
                 <div class="flex items-center justify-between w-full">
                     <p class="uppercase text-red-500 font-semibold">Danh mục</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1402,8 +1492,8 @@
                 </div>
 
                 <!-- category list -->
-                <div class="category-list relative w-screen">
-                    <div class="swiper-wrapper w-full h-full grid grid-rows-2 grid-flow-col items-start gap-x-2">
+                <div class="category-list relative w-full overflow-hidden">
+                    <div class="swiper-wrapper w-full h-full  md:grid-rows-1  grid grid-rows-2 grid-flow-col items-start gap-x-2">
                         <a class="category-item swiper-slide flex flex-col items-center w-28">
                             <img src="./images/categories/1.png" alt="" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Nam</p>
@@ -1519,7 +1609,7 @@
             <!-- Category end -->
 
             <!-- Today' Suggest -->
-            <div class="today-suggest flex flex-col items-center mb-1 overflow-hidden space-y-2 h-full pb-16 ">
+            <div class="today-suggest flex flex-col items-center mb-1 overflow-hidden space-y-2 h-full pb-16 md:px-40">
                 <div class="sticky top-0 bg-white h-full flex items-center justify-between w-full p-2">
                     <p class="uppercase text-red-500 font-semibold">Gợi Ý Hôm Nay</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
@@ -1538,12 +1628,11 @@
                         h-full
                         grid
                         justify-center
-                         
                         p-1
                         md:p-2
                         grid-cols-2
-                        md:grid-cols-3
-                        lg:grid-cols-5
+                        md:grid-cols-4
+                        lg:grid-cols-6
                         gap-x-2 gap-y-4
                         md:gap-4
                     "
@@ -1814,18 +1903,141 @@
                             </div>
                         </div>
                     </div>
+                    <div class="suggest_item bg-white flex flex-col items-center border rounded gap-2">
+                        <div class="suggest_item_image relative">
+                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
+                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                                <span class="percent text-red-500 font-semibold">50%</span>
+                                <span class="text-white text-base">Giảm</span>
+                            </div>
+                        </div>
+                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
+                            <p class="description text-xs line-clamp-2 text-black">
+                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+                                atque!
+                            </p>
+
+                            <div class="w-full flex justify-between items-center text-sm">
+                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
+                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
+                        <div class="suggest_item_image relative">
+                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
+                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                                <span class="percent text-red-500 font-semibold">49%</span>
+                                <span class="text-white text-base">Giảm</span>
+                            </div>
+                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
+                        </div>
+                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">
+                                RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="bg-orange-400 flex items-center h-4 text-white">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
+                                    <path
+                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
+                                        stroke-width="1"
+                                        transform=""
+                                        stroke="currentColor"
+                                        fill="#f69113"
+                                    ></path>
+                                </svg>
+                                <p class="text-white text-xs">Giảm đ 3k</p>
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
+                                    <path
+                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
+                                        stroke-width="1"
+                                        transform="rotate(180) translate(-3 -15)"
+                                        stroke="currentColor"
+                                        fill="#f69113"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="w-full flex justify-between items-center text-sm">
+                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
+                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suggest_item bg-white flex flex-col items-center border rounded gap-2">
+                        <div class="suggest_item_image relative">
+                            <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
+                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                                <span class="percent text-red-500 font-semibold">50%</span>
+                                <span class="text-white text-base">Giảm</span>
+                            </div>
+                        </div>
+                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left border">
+                            <p class="description text-xs line-clamp-2 text-black">
+                                Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+                                atque!
+                            </p>
+
+                            <div class="w-full flex justify-between items-center text-sm">
+                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 17.000</p>
+                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suggest_item bg-white flex flex-col border rounded gap-2">
+                        <div class="suggest_item_image relative">
+                            <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
+                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                                <span class="percent text-red-500 font-semibold">49%</span>
+                                <span class="text-white text-base">Giảm</span>
+                            </div>
+                            <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
+                        </div>
+                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                            <p class="description w-conte text-xs line-clamp-2 text-black text-left">
+                                RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="bg-orange-400 flex items-center h-4 text-white">
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
+                                    <path
+                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
+                                        stroke-width="1"
+                                        transform=""
+                                        stroke="currentColor"
+                                        fill="#f69113"
+                                    ></path>
+                                </svg>
+                                <p class="text-white text-xs">Giảm đ 3k</p>
+                                <svg class="h-full" viewBox="-0.5 -0.5 4 16">
+                                    <path
+                                        d="M4 0h-3q-1 0 -1 1a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3v0.333a1.2 1.5 0 0 1 0 3q0 1 1 1h3"
+                                        stroke-width="1"
+                                        transform="rotate(180) translate(-3 -15)"
+                                        stroke="currentColor"
+                                        fill="#f69113"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="w-full flex justify-between items-center text-sm">
+                                <p class="price text-red-500 font-semibold whitespace-nowrap">đ 128.000</p>
+                                <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- suggest Items end -->
-                <button class=" w-11/12  h-8 border-2 rounded border-red-500 bg-white text-center text-red-500">Xem thêm</button>
+                <button class="w-11/12 md:block md:w-1/3 hover:bg-sky-700 md:border-0 hover:text-white h-8 border-2 rounded border-red-500 bg-white text-center text-red-500 md:text-gray-800 ">Xem thêm</button>
             </div>
             <!-- Today' Suggest end -->
         </main>
         <!-- 2 main end -->
 
         <!-- 3 Footer -->
-        <footer class="footer   flex flex-col items-center justify-between   pt-0 p-2">
-            <div class="role  grid grid-cols-2  place-content-center  w-full gap-4 h-full  ">
-                <a class="role-item flex items-center gap-1 whitespace-nowrap text-least  justify-center">
+        <footer class="footer flex flex-col items-center justify-between pt-0 p-2  md:px-40">
+            <div class="role grid grid-cols-2 md:grid-cols-4 place-content-center w-full gap-4 h-full">
+                <a class="role-item flex items-center gap-1 whitespace-nowrap text-least justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                             stroke-linecap="round"
@@ -1834,28 +2046,43 @@
                             d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
                         />
                     </svg>
-                    <span class="uppercase text-gray-600  ">Chính Sách bảo mật</span>
+                    <span class="uppercase text-gray-600">Chính Sách bảo mật</span>
                 </a>
-                <a href="#" class="role-item flex items-center gap-1  whitespace-nowrap text-least  justify-center">
-                    <img src="./images/footer/2.png" alt="" class="w-4 h-4">
+                <a href="#" class="role-item flex items-center gap-1 whitespace-nowrap text-least justify-center">
+                    <img src="./images/footer/2.png" alt="" class="w-4 h-4" />
                     <span class="uppercase text-gray-600">Quy Chế hoạt động</span>
                 </a>
-                <a href="#" class="role-item flex items-center gap-1   whitespace-nowrap text-least justify-center"><img src="./images/footer/3.png" alt="" class="w-4 h-4"><span class="uppercase text-gray-600">Chính sách vận chuyển</span></a>
-                <a href="#" class="role-item flex items-center gap-1  text-least justify-center"><img src="./images/footer/4.png" alt="" class="w-4 h-4"><span class="uppercase text-gray-600 text-center">Quy trình giải quyết tranh chấp</span></a>
+                <a href="#" class="role-item flex items-center gap-1 whitespace-nowrap text-least justify-center"
+                    ><img src="./images/footer/3.png" alt="" class="w-4 h-4" /><span class="uppercase text-gray-600">Chính sách vận chuyển</span></a
+                >
+                <a href="#" class="role-item flex items-center gap-1 text-least justify-center"
+                    ><img src="./images/footer/4.png" alt="" class="w-4 h-4" /><span class="uppercase text-gray-600 text-center"
+                        >Quy trình giải quyết tranh chấp</span
+                    ></a
+                >
             </div>
 
-            <div class="grid grid-cols-2  grid-rows-2 items-center  place-content-center w-full gap-2  px-4 mb-2" >
-                <img src="./images/footer/5.png" alt="" class="row-start-1 col-start-1">
-                <img src="./images/footer/5.png" alt="" class=" row-start-1 col-start-2">
-               <div class="row-start-2  col-span-full  flex justify-center">
-                    <img src="./images/footer/6.png" alt="" class="">
-               </div>
+            <div class="grid   grid-cols-2 md:grid-cols-3 md:grid-rows-1 grid-rows-2 items-center place-content-center w-full max-w-content gap-2 md:gap-0 px-4 mb-2">
+                <img src="./images/footer/5.png" alt="" class="row-start-1 col-start-1 border" />
+                <img src="./images/footer/5.png" alt="" class="row-start-1 col-start-2 border" />
+                <div class="row-start-2 md:row-start-1 md:col-span-1 md:col-start-3  col-span-full flex justify-center">
+                    <img src="./images/footer/6.png" alt="" class="" />
+                </div>
             </div>
 
-            <div class="text-center text-black text-least space-y-1">
+            <div class="sm:hidden text-center text-gray-800 text-least space-y-1">
                 <p class="mb-2">Công ty TNHH Shopee</p>
-                <P>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội</P>
+                <p>Địa chỉ: Tầng 28, Tòa nhà trung tâm Lotte Hà Nội, 54 Liễu Giai, phường Cống Vị, Quận Ba Đình, Hà Nội</p>
                 <p>Tổng đài hỗ trợ: 19001221 - Email: support@shopee.vn</p>
+                <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                <p>&copy; 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+            </div>
+
+            <div class="sm:block hidden text-center text-gray-800 text-xs space-y-2">
+                <p class="mb-6">Công ty TNHH Shopee</p>
+                <p>Địa chỉ: Tầng 4-5-6, Tòa nhà trung tâm Lotte Hà Nội, số 29 Liễu Giai, phường Ngọc Khánh, Quận Ba Đình,  Thành phố Hà Nội, Việt Nam
+                Tổng đài hỗ trợ: 19001221 - Email: support@shopee.vn</p>
+                <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
                 <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư Hà Nội cấp lần đầu ngày 10/02/2015</p>
                 <p>&copy; 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
             </div>
