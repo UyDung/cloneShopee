@@ -100,10 +100,7 @@ const shopeeMallProducts = new Swiper(".shopee-mall-products", {
         768: {
             slidesPerView: 4,
             spaceBetween: 0,
-            grid: {
-                rows: 2,
-                fill: 'row'
-            }
+             
         }
     }
 });
