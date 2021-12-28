@@ -64,6 +64,7 @@ const topSearchSwiper = new Swiper(".top-search-container", {
     slidesPerView: 2,
     touchReleaseOnEdges: true,
     watchSlidesProgress: true,
+ 
     breakpoints: {
         768: {
             slidesPerView: 4,
@@ -103,15 +104,11 @@ const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
 });
 
 const shopeeMallProducts = new Swiper(".shopee-mall-products", {
-    watchSlidesProgress: true,
-    autoplay: {
-        delay: 2000,
-    },
+    watchSlidesProgress: true,    
     slidesPerView: "auto",
-    loopedSlides: 13,
-    spaceBetween: 10,
-    setSwapperSize: true,
-    touchReleaseOnEdges: true,
+ 
+    spaceBetween: 10,   
+    cssMode: true,
     breakpoints: {
         768: {
             slidesPerView: 3,
@@ -121,11 +118,27 @@ const shopeeMallProducts = new Swiper(".shopee-mall-products", {
             slidesPerView: 4,
         },
     },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
 });
 
-const shopeeLiveItems = new Swiper(".shopee-live-list", {
-    slidesPerView: "auto",
-    watchSlidesProgress: true
+const shopeeLiveList = new Swiper(".shopee-live-list", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 'auto',
+    cssMode: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
 });
 
 const thienthan = new Swiper(".favorities-list", {
@@ -143,6 +156,6 @@ const categoryList = new Swiper(".category-list", {
     watchSlidesProgress: true,
     navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button.prev"
+        prevEl: ".swiper-button-prev"
     }
 });

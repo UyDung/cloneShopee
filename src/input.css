@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-    
     .card {
         /* @apply w-20   gap-2 h-20 md:h-full md:w-32 flex flex-col items-center justify-start  cursor-pointer  ; */
-        @apply  gap-2  flex flex-col items-center justify-start  cursor-pointer  ;
+        @apply gap-2  flex flex-col items-center justify-start  cursor-pointer;
     }
 
     .card > img {
-        @apply w-10 h-10 ;
+        @apply w-10 h-10;
     }
 
     .card > p {
-        @apply text-xs text-center  font-medium  line-clamp-2  md:text-sm  ;
+        @apply text-xs text-center  font-medium  line-clamp-2  md:text-sm;
     }
 
     .swiper-slide {
@@ -26,14 +24,13 @@
         @apply rounded-none !important w-10 h-10 bg-red-500;
     }
 
-    
     p.had-sale {
         @apply bg-gray-200 rounded-full flex-nowrap text-xs !important;
     }
 
-   img {
-       @apply object-cover
-   }
+    img {
+        @apply object-cover;
+    }
 }
 
 .swiper-pagination-bullet {
@@ -44,8 +41,22 @@
 
 .slogan-swiper > .swiper-pagination .swiper-pagination-bullet {
     border-radius: 0;
-    background: white;   
+    background: white;
     margin: 0 !important;
 }
 
- 
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+    content: "" !important;
+}
