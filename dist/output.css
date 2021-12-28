@@ -739,6 +739,14 @@ img {
   height: 2rem;
 }
 
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-1\/5 {
+  height: 20%;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -753,14 +761,6 @@ img {
 
 .h-12 {
   height: 3rem;
-}
-
-.h-4\/5 {
-  height: 80%;
-}
-
-.h-1\/5 {
-  height: 20%;
 }
 
 .w-4 {
@@ -825,6 +825,10 @@ img {
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .flex-1 {
@@ -1258,19 +1262,14 @@ img {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
-.text-red-700 {
+.text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .shadow-md {
@@ -1440,11 +1439,6 @@ img {
     grid-row-start: 1;
   }
 
-  .md\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
   .md\:mb-7 {
     margin-bottom: 1.75rem;
   }
@@ -1497,24 +1491,16 @@ img {
     width: 100%;
   }
 
-  .md\:w-32 {
-    width: 8rem;
-  }
-
   .md\:w-auto {
     width: auto;
   }
 
-  .md\:grid-flow-row {
-    grid-auto-flow: row;
+  .md\:w-32 {
+    width: 8rem;
   }
 
   .md\:grid-flow-col {
     grid-auto-flow: column;
-  }
-
-  .md\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
@@ -1525,12 +1511,12 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
-  }
-
   .md\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -1565,10 +1551,6 @@ img {
     gap: 1rem;
   }
 
-  .md\:gap-2 {
-    gap: 0.5rem;
-  }
-
   .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1581,10 +1563,6 @@ img {
 
   .md\:border {
     border-width: 1px;
-  }
-
-  .md\:border-2 {
-    border-width: 2px;
   }
 
   .md\:bg-transparent {
@@ -1600,14 +1578,14 @@ img {
     padding: 0.5rem;
   }
 
-  .md\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .md\:pt-2 {
@@ -1646,6 +1624,18 @@ img {
 @media (min-width: 1024px) {
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-40 {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 

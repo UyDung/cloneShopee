@@ -2,6 +2,7 @@ const navSwiper = new Swiper(".main-banner", {
     speed: 700,
     slidesPerView: 1,
     watchSlidesProgress : true,
+    
     autoplay: {
         delay: 4000,
     }, 
@@ -15,13 +16,15 @@ const navSwiper = new Swiper(".main-banner", {
 });
 
 const sloganSwiper = new Swiper(".slogan-swiper", {
-    autoplay: false,    
+    autoplay: false,
     grid: {
         rows: 2,
         fill: "column",
     },
+    touchReleaseOnEdges: true,
     slidesPerView: "auto",
-    watchSlidesProgress : true,
+    loopedSlides: 14,
+    watchSlidesProgress: true,
     pagination: {
         el: ".swiper-pagination-slogan",
         type: "bullets",
@@ -29,36 +32,45 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
     },
     breakpoints: {
         768: {
-            slidesPerView: 8,
+            slidesPerView: 6,
             spaceBetween: 5,
+        },
+        1024: {
+            slidesPerView: 8,
             grid: {
-                rows: 1
-            }
-        }
-    }
+                rows: 1,
+            },
+        },
+    },
 });
 
-const flashSwiper = new Swiper(".product-container", {    
+const flashSwiper = new Swiper(".product-container", {
     slidesPerView: 2,
-    
-    watchSlidesProgress : true, 
+    touchReleaseOnEdges: true,
+    watchSlidesProgress: true,
     breakpoints: {
         768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        1024: {
             slidesPerView: 6,
-            spaceBetween: 10
-        }
-    }
-
+            spaceBetween: 10,
+        },
+    },
 });
 
 const topSearchSwiper = new Swiper(".top-search-container", {
     slidesPerView: 2,
-    
+    touchReleaseOnEdges: true,
     watchSlidesProgress: true,
     breakpoints: {
         768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        1024: {
             slidesPerView: 6,
-            spaceBetween: 20,          
         },
     },
 });
@@ -69,9 +81,8 @@ const shopeeMallSwiper = new Swiper(".shopee-mall-swiper", {
     },
     slidesPerView: 1,
     watchSlidesProgress : true,
-    loop: true,
     pagination: {
-        el: ".swiper-pagination-shopee",
+        el: ".swiper-pagination-mobile",
         type: "bullets",
         clickable: true,
     },
@@ -93,16 +104,23 @@ const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
 
 const shopeeMallProducts = new Swiper(".shopee-mall-products", {
     watchSlidesProgress: true,
-    slidesPerView: 'auto',
-    
-    spaceBetween: 10, 
+    autoplay: {
+        delay: 2000,
+    },
+    slidesPerView: "auto",
+    loopedSlides: 13,
+    spaceBetween: 10,
+    setSwapperSize: true,
+    touchReleaseOnEdges: true,
     breakpoints: {
         768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 0,
-             
-        }
-    }
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
 });
 
 const shopeeLiveItems = new Swiper(".shopee-live-list", {
