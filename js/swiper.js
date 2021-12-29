@@ -44,7 +44,7 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
     },
 });
 
-const flashSwiper = new Swiper(".product-container", {
+const flashSale = new Swiper(".product-container", {
     slidesPerView: 2,
     touchReleaseOnEdges: true,
     watchSlidesProgress: true,
@@ -56,34 +56,45 @@ const flashSwiper = new Swiper(".product-container", {
         1024: {
             slidesPerView: 6,
             spaceBetween: 10,
+            allowTouchMove: false
         },
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
 });
 
-const topSearchSwiper = new Swiper(".top-search-container", {
+const topSearch = new Swiper(".top-search-container", {
     slidesPerView: 2,
     touchReleaseOnEdges: true,
     watchSlidesProgress: true,
- 
+    spaceBetween: 10,
     breakpoints: {
         768: {
             slidesPerView: 4,
-            spaceBetween: 20,
+            spaceBetween: 20
         },
         1024: {
             slidesPerView: 6,
+            allowTouchMove: false,
+            spaceBetween: 30
         },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 });
 
-const shopeeMallSwiper = new Swiper(".shopee-mall-swiper", {
+const shopeeMallMobile = new Swiper(".shopee-mall-swiper-mobile", {
     autoplay: {
         delay: 2000,
     },
     slidesPerView: 1,
-    watchSlidesProgress : true,
+    watchSlidesProgress: true,
     pagination: {
-        el: ".swiper-pagination-mobile",
+        el: ".swiper-pagination-shopee",
         type: "bullets",
         clickable: true,
     },
@@ -104,24 +115,27 @@ const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
 });
 
 const shopeeMallProducts = new Swiper(".shopee-mall-products", {
-    watchSlidesProgress: true,    
-    slidesPerView: "auto",
- 
-    spaceBetween: 10,   
-    cssMode: true,
+    watchSlidesProgress: true,
+
+    spaceBetween: 10,
+
     breakpoints: {
         768: {
             slidesPerView: 3,
             spaceBetween: 0,
         },
         1024: {
+            grid: {
+                rows: 2,
+                fill: "column",
+            },
             slidesPerView: 4,
         },
     },
     navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    }
+        prevEl: ".swiper-button-prev",
+    },
 });
 
 const shopeeLiveList = new Swiper(".shopee-live-list", {
@@ -157,5 +171,11 @@ const categoryList = new Swiper(".category-list", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 10,
+            allowTouchMove: false
+        }
     }
 });

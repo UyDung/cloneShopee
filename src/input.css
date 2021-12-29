@@ -31,6 +31,14 @@
     img {
         @apply object-cover;
     }
+
+    .suggest_item {
+        @apply hover:scale-105 transition-all cursor-pointer hover:border hover:border-orange-600 p-2 shadow;
+    }
+
+    .suggest_item > button {
+        @apply bg-orange-400 w-full translate-y-full absolute z-50 bottom-0    rounded text-white whitespace-nowrap text-sm py-1;
+    }
 }
 
 .swiper-pagination-bullet {
