@@ -175,7 +175,8 @@ const categoryList = new Swiper(".category-list", {
     breakpoints: {
         1024: {
             slidesPerView: 10,
-            allowTouchMove: false
+            allowTouchMove: false,
+            
         }
     }
 });

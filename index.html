@@ -17,16 +17,16 @@
     </head>
     <body class="text-gray-600 relative">
         <!-- 1 header -->
-        <header class="md:h-32 h-10 md:z-50 md:top-0 md:left-0 md:right-0 md:mb-7 bg-orange-600 relative overflow-hidden xl:px-40 lg:sticky">
+        <header class="md:h-32 h-10 md:z-50 md:top-0 md:left-0 md:right-0 md:mb-7 relative lg:bg-orange-600  overflow-hidden xl:px-40 lg:sticky">
             <!-- mobile nav -->
-            <nav class="sm:hidden flex absolute top-2 z-50 items-center justify-around px-3 space-x-2">
-                <div class="search flex items-center justify-center bg-white rounded py-1 px-2">
+            <nav class="    bg-red-500  sticky   p-2 flex items-center  gap-2">
+                <div class="search flex items-center justify-center    w-2/3 bg-white rounded  px-2 ml-6 ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    <input type="text" class="w-full bg-white rounded pl-2 placeholder:text-red-400" placeholder="GIẢM GIÁ ĐẾN 90%" />
+                    <input type="text" class="  rounded pl-2 placeholder:text-red-400 w-full h-full text-xs" placeholder="GIẢM GIÁ ĐẾN 90%" />
                 </div>
-                <div class="badge">
+                <div class="  ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                             stroke-linecap="round"
@@ -36,7 +36,7 @@
                         />
                     </svg>
                 </div>
-                <div class="user">
+                <div class="user  ">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                             stroke-linecap="round"
@@ -152,7 +152,7 @@
                         <a href="#" class="whitespace-nowrap">Sweater</a>
                     </nav>
                 </div>
-                <div class="badge cursor-pointer relative group">
+                <div class=" cursor-pointer relative group">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                             stroke-linecap="round"
@@ -311,10 +311,10 @@
             <!-- second banner end -->
 
             <!-- 3 Category Laptop -->
-             <div class="category hidden lg:flex flex-col p-2 px-3 relative  bg-white mb-1 xl:mx-40">
-                <div class="flex items-center justify-between w-full">
-                    <p class="uppercase text-red-500 font-semibold">Danh mục</p>
-                    <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
+            <div class="category hidden lg:flex flex-col py-2 space-y-3 relative bg-white mb-1 xl:mx-40">
+                <div class="flex items-center justify-between w-full px-5 h-10">
+                    <p class="uppercase text-gray-500 font-normal text-lg">Danh mục</p>
+                    <a href="#" class="lg:hidden flex items-center font-thin text-gray-600 text-xs"
                         >Xem thêm
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -323,140 +323,119 @@
                 </div>
 
                 <!-- category list -->
-                <div class="category-list   group w-full  overflow-hidden">
-                    <div class="swiper-wrapper w-full h-full  grid grid-rows-2 grid-flow-col items-start gap-x-2 md:gap-0">
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/1.png" alt="" />
+                <div class="category-list px-0 group w-full overflow-hidden">
+                    <div class="px-0 swiper-wrapper w-full h-full grid grid-rows-2 grid-flow-col">
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/1.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Nam</p>
                         </a>
 
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/2.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/2.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Điện Thoại & Phụ Kiện</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/3.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/3.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Thiết Bị Điện Tử</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/4.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/4.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Máy Tính & Laptop</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/5.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/5.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Máy Ảnh & Máy Quay Lorem ipsum dolor sit amet.</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/6.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/6.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Đồng Hồ</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/7.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/7.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Giày Dép Nam</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/8.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/8.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Thiết Bị Điện Gia Dụng</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/9.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/9.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Thể Thao & Du Lịch</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/10.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/10.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Ô Tô & Xe Máy & Xe Đạp</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/11.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/11.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Balo & Túi Ví Nam</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/12.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/12.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Đồ Chơi</p>
                         </a>
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/13.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/13.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Chăm Sóc Thú Cưng</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/14.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/14.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Nữ</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/15.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/15.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Mẹ & Bé</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/16.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/16.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Nhà Cửa & Đời Sống</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/17.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/17.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Sắc Đẹp</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/18.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/18.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Sức Khỏe</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/19.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/19.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Giày Dép Nữ</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/20.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/20.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Túi Ví Nữ</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/21.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/21.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Phụ Kiện & Trang Sức Nữ</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/22.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/22.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Bách Hóa Online</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/23.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/23.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Nhà Sách Online</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/24.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/24.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Trẻ Em</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/25.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/25.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Giặt Giũ & Chăm Sóc Sắc Đẹp</p>
                         </a>
-                        <a href="#" class="category-items swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
-                            <img src="./images/categories/26.png" alt="" />
+                        <a href="#" class="category-item swiper-slide">
+                            <img src="./images/categories/26.png" alt="" class="h-2/3" />
                             <p class="line-clamp-2 text-center text-black">Voucher & Dịch Vụ</p>
                         </a>
                     </div>
 
-                    <div
-                        class="
-                            swiper-button-next
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                             top-1/2
-                             group-hover:-translate-y-4
-                            z-30
-                            right-0
-                            translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
+                    <div class="swiper-button-next">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 flex justify-center items-center text-black"
+                            class="h-4 w-4 flex justify-center items-center text-gray-600"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -464,35 +443,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </div>
-                    <div
-                        class="
-                            swiper-button-prev
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            top-1/2
-                            group-hover:-translate-y-4
-                            z-30
-                            left-0
-                            -translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                         </svg>
                     </div>
@@ -504,7 +456,7 @@
             <!--3 Flash Sale -->
             <section class="flash-sale relative flex flex-col space-y-2 md:px-4 p-3 mb-1 bg-white xl:mx-40">
                 <div class="flas-sale-header flex justify-between items-center px-2">
-                    <img src="./images/flash_sale/logo.png" alt="" class="h-6" />
+                    <img src="./images/flash_sale/logo.png" alt="" class="h-2/3" class="h-6" />
                     <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
                         >Xem Tất Cả
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -514,33 +466,13 @@
                 </div>
 
                 <!-- product container -->
-                <div class="product-container    group h-56 w-full overflow-hidden">
+                <div class="product-container group h-56 w-full overflow-hidden">
                     <ul class="swiper-wrapper h-full">
                         <li class="product swiper-slide">
                             <a href="#" class="h-full w-full flex flex-col justify-between">
                                 <div class="card-image relative h-3/4 w-full">
-                                    <div
-                                        class="
-                                            logo
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
-                                    <p class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center bg-red-500 px-2">
-                                        Mall
-                                    </p>
+                                    <div class="logo"><span class="text-red-500">64%</span> Giảm</div>
+                                    <p class="absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center bg-red-500 px-2">Mall</p>
                                     <img src="./images/flash_sale/1.jpeg" class="object-cover w-full h-full" />
                                     <img src="./images/flash_sale/50.png" alt="" class="absolute bottom-0 left-1/2 -translate-x-1/2" />
                                 </div>
@@ -555,28 +487,8 @@
                         <li class="product swiper-slide">
                             <a href="#" class="w-full h-full flex flex-col justify-between">
                                 <div class="card-image relative w-full h-3/4">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
-                                    <p class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center bg-red-500 px-2">
-                                        Mall
-                                    </p>
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
+                                    <p class="absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center bg-red-500 px-2">Mall</p>
                                     <img src="./images/flash_sale/1.jpeg" alt="" class="w-full h-full" />
                                     <img src="./images/flash_sale/50.png" alt="" class="absolute bottom-0 left-1/2 -translate-x-1/2" />
                                 </div>
@@ -589,29 +501,9 @@
                         <li class="product swiper-slide">
                             <a href="#" class="w-full h-full relative flex flex-col justify-between">
                                 <div class="card-image relative w-full h-3/4">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
 
-                                    <p class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center bg-red-500 px-2">
-                                        Mall
-                                    </p>
+                                    <p class="absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center bg-red-500 px-2">Mall</p>
 
                                     <img src="./images/flash_sale/53_2.jpeg" alt="" class="w-full h-full object-cover" />
 
@@ -626,26 +518,8 @@
                         <li class="product swiper-slide">
                             <a href="#" class="flex flex-col justify-between w-full h-full">
                                 <div class="card-image relative w-full h-3/4">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">98%</span> Giảm
-                                    </div>
-                                    <div class="badge absolute top-0 z-10 w-10 h-10 rounded-md text-gray-100 flex justify-between items-center">
+                                    <div class="badge"><span class="text-red-500">98%</span> Giảm</div>
+                                    <div class="absolute top-0 z-10 w-10 h-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <img src="./images/flash_sale/51_logo.jpeg" alt="" class="rounded-sm" />
                                     </div>
                                     <img src="./images/flash_sale/51_2.jpeg" alt="" class="w-full h-full" />
@@ -660,25 +534,7 @@
                         <li class="product swiper-slide">
                             <a href="#" class="w-full h-full flex flex-col justify-between">
                                 <div class="card-image w-full h-3/4 relative">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
                                     <div class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <p class="bg-red-500 px-2">Mall</p>
                                     </div>
@@ -694,26 +550,8 @@
                         <li class="product swiper-slide">
                             <a href="#" class="flex flex-col justify-between w-full h-full">
                                 <div class="card-image w-full h-3/4 relative">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
-                                    <div class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
+                                    <div class="absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <p class="bg-red-500 px-2">Mall</p>
                                     </div>
                                     <img src="./images/flash_sale/1.jpeg" alt="" class="w-full h-full" />
@@ -729,25 +567,7 @@
                         <li class="product swiper-slide">
                             <a href="#" class="flex flex-col justify-between w-full h-full">
                                 <div class="card-image w-full h-3/4 relative">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
                                     <div class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <p class="bg-red-500 px-2">Mall</p>
                                     </div>
@@ -764,26 +584,8 @@
                         <li class="product swiper-slide">
                             <a href="#" class="w-full h-full flex flex-col justify-between">
                                 <div class="card-image w-full h-3/4 relative">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
-                                    <div class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
+                                    <div class="absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <p class="bg-red-500 px-2">Mall</p>
                                     </div>
                                     <img src="./images/flash_sale/53_2.jpeg" alt="" class="w-full h-full" />
@@ -799,26 +601,8 @@
                         <li class="product swiper-slide">
                             <a href="#" class="flex flex-col justify-between w-full h-full">
                                 <div class="card-image w-full h-3/4 relative">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">98%</span> Giảm
-                                    </div>
-                                    <div class="badge absolute top-0 z-10 w-10 h-10 rounded-md text-gray-100 flex justify-between items-center">
+                                    <div class="badge"><span class="text-red-500">98%</span> Giảm</div>
+                                    <div class="absolute top-0 z-10 w-10 h-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <img src="./images/flash_sale/51_logo.jpeg" alt="" class="w-full h-full" />
                                     </div>
                                     <img src="./images/flash_sale/51_2.jpeg" alt="" class="w-full h-full" />
@@ -834,26 +618,8 @@
                         <li class="product swiper-slide">
                             <a href="#" class="flex flex-col justify-between w-full h-full">
                                 <div class="card-image w-full h-3/4 relative">
-                                    <div
-                                        class="
-                                            badge
-                                            bg-yellow-400
-                                            w-10
-                                            h-14
-                                            uppercase
-                                            text-white text-xs
-                                            flex flex-col
-                                            items-center
-                                            px-2
-                                            absolute
-                                            right-0
-                                            top-0
-                                            z-50
-                                        "
-                                    >
-                                        <span class="text-red-500">64%</span> Giảm
-                                    </div>
-                                    <div class="badge absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
+                                    <div class="badge"><span class="text-red-500">64%</span> Giảm</div>
+                                    <div class="absolute top-0 z-10 rounded-md text-gray-100 flex justify-between items-center">
                                         <p class="bg-red-500 px-2">Mall</p>
                                     </div>
                                     <img src="./images/flash_sale/1.jpeg" alt="" class="w-full h-full" />
@@ -867,6 +633,296 @@
                             </a>
                         </li>
                         <a href="#" class="md:hidden m-auto swiper-slide w-32">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-10 w-10 text-red-500"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="1"
+                                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                                />
+                            </svg>
+                            <p class="shopee-mall-promotion capitalize text-red-500 font-semibold whitespace-nowrap">Xem thêm</p>
+                        </a>
+                    </ul>
+                    <div class="swiper-button-next">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 flex justify-center items-center text-gray-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- product container end -->
+            </section>
+            <!-- Flash Sale end -->
+
+            <!-- 3 Shopee stack banner -->
+            <div class="shopee-stack-banner hidden relative lg:flex flex-col h-24 py-2 bg-white xl:mx-40">
+                <img src="./images/stack_banner/1.png" usemap="#stack-banner" class="w-full h-full rounded-[19px]" />
+                <map name="stack-banner">
+                    <area target="_self" alt="" title="" href="https://shopee.vn/m/samsung-day" coords="8,5,395,106" shape="rect" />
+                    <area target="_self" alt="" title="" href="https://shopee.vn/m/khung-gio-san-sale" coords="407,6,792,104" shape="rect" />
+                    <area target="_self" alt="" title="" href="https://shopee.vn/m/mum-club" coords="807,4,1194,107" shape="rect" />
+                </map>
+            </div>
+            <!-- 3 Shopee stack banner end -->
+
+            <!--3 Top Search show on mobile-->
+            <section class="top-search relative lg:hidden flex flex-col space-y-2 p-2 mb-1 bg-white xl:mx-40">
+                <div class="top-search-header flex justify-between items-center px-2">
+                    <p class="text-red-500 uppercase font-semibold">Tìm kiếm hàng đầu</p>
+                    <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
+                        >Xem Thêm
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- top search container -->
+                <div class="top-search-container group w-full h-56 overflow-hidden">
+                    <ul class="swiper-wrapper h-full">
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/1.jpeg" class="w-full h-3/4 object-cover" />
+                                <div class="description h-1/4 py-1 border px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-lg w-full">
+                                        Kẹp Tóc Càng Cua Đơn Giản Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, est.
+                                    </p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 62k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/4.jpeg" class="w-full h-3/4 object-cover" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Ốp Lưng Iphone</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 229k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/3.jpeg" class="w-full h-3/4 object-cover" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Bông Tẩy Trang 3 lớp Cotton Lorem ipsum dolor sit amet.</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 128k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/2.jpeg" class="w-full h-3/4 object-cover" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Quần Lót Nữ Cotton</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 81k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/1.jpeg" class="w-full object-cover h-3/4" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">
+                                        Kẹp Tóc Càng Cua Đơn Giản Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, est.
+                                    </p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 62k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/4.jpeg" class="w-full object-cover h-3/4" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Ốp Lưng Iphone</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 229k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/3.jpeg" class="w-full object-cover h-3/4" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Bông Tẩy Trang 3 lớp Cotton Lorem ipsum dolor sit amet.</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 128k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/2.jpeg" class="w-full object-cover h-3/4" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Quần Lót Nữ Cotton</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 81k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/3.jpeg" class="w-full object-cover h-3/4" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Bông Tẩy Trang 3 lớp Cotton Lorem ipsum dolor sit amet.</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 128k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+                        <li class="search-item border md:border-0 swiper-slide">
+                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
+                                <img src="./images/top_search/2.jpeg" class="w-full object-cover h-3/4" />
+                                <div class="description h-1/4 py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-md w-full">Quần Lót Nữ Cotton</p>
+                                    <p
+                                        class="
+                                            text-gray-500
+                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            text-xs
+                                            md:text-sm
+                                            w-full
+                                            h-6
+                                            md:flex md:flex-col md:justify-center
+                                        "
+                                    >
+                                        Đã bán 81k+
+                                    </p>
+                                </div>
+                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
+                            </a>
+                        </li>
+
+                        <a href="#" class="flex justify-center flex-col md:hidden swiper-slide w-32">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="h-10 w-10 text-red-500"
@@ -949,351 +1005,12 @@
                         </svg>
                     </div>
                 </div>
-                <!-- product container end -->
-            </section>
-            <!-- Flash Sale end -->
-
-            <!-- 3 Shopee stack banner -->
-            <div class="shopee-stack-banner  hidden relative lg:flex flex-col  h-24  py-2 bg-white xl:mx-40 ">
-                <img src="./images/stack_banner/1.png"  usemap="#stack-banner" class="w-full h-full  rounded-[19px]">
-                <map name="stack-banner">
-                    <area target="_self" alt="" title="" href="https://shopee.vn/m/samsung-day" coords="8,5,395,106" shape="rect">
-    <area target="_self" alt="" title="" href="https://shopee.vn/m/khung-gio-san-sale" coords="407,6,792,104" shape="rect">
-    <area target="_self" alt="" title="" href="https://shopee.vn/m/mum-club" coords="807,4,1194,107" shape="rect">
-                </map>
-             
-            </div>
-            <!-- 3 Shopee stack banner end -->
-
-            <!--3 Top Search show on mobile-->
-            <section class="top-search relative lg:hidden flex flex-col space-y-2 p-2 mb-1 bg-white xl:mx-40">
-                <div class="top-search-header flex justify-between items-center px-2">
-                    <p class="text-red-500 uppercase font-semibold">Tìm kiếm hàng đầu</p>
-                    <a href="#" class="flex items-center font-thin text-gray-500 text-xs"
-                        >Xem Thêm
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- top search container -->
-                <div class="top-search-container group w-full h-56 overflow-hidden">
-                    <ul class="swiper-wrapper h-full">
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/1.jpeg" class="w-full h-3/4 object-cover" />
-                                <div class="description h-1/4    py-1  border px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-lg w-full">
-                                        Kẹp Tóc Càng Cua Đơn Giản Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, est.
-                                    </p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 62k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/4.jpeg" class="w-full h-3/4 object-cover" />
-                                <div class="description h-1/4  py-1 px-2  bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Ốp Lưng Iphone</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 229k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/3.jpeg" class="w-full h-3/4 object-cover" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Bông Tẩy Trang 3 lớp Cotton Lorem ipsum dolor sit amet.</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 128k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/2.jpeg" class="w-full h-3/4 object-cover" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Quần Lót Nữ Cotton</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 81k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/1.jpeg" class="w-full object-cover h-3/4" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">
-                                        Kẹp Tóc Càng Cua Đơn Giản Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, est.
-                                    </p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 62k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/4.jpeg" class="w-full object-cover h-3/4" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Ốp Lưng Iphone</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 229k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/3.jpeg" class="w-full object-cover h-3/4" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Bông Tẩy Trang 3 lớp Cotton Lorem ipsum dolor sit amet.</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 128k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/2.jpeg" class="w-full object-cover h-3/4" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Quần Lót Nữ Cotton</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 81k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/3.jpeg" class="w-full object-cover h-3/4" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Bông Tẩy Trang 3 lớp Cotton Lorem ipsum dolor sit amet.</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 128k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-                        <li class="search-item border md:border-0 swiper-slide">
-                            <a href="#" class="w-full h-full relative flex flex-col justify-center">
-                                <img src="./images/top_search/2.jpeg" class="w-full object-cover h-3/4" />
-                                <div class="description h-1/4  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2 text-md w-full ">Quần Lót Nữ Cotton</p>
-                                    <p
-                                        class="
-                                            text-gray-500
-                                            md:bg-gray-400 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
-                                            text-xs
-                                            md:text-sm
-                                            w-full
-                                            h-6
-                                            md:flex md:flex-col md:justify-center
-                                        "
-                                    >
-                                        Đã bán 81k+
-                                    </p>
-                                </div>
-                                <img src="./images/top_search/logo.png" class="absolute top-0 left-0 w-6 h-8" alt="" />
-                            </a>
-                        </li>
-
-                        <a href="#" class="flex justify-center flex-col md:hidden swiper-slide w-32">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class=" h-10 w-10 text-red-500"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="1"
-                                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                                />
-                            </svg>
-                            <p class="shopee-mall-promotion capitalize text-red-500 font-semibold whitespace-nowrap">Xem thêm</p>
-                        </a>
-                    </ul>
-                       <div
-                        class="
-                            swiper-button-next
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            -translate-y-1/2
-                            top-1/2
-                            z-30
-                            right-0
-                            translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 flex justify-center items-center text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </div>
-                    <div
-                        class="
-                            swiper-button-prev
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            -translate-y-1/2
-                            top-1/2
-                            z-30
-                            left-0
-                            -translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </div>
-                </div>
                 <!-- top search container end -->
             </section>
             <!-- Top Search end -->
 
             <!--3 Shoppe Mall -->
-            <section class="shopee-mall flex flex-col space-y-2 p-2 mb-1 bg-white xl:mx-40  ">
+            <section class="shopee-mall flex flex-col space-y-2 p-2 mb-1 bg-white xl:mx-40">
                 <div class="shopee-mall-header flex items-center justify-between pb-2 border-b">
                     <p class="uppercase text-red-500 font-semibold">shopee mall</p>
                     <ul class="md:flex hidden flex-1 ml-4 items-center gap-6">
@@ -1353,22 +1070,22 @@
                 </ul>
 
                 <!-- SHOPEE MALL CONTAINER -->
-                <div class="shopee-mall-container    flex flex-col md:flex-row space-y-2 items-center lg:h-96 lg:gap-2 ">
+                <div class="shopee-mall-container flex flex-col md:flex-row space-y-2 items-center lg:h-96 lg:gap-2">
                     <!-- MOBILE SHOPEE MALL -->
                     <div class="shopee-mall-swiper-mobile relative h-full overflow-hidden w-full lg:hidden">
                         <div class="swiper-wrapper w-full h-full">
-                            <img src="./images/shopee_mall/1.png" alt="" class="swiper-slide object-cover " />
-                            <img src="./images/shopee_mall/2.png" alt="" class="swiper-slide object-cover " />
-                            <img src="./images/shopee_mall/3.png" alt="" class="swiper-slide object-cover " />
-                            <img src="./images/shopee_mall/4.png" alt="" class="swiper-slide object-cover " />
-                            <img src="./images/shopee_mall/5.png" alt="" class="swiper-slide object-cover "/>
-                            <img src="./images/shopee_mall/6.png" alt="" class="swiper-slide object-cover " />
+                            <img src="./images/shopee_mall/1.png" alt="" class="swiper-slide object-cover" />
+                            <img src="./images/shopee_mall/2.png" alt="" class="swiper-slide object-cover" />
+                            <img src="./images/shopee_mall/3.png" alt="" class="swiper-slide object-cover" />
+                            <img src="./images/shopee_mall/4.png" alt="" class="swiper-slide object-cover" />
+                            <img src="./images/shopee_mall/5.png" alt="" class="swiper-slide object-cover" />
+                            <img src="./images/shopee_mall/6.png" alt="" class="swiper-slide object-cover" />
                         </div>
                         <div class="swiper-pagination-shopee text-center z-50 absolute"></div>
                     </div>
                     <!-- MOBILE SHOPEE MALL END-->
                     <!-- LAPTOP SHOPEE MALL -->
-                    <div class="shopee-mall-swiper-laptop relative hidden lg:flex overflow-hidden   lg:w-1/3 md:h-full">
+                    <div class="shopee-mall-swiper-laptop relative hidden lg:flex overflow-hidden lg:w-1/3 md:h-full">
                         <div class="swiper-wrapper">
                             <img src="./images/shopee_mall/laptop/1.png" alt="" class="swiper-slide object-cover w-full h-full" />
                             <img src="./images/shopee_mall/laptop/2.png" alt="" class="swiper-slide object-cover w-full h-full" />
@@ -1382,9 +1099,8 @@
                     <!-- LAPTOP SHOPEE MALL END -->
 
                     <!-- shopee mall products -->
-                    <div class="shopee-mall-products group   border relative  overflow-hidden  lg:w-2/3  h-full">
-                        <div class="swiper-wrapper md:grid md:grid-flow-col   md:grid-rows-2 md:h-full">
-                 
+                    <div class="shopee-mall-products group border relative overflow-hidden lg:w-2/3 h-full">
+                        <div class="swiper-wrapper md:grid md:grid-flow-col md:grid-rows-2 md:h-full">
                             <a
                                 href="#"
                                 class="
@@ -2269,67 +1985,28 @@
                                 <p class="shopee-mall-promotion capitalize text-red-500 font-semibold whitespace-nowrap">Xem thêm</p>
                             </a>
                         </div>
-                        <div
-                        class="
-                            swiper-button-next
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            top-1/2
-                            -translate-y-1/2
-                            z-50
-                            right-0
-                            translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 flex justify-center items-center text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
+
+                        <div class="swiper-button-next">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 flex justify-center items-center text-black"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
                         </div>
-                        <div
-                        class="
-                            swiper-button-prev
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            -translate-x-1/2 -translate-y-1/2
-                            z-30
-                            left-0
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
+                        <div class="swiper-button-prev">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 text-black"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
                         </div>
                     </div>
                     <!-- shopee mall product end -->
@@ -2354,7 +2031,7 @@
 
                 <div class="shopee-live-list h-48 group overflow-hidden border-2">
                     <div class="swiper-wrapper space-x-2">
-                        <a href="" class="swiper-slide rounded border flex relative flex-col w-28 h-48 justify-between">
+                        <a href="" class="swiper-slide rounded border flex relative flex-col w-32 h-48 justify-between">
                             <img src="./images/shopee_live/1.jpeg" alt="" class="w-full h-full object-cover" />
                             <div class="overlay absolute top-0 left-0 right-0 bottom-0 bg-black/20"></div>
                             <div class="flex items-center absolute top-2 left-2 h-4">
@@ -2724,13 +2401,14 @@
                                 d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                             />
                         </svg>
-                        <span class="text-xs font-semibold">Xem thêm</span>
+                        <span class="text-xs font-semibold lg:hidden">Xem thêm</span>
+                        <span class="text-xs font-semibold text-red-500 hidden lg:block">Xem Tất Cả</span>
                     </button>
                 </div>
 
                 <!-- fluently-search-list -->
                 <div class="fluently-search-list grid grid-cols-2 md:grid-cols-4 justify-center">
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
+                    <a href="#" class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Kem Chống Nắng</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">210k+ Sản phẩm cùng loại</p>
@@ -2738,8 +2416,8 @@
                         <div class="flex items-center justify-center w-1/2">
                             <img src="./images/fluently_search/1.jpeg" alt="" />
                         </div>
-                    </div>
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
+                    </a>
+                    <a href="#" class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Áo Cardigan</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">196k+ Sản phẩm cùng loại</p>
@@ -2747,8 +2425,8 @@
                         <div class="flex items-center justify-center w-1/2">
                             <img src="./images/fluently_search/2.jpeg" alt="" />
                         </div>
-                    </div>
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
+                    </a>
+                    <a href="#" class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Son Nội Địa Nhật</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">12k+ Sản phẩm cùng loại</p>
@@ -2756,8 +2434,8 @@
                         <div class="flex items-center justify-center w-1/2">
                             <img src="./images/fluently_search/3.jpeg" alt="" />
                         </div>
-                    </div>
-                    <div class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
+                    </a>
+                    <a href="#" class="flex items-center pt-2 pb-2 pl-2 pr-1 border">
                         <div class="w-1/2">
                             <p class="truncate whitespace-nowrap text-black">Bomber</p>
                             <p class="text-gray-400 text-xs whitespace-nowrap truncate">81k+ Sản phẩm cùng loại</p>
@@ -2765,13 +2443,13 @@
                         <div class="flex items-center justify-center w-1/2">
                             <img src="./images/fluently_search/4.jpeg" alt="" />
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!-- fluently-search-list end -->
             </div>
             <!-- Fluently search end -->
 
-              <!--3 Top Search show on laptop -->
+            <!--3 Top Search show on laptop -->
             <section class="top-search relative hidden lg:flex flex-col space-y-2 p-2 mb-1 bg-white xl:mx-40">
                 <div class="top-search-header flex justify-between items-center px-2">
                     <p class="text-red-500 uppercase font-semibold">Tìm kiếm hàng đầu</p>
@@ -2785,18 +2463,18 @@
 
                 <!-- top search container -->
                 <div class="top-search-container group w-full h-56 overflow-hidden">
-                    <ul class="swiper-wrapper h-full  ">
+                    <ul class="swiper-wrapper h-full">
                         <li class="search-item border md:border-0 swiper-slide">
                             <a href="#" class="w-full h-full relative flex flex-col justify-center">
                                 <img src="./images/top_search/1.jpeg" class="w-full h-3/4 object-cover" />
-                                <div class="description h-1/4 w-full  py-1 px-2 bg-gray-200 md:bg-transparent relative">
-                                    <p class="line-clamp-2   text-lg w-full">
+                                <div class="description h-1/4 w-full py-1 px-2 bg-gray-200 md:bg-transparent relative">
+                                    <p class="line-clamp-2 text-lg w-full">
                                         Kẹp Tóc Càng Cua Đơn Giản Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, est.
                                     </p>
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2818,7 +2496,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2840,7 +2518,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2862,7 +2540,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2886,7 +2564,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2908,7 +2586,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2930,7 +2608,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2952,7 +2630,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2974,7 +2652,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -2996,7 +2674,7 @@
                                     <p
                                         class="
                                             text-gray-500
-                                            md:bg-gray-600/40 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
+                                            md:bg-gray-600/20 md:text-white md:absolute md:-top-1/2 md:left-0 md:text-center
                                             text-xs
                                             md:text-sm
                                             w-full
@@ -3029,31 +2707,10 @@
                             <p class="shopee-mall-promotion capitalize text-red-500 font-semibold whitespace-nowrap">Xem thêm</p>
                         </a>
                     </ul>
-                       <div
-                        class="
-                            swiper-button-next
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            -translate-y-1/2
-                            top-1/2
-                            z-30
-                            right-0
-                            translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
+                    <div class="swiper-button-next">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 flex justify-center items-center text-black"
+                            class="h-4 w-4 flex justify-center items-center text-gray-600"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -3061,35 +2718,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
                     </div>
-                    <div
-                        class="
-                            swiper-button-prev
-                            hidden
-                            lg:flex
-                            absolute
-                            m-0
-                            group-hover:w-12 group-hover:h-12
-                            -translate-y-1/2
-                            top-1/2
-                            z-30
-                            left-0
-                            -translate-x-1/2
-                            shadow-md
-                            w-6
-                            h-6
-                            justify-center
-                            items-center
-                            rounded-full
-                            bg-white
-                        "
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="group-hover:h-6 group-hover:w-6 group-hover:text-bold h-4 w-4 text-black"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                         </svg>
                     </div>
@@ -3288,7 +2918,7 @@
                 <!-- category list -->
                 <div class="category-list group w-full overflow-hidden">
                     <div class="swiper-wrapper w-full h-full grid grid-rows-2 grid-flow-col items-start gap-x-2 md:gap-0">
-                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 md:w-32">
+                        <a href="#" class="category-item swiper-slide hover:shadow-lg md:border flex flex-col items-center w-28 h-36">
                             <img src="./images/categories/1.png" alt="" />
                             <p class="line-clamp-2 text-center text-black">Thời Trang Nam</p>
                         </a>
@@ -3461,8 +3091,8 @@
             <!-- Category end -->
 
             <!--3 Today' Recommend -->
-            <div class="today-suggest flex flex-col items-center mb-1 overflow-hidden space-y-2 h-full pb-16 xl:px-40">
-                <div class="sticky top-0 bg-white h-full flex items-center justify-between w-full p-2">
+            <div class="today-suggest sticky flex flex-col items-center mb-1 overflow-hidden space-y-2 h-full pb-16 xl:px-40">
+                <div class="top-0 bg-white h-full flex items-center justify-between w-full p-2">
                     <p class="uppercase text-red-500 font-semibold">Gợi Ý Hôm Nay</p>
                     <a href="#" class="flex items-center font-thin text-gray-600 text-xs"
                         >Xem thêm
@@ -3473,31 +3103,16 @@
                 </div>
 
                 <!-- suggest Items -->
-                <div
-                    class="
-                        suggest_items
-                        w-full
-                        h-full
-                        grid
-                        justify-center
-                        p-1
-                        md:p-2
-                        grid-cols-2
-                        md:grid-cols-4
-                        lg:grid-cols-6
-                        gap-x-2 gap-y-4
-                        md:gap-4
-                    "
-                >
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                <div class="suggest-items w-full h-full grid justify-center p-1 md:p-2 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">50%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                         </div>
-                        <div class="suggest_item_content relative justify-between h-full px-2 flex flex-col items-left">
+                        <div class="suggest-item-content relative justify-between h-full px-2 flex flex-col items-left">
                             <p class="description h-1/4 text-xs line-clamp-2 text-black">
                                 Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
                                 atque!
@@ -3508,19 +3123,19 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
                             </div>
                         </div>
-                        <button >Tìm sản phẩm tương tự </button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">49%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                        <div class="suggest-item-content justify-between px-2 flex flex-col items-start">
                             <p class="description w-conte text-xs line-clamp-2 text-black text-left">
                                 RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
                             </p>
@@ -3550,11 +3165,11 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_header relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-header relative">
                             <img src="./images/today_suggest/3.jpeg" alt="" />
                             <div class="sale-percent flex flex-col bg-yellow-400 text-xs items-center px-1 font-bold absolute top-0 right-0">
                                 <p class="text-red-500">20%</p>
@@ -3590,19 +3205,19 @@
                                 <span class="text-gray-500 text-xs whitespace-nowrap"> Đã bán 14,6k</span>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                   <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">49%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                        <div class="suggest-item-content justify-between px-2 flex flex-col items-start">
                             <p class="description w-conte text-xs line-clamp-2 text-black text-left">
                                 RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
                             </p>
@@ -3632,19 +3247,19 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
                     <!--  -->
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">50%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                         </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left ">
+                        <div class="suggest-item-content justify-between h-full px-2 flex flex-col items-left">
                             <p class="description text-xs line-clamp-2 text-black">
                                 Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
                                 atque!
@@ -3655,19 +3270,19 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">49%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                        <div class="suggest-item-content justify-between px-2 flex flex-col items-start">
                             <p class="description w-conte text-xs line-clamp-2 text-black text-left">
                                 RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
                             </p>
@@ -3697,18 +3312,18 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">50%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                         </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left  ">
+                        <div class="suggest-item-content justify-between h-full px-2 flex flex-col items-left">
                             <p class="description text-xs line-clamp-2 text-black">
                                 Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
                                 atque!
@@ -3719,19 +3334,19 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">49%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                        <div class="suggest-item-content justify-between px-2 flex flex-col items-start">
                             <p class="description w-conte text-xs line-clamp-2 text-black text-left">
                                 RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
                             </p>
@@ -3761,18 +3376,18 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">50%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                         </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left  ">
+                        <div class="suggest-item-content justify-between h-full px-2 flex flex-col items-left">
                             <p class="description text-xs line-clamp-2 text-black">
                                 Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
                                 atque!
@@ -3783,19 +3398,19 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">49%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                        <div class="suggest-item-content justify-between px-2 flex flex-col items-start">
                             <p class="description w-conte text-xs line-clamp-2 text-black text-left">
                                 RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
                             </p>
@@ -3825,18 +3440,18 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                    <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/1.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">50%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                         </div>
-                        <div class="suggest_item_content justify-between h-full px-2 flex flex-col items-left  ">
+                        <div class="suggest-item-content justify-between h-full px-2 flex flex-col items-left">
                             <p class="description text-xs line-clamp-2 text-black">
                                 Áo sweater nam nữ Sunshine phong cách, Áo nỉ bông Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
                                 atque!
@@ -3847,19 +3462,19 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 5,6k</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
 
-                   <div class="suggest_item  relative bg-white group flex flex-col items-center border lg:border-0 rounded gap-2">
-                        <div class="suggest_item_image relative">
+                    <a href="#" class="suggest-item group">
+                        <div class="suggest-item-image relative">
                             <img src="./images/today_suggest/2.jpeg" alt="" class="object-cover" />
-                            <div class="sale bg-yellow-400 absolute px-1 top-0 right-0 w-10 h-12 text-xs uppercase flex flex-col items-center">
+                            <div class="sale">
                                 <span class="percent text-red-500 font-semibold">49%</span>
                                 <span class="text-white text-base">Giảm</span>
                             </div>
                             <img src="./images/today_suggest/2_1.png" alt="" class="absolute bottom-0 left-0" />
                         </div>
-                        <div class="suggest_item_content justify-between px-2 flex flex-col items-start">
+                        <div class="suggest-item-content justify-between px-2 flex flex-col items-start">
                             <p class="description w-conte text-xs line-clamp-2 text-black text-left">
                                 RED DRESS Bộ sưu tập váy đỏ Đầm Lorem ipsum dolor sit amet.
                             </p>
@@ -3889,8 +3504,8 @@
                                 <p class="amount text-gray-500 whitespace-nowrap text-xs">Đã bán 21</p>
                             </div>
                         </div>
-                          <button >Tìm sản phẩm tương tự</button>
-                    </div>
+                        <button class="group-hover:opacity-100 group-hover:bottom-0">Tìm sản phẩm tương tự</button>
+                    </a>
                 </div>
                 <!-- suggest Items end -->
                 <button
@@ -3909,7 +3524,7 @@
                         md:text-gray-800
                     "
                 >
-                    Xem thêm
+                    Xem thêm 123
                 </button>
             </div>
             <!-- Today' Recommend end -->
@@ -3919,7 +3534,7 @@
         <!--2 Footer -->
         <footer class="footer flex flex-col items-center justify-between pt-0 p-2 md:px-40">
             <div class="role grid grid-cols-2 md:grid-cols-4 place-content-center w-full gap-4 h-full">
-                <a class="role-item flex items-center gap-1 whitespace-nowrap text-least justify-center">
+                <a href="#" class="role-item flex items-center gap-1 whitespace-nowrap text-least justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 flex-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path
                             stroke-linecap="round"
