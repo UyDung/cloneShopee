@@ -16,7 +16,6 @@ const navSwiper = new Swiper(".main-banner", {
 });
 
 const sloganSwiper = new Swiper(".slogan-swiper", {
-    autoplay: false,
     grid: {
         rows: 2,
         fill: "column",

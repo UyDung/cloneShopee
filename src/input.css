@@ -31,6 +31,9 @@
     img {
         @apply object-cover;
     }
+    .product-container .product {
+        @apply w-28 lg:w-auto  
+    }
 
     .suggest_item {
         @apply hover:scale-105 transition-all   cursor-pointer hover:border hover:border-orange-600 p-2 shadow;
