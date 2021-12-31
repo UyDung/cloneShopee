@@ -1146,16 +1146,16 @@ img {
   width: 2.5rem !important;
 }
 
+.w-28 {
+  width: 7rem !important;
+}
+
 .w-12 {
   width: 3rem !important;
 }
 
 .w-2 {
   width: 0.5rem !important;
-}
-
-.w-28 {
-  width: 7rem !important;
 }
 
 .w-1\/2 {
@@ -1210,10 +1210,6 @@ img {
 
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
-}
-
-.flex-row {
-  flex-direction: row !important;
 }
 
 .flex-col {
