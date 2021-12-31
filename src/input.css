@@ -105,9 +105,9 @@
     height: 11px;
 }
 
-.slogan-swiper > .swiper-pagination .swiper-pagination-bullet {
+.slogan-swiper  .swiper-pagination-bullet {
     border-radius: 0;
-    background: white;
+    background: red;
     margin: 0 !important;
 }
 

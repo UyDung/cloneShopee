@@ -20,9 +20,13 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
         rows: 2,
         fill: "column",
     },
+    freeMode: {
+        enabled: true,
+        sticky: true
+    },
     touchReleaseOnEdges: true,
-    slidesPerView: "auto",
-    loopedSlides: 14,
+    slidesPerView: 4,
+    spaceBetween: 10,
     watchSlidesProgress: true,
     pagination: {
         el: ".swiper-pagination-slogan",
@@ -36,6 +40,7 @@ const sloganSwiper = new Swiper(".slogan-swiper", {
         },
         1024: {
             slidesPerView: 8,
+            spaceBetween: 10,
             grid: {
                 rows: 1,
             },
@@ -47,6 +52,10 @@ const flashSale = new Swiper(".product-container", {
     slidesPerView: 2,
     touchReleaseOnEdges: true,
     watchSlidesProgress: true,
+    freeMode: {
+        enabled: true,
+        sticky: true,
+    },
     breakpoints: {
         768: {
             slidesPerView: 4,
@@ -69,6 +78,9 @@ const topSearch = new Swiper(".top-search-container", {
     touchReleaseOnEdges: true,
     watchSlidesProgress: true,
     spaceBetween: 10,
+    freeMode: {
+        enabled: true,
+    },
     breakpoints: {
         768: {
             slidesPerView: 4,
@@ -89,6 +101,10 @@ const topSearch = new Swiper(".top-search-container", {
 const shopeeMallMobile = new Swiper(".shopee-mall-swiper-mobile", {
     autoplay: {
         delay: 2000,
+    },
+    freeMode: {
+        enabled: true,
+
     },
     slidesPerView: 1,
     watchSlidesProgress: true,
@@ -143,7 +159,9 @@ const shopeeLiveList = new Swiper(".shopee-live-list", {
         prevEl: ".swiper-button-prev",
     },
     slidesPerView: 'auto',
-    cssMode: true,
+    freeMode: {
+        enabled: true,
+    },
     breakpoints: {
         768: {
             slidesPerView: 4,
@@ -154,16 +172,20 @@ const shopeeLiveList = new Swiper(".shopee-live-list", {
     },
 });
 
-const thienthan = new Swiper(".favorities-list", {
-   watchSlidesProgress: true,
-    slidesPerView: 'auto',
-     
+const favoritiesList = new Swiper(".favorities-list", {
+   
+     freeMode: {
+         enabled: true
+     }
 });
 
 const categoryList = new Swiper(".category-list", {
     grid: {
         rows: 2,
         fill: "column",
+    },
+    freeMode: {
+        enabled: true,
     },
     slidesPerView: "auto",
     watchSlidesProgress: true,
