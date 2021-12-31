@@ -98,13 +98,34 @@ const topSearch = new Swiper(".top-search-container", {
     },
 });
 
+const topSearchMobile = new Swiper(".top-search-mobile-container", {
+    slidesPerView: 2,
+    touchReleaseOnEdges: true,
+    watchSlidesProgress: true,
+   
+    freeMode: {
+        enabled: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 6,
+            allowTouchMove: false,
+            spaceBetween: 30,
+        },
+    },
+    
+});
+
 const shopeeMallMobile = new Swiper(".shopee-mall-swiper-mobile", {
     autoplay: {
         delay: 2000,
     },
     freeMode: {
         enabled: true,
-
     },
     slidesPerView: 1,
     watchSlidesProgress: true,
@@ -113,6 +134,7 @@ const shopeeMallMobile = new Swiper(".shopee-mall-swiper-mobile", {
         type: "bullets",
         clickable: true,
     },
+     
 });
 
 const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
@@ -122,22 +144,22 @@ const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
     slidesPerView: 1,
     watchSlidesProgress: true,
     loop: true,
+    spaceBetween: 0,
     pagination: {
         el: ".swiper-pagination-laptop",
         type: "bullets",
         clickable: true,
     },
+    
 });
 
 const shopeeMallProducts = new Swiper(".shopee-mall-products", {
-    watchSlidesProgress: true,
-
-    spaceBetween: 10,
-
+    watchSlidesProgress: true,  
+    slidesPerView: 'auto',
     breakpoints: {
         768: {
-            slidesPerView: 3,
-            spaceBetween: 0,
+            slidesPerView: 4,
+            spaceBetween: 10,
         },
         1024: {
             grid: {
@@ -151,6 +173,7 @@ const shopeeMallProducts = new Swiper(".shopee-mall-products", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+     
 });
 
 const shopeeLiveList = new Swiper(".shopee-live-list", {
