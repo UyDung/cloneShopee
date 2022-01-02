@@ -224,3 +224,29 @@ const categoryList = new Swiper(".category-list", {
         }
     }
 });
+
+/////////////////////// 
+const productThumbs = new Swiper(".thumbs-swiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+  
+});
+
+
+ 
+
+const products = new Swiper(".main-swiper", {
+    spaceBetween: 10,
+
+    thumbs: {
+        swiper: productThumbs,
+    },
+});
+
+ 
