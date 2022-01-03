@@ -226,7 +226,7 @@ const categoryList = new Swiper(".category-list", {
 });
 
 /////////////////////// 
-const productThumbs = new Swiper(".thumbs-swiper", {
+const productThumbs = new Swiper(".product-thumbs", {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
@@ -241,7 +241,7 @@ const productThumbs = new Swiper(".thumbs-swiper", {
 
  
 
-const products = new Swiper(".main-swiper", {
+const products = new Swiper(".product-images", {
     spaceBetween: 10,
 
     thumbs: {
