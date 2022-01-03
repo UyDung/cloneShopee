@@ -250,3 +250,10 @@ const products = new Swiper(".main-swiper", {
 });
 
  
+const productSlides  = new Swiper('.product-slides', {
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination-product',
+        type: 'fraction'
+    }
+})
