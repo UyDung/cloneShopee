@@ -238,22 +238,11 @@ const productThumbs = new Swiper(".product-thumbs", {
   
 });
 
-
- 
-
 const products = new Swiper(".product-images", {
     spaceBetween: 10,
-
+    slidesPerView: 1,
     thumbs: {
         swiper: productThumbs,
     },
 });
-
  
-const productSlides  = new Swiper('.product-slides', {
-    slidesPerView: 1,
-    pagination: {
-        el: '.swiper-pagination-product',
-        type: 'fraction'
-    }
-})
