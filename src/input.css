@@ -40,10 +40,10 @@
         @apply hover:scale-105 transition-all   cursor-pointer hover:border hover:border-orange-600 p-2 shadow;
     }
     .swiper-button-next {
-        @apply hidden lg:flex absolute  m-0 w-6 h-6 group-hover:scale-[2] top-1/2 translate-y-1/2  z-30  right-0  translate-x-1/2 shadow-md  justify-center  items-center  rounded-full  bg-white transition-all;
+        @apply  hidden lg:flex absolute  m-0 w-6 h-6 top-1/2 group-hover:scale-[2]  translate-y-1/2  z-30  right-0  translate-x-1/2 shadow-md  justify-center  items-center  rounded-full  bg-white transition-all;
     }
     .swiper-button-prev {
-        @apply hidden lg:flex absolute   m-0  top-1/2  translate-y-1/2 group-hover:scale-[2] z-30   left-0  -translate-x-1/2 shadow-md  w-6 h-6 justify-center items-center rounded-full bg-white transition-all;
+        @apply  hidden lg:flex absolute   m-0   w-6 h-6  top-1/2  translate-y-1/2 group-hover:scale-[2] z-30   left-0  -translate-x-1/2 shadow-md justify-center items-center rounded-full bg-white transition-all;
     }
 
     .category-item {
@@ -147,6 +147,10 @@
                 w-full
                 text-center
                 h-1/5
+    }
+
+    .product-thumbs .swiper-slide-thumb-active {
+        @apply opacity-100 border-2 border-red-500;
     }
 }
 
