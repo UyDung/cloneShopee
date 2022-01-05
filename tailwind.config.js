@@ -20,6 +20,7 @@ module.exports = {
             xl: ["20px", "32px"],
             ...defaultTheme.fontSize,
         },
+        
     },
     plugins: [require("@tailwindcss/line-clamp")],
 };
