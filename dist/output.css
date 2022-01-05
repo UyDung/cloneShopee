@@ -992,6 +992,10 @@ img {
   left: 0.75rem !important;
 }
 
+.right-10 {
+  right: 2.5rem !important;
+}
+
 .bottom-2 {
   bottom: 0.5rem !important;
 }
@@ -1400,6 +1404,10 @@ img {
   width: 5rem !important;
 }
 
+.w-8 {
+  width: 2rem !important;
+}
+
 .w-80 {
   width: 20rem !important;
 }
@@ -1543,11 +1551,6 @@ img {
 
 .translate-y-full {
   --tw-translate-y: 100% !important;
-  transform: var(--tw-transform) !important;
-}
-
-.translate-x-1\/2 {
-  --tw-translate-x: 50% !important;
   transform: var(--tw-transform) !important;
 }
 
