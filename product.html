@@ -148,11 +148,13 @@
         <!-- 1 header end -->
 
         <!-- ! -->
-        <div class="product flex flex-col w-full xl:px-40">
-            <div class="product-wrapper flex flex-col lg:flex-row lg:bg-white border-2">
+        <div class="product flex flex-col w-full xl:px-32">
+            <div class="product-wrapper flex flex-col md:flex-row   lg:bg-white  ">
                 <!-- 1 -->
-                <div class="product-slides flex flex-col relative h-64 lg:h-full w-full lg:w-2/5 overflow-x-hidden flex-none">
-                    <div class="product-images">
+                <div class="product-slides flex flex-col  h-full  justify-between  p-4     w-full md:w-2/5 overflow-x-hidden flex-none ">
+                <!-- <div class="product-slides flex flex-col relative h-full  lg:h-full   w-full lg:w-2/5 overflow-x-hidden flex-none"> -->
+                <div class="product-slides-wrapper flex flex-col gap-3 relative   w-full overflow-x-hidden   ">
+                         <div class="product-images">
                         <div class="swiper-wrapper w-full h-full">
                             <div class="swiper-slide">
                                 <img src="./images/product/main/1.jpeg" alt="" class="object-cover w-full h-full" />
@@ -179,48 +181,60 @@
                         <div
                             class="lg:hidden swiper-pagination-product text-sm flex justify-center py-1 whitespace-nowrap w-12 rounded-full bg-gray-200 absolute z-50 bottom-4 left-3/4"
                         ></div>
-                    </div>
+                        </div>
 
-                    <div class="product-thumbs relative hidden lg:flex">
-                        <div class="swiper-wrapper h-full">
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/1.jpeg" alt="" class="object-cover w-full h-full" />
+                        <div class="product-thumbs relative hidden lg:flex">
+                            <div class="swiper-wrapper h-full">
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/1.jpeg" alt="" class="object-cover w-full h-full" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/2.jpeg" alt="" class="object-cover w-full h-full" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/3.jpeg" alt="" class="object-cover w-full h-full" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/4.jpeg" alt="" class="object-cover w-full h-full" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/5.jpeg" alt="" class="object-cover w-full h-full" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/6.jpeg" alt="" class="object-cover w-full h-full" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/product/main/7.jpeg" alt="" />
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/2.jpeg" alt="" class="object-cover w-full h-full" />
+                            <div class="swiper-button-next text-white font-bold w-6 h-12 rounded translate-y-0 bg-transparent border border-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/3.jpeg" alt="" class="object-cover w-full h-full" />
+                            <div class="swiper-button-prev text-white font-bold w-6 h-12 rounded translate-y-0 bg-transparent border border-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/4.jpeg" alt="" class="object-cover w-full h-full" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/5.jpeg" alt="" class="object-cover w-full h-full" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/6.jpeg" alt="" class="object-cover w-full h-full" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/product/main/7.jpeg" alt="" />
-                            </div>
+                            <div class="swiper-pagination-product"></div>
                         </div>
-                        <div class="swiper-button-next text-white font-bold w-6 h-12 rounded translate-y-0 bg-transparent border border-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  
+                </div>
+                    <div class="flex justify-around items-center mt-4 ">
+                        <span class="text-gray-900 flex items-center after:content-[''] after:absolute relative after:w-0 after:h-full after:border after:border-gray-100 after:left-24">Chia sẻ</span> 
+                        <div class="flex items-center gap-2 text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                             </svg>
+                            <span>Đã thích (2,4K)</span>
                         </div>
-                        <div class="swiper-button-prev text-white font-bold w-6 h-12 rounded translate-y-0 bg-transparent border border-black">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </div>
-                        <div class="swiper-pagination-product"></div>
                     </div>
+                      
                 </div>
 
                 <!-- 1 -->
-                <div class="product-content lg:w-3/5 lg:px-9 flex flex-col">
+                <div class="product-content flex-auto  lg:px-9 flex flex-col  ">
                     <div class="page-section flex flex-col bg-white py-4 pb-0">
                         <!-- mobile -->
                         <div class="product-info-mobile flex lg:hidden flex-col px-3">
@@ -275,7 +289,7 @@
                                     >[Mã FMCGMALL giảm 8% đơn 250K] Kem dưỡng siêu cấp ấm căng mịn da L'Oreal Paris Revitalift Hyaluronic Acid 50ml
                                 </span>
                             </div>
-                            <div class="product-review flex items-center justify-start gap-4 text-sm py-4">
+                            <div class="product-review flex items-center justify-start gap-4 text-sm py-2">
                                 <a href="#" class="product-review-link flex items-center gap-2">
                                     <div
                                         class="text-red-600 font-semibold text-lg flex flex-col items-center relative after:content-[''] after:border after:border-red-600 after:absolute after:-bottom-1 after:w-full after:h-0"
@@ -339,7 +353,7 @@
                         </div>
 
                         <!-- desktop -->
-                        <div class="product-price px-3 hidden lg:block lg:bg-gray-50 lg:pt-3">
+                        <div class="product-price px-3 hidden lg:block lg:bg-gray-50  lg:pt-3 lg:mt-2">
                             <div class="current-price text-red-600 flex gap-4 items-center">
                                 <p class="line-through text-gray-400 text-sm"><sup>đ</sup>329.000</p>
                                 <p><sup>đ</sup> <span class="font-semibold text-base lg:text-3xl">289.000</span></p>
@@ -623,9 +637,9 @@
                     </div>
 
                     <!-- desktop  vouchers-->
-                    <div class="action-bar-section bg-white group p-3 py-4 hidden lg:flex items-center w-full relative">
+                    <div class="action-bar-section bg-white group p-3 py-5 hidden lg:flex items-center w-full relative">
                         <div class="flex items-center">
-                            <div class="text-gray-500 text-base line-clamp-2 w-32 flex-none leading-none">Mã Giảm Giá Của Shop</div>
+                            <div class="text-gray-500 text-base line-clamp-2 w-32 flex-none leading-none  ">Mã Giảm Giá Của Shop</div>
                             <div class="action-bar-vouchers flex gap-2 flex-wrap">
                                 <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs whitespace-nowrap uppercase py-1">
                                     Giảm <sup>đ</sup>15k
@@ -723,13 +737,13 @@
                     </div>
 
                     <!-- desktop deal sốc-->
-                    <div class="hidden lg:flex items-center w-full gap-1 p-3">
-                        <div class="text-gray-600 text-base line-clamp-2 w-32 whitespace-normal">Deal Sốc</div>
-                        <span class="text-red-600 bg-red-200 px-2">Mua kèm deal sốc</span>
+                    <div class="hidden lg:flex items-center w-full   p-3 -mt-2">
+                        <div class="text-gray-600 text-base line-clamp-2 w-32 whitespace-normal  ">Deal Sốc</div>
+                        <span class="text-red-600 bg-red-200   ">Mua kèm deal sốc</span>
                     </div>
 
                     <!-- desktop delivery -->
-                    <div class="delivery-desktop hidden lg:flex w-full gap-1 px-3">
+                    <div class="delivery-desktop hidden lg:flex w-full  px-3 mt-1">
                         <div class="text-gray-600 text-base w-32 whitespace-nowrap">Vận chuyển</div>
                         <div class="shipping-delivery flex flex-col items-center relative gap-1">
                             <div class="flex items-center relative gap-2 w-full">
@@ -877,7 +891,7 @@
                     </div>
 
                     <!-- DESKTOP Amount sold -->
-                    <div class="sold-amount hidden lg:flex items-center w-full gap-1 p-3">
+                    <div class="sold-amount hidden lg:flex items-center w-full gap-1 p-3 mt-5">
                         <div class="w-32 flex-none whitespace-nowrap">Số Lượng</div>
                         <div class="flex items-center gap-3 ">
                             <div class="flex items-center  justify-between w-1/3 ">
@@ -900,29 +914,28 @@
                         <button class="text-white rounded-[1px] bg-red-600 px-4 py-3 capitalize hover:opacity-90 transition-all">mua ngay</button>
                     </div>
 
-                    <!-- DESKTOP bottom product -->
-                    <div class="desktop-bottom-product   my-5 space-y-2 w-full">
-                        <hr>
-                    <ul class=" hidden   ml-4 text-gray-700  gap-6 w-full lg:flex items-center justify-between   text-sm">
+                   
+                      <!-- DESKTOP bottom product -->                   
+                    <ul class="desktop-bottom-product border-t border-t-gray-200 bg-white hidden  py-2 mt-4 text-gray-700  gap-6 w-full lg:flex items-center justify-end   text-sm">
                         <li class="flex items-center gap-1 whitespace-nowrap relative group cursor-help">
                             <img src="./images/shopee_mall/header/1.png" alt="" class="w-4 h-4" />
-                            <span>7 Ngày Miễn Phí Trả Hàng</span>
+                            <span class="semibold">7 Ngày Miễn Phí Trả Hàng</span>
                             <div class="absolute bottom-0 translate-y-full py-4 transition-all group-hover:opacity-100 opacity-0 px-4 text-gray-800 bg-white shadow rounded z-50 w-56 h-28 whitespace-normal">Hoàn toàn yên tâm khi mua hàng ở Shopee Mall với ưu đĩa miễn phí trả hàng lên đến 7 ngày</div>
                         </li>
                         <li class="flex items-center gap-1 whitespace-nowrap text-gray-700 relative group cursor-help">
                             <img src="./images/shopee_mall/header/2.png" alt="" class="w-4 h-4">
-                            <span>Hàng Chính Hãng 100%</span>
+                            <span class="semibold">Hàng Chính Hãng 100%</span>
                             <div class="absolute bottom-0 translate-y-full py-4 transition-all group-hover:opacity-100 opacity-0 px-4 text-gray-800 bg-white shadow rounded z-50 w-56 h-28 whitespace-normal">Nhận lại gấp đôi số tiền mà bạn đã thanh toán cho sản phẩm không chính hãng từ Shopee Mall</div>
                         </li>
                         <li class="flex items-center gap-1 whitespace-nowrap relative group cursor-help">
                             <img src="./images/shopee_mall/header/3.png" alt="" class="w-4 h-4" />
-                            <span>Miễn Phí Vận Chuyển</span>
+                            <span class="semibold">Miễn Phí Vận Chuyển</span>
                             <div class="absolute bottom-0 translate-y-full py-4 transition-all group-hover:opacity-100 opacity-0 px-4 text-gray-800 bg-white shadow rounded z-50 w-56 h-28 whitespace-normal">
                                 Ưu đãi miễn phí vận chuyển lên tới 40,000 VNĐ cho đơn hàng của Shopee Mall từ 150,000 VNĐ
                             </div>
                         </li>
                     </ul>
-                    </div>
+                   
 
                     <!-- mobile delivery -->
                     <div class="product-shipping lg:hidden flex flex-col gap-2 bg-white p-3 py-4 mt-3">
@@ -971,6 +984,8 @@
                     </div>
                 </div>
             </div>
+           
+                     
 
             <div class="shop flex flex-col">
                 <div class="mt-3 shop flex flex-col bg-white py-4 text-sm gap-4 px-3">
