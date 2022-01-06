@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-     
     .card {
         /* @apply w-20   gap-2 h-20 md:h-full md:w-32 flex flex-col items-center justify-start  cursor-pointer  ; */
         @apply gap-2  flex flex-col items-center justify-start  cursor-pointer;
@@ -51,8 +50,7 @@
     }
 
     .product-container .logo {
-        @apply bg-yellow-400  w-10 h-14 uppercase text-xs flex flex-col items-center
- px-2 absolute right-0 top-0 z-50;
+        @apply bg-yellow-400  w-10 h-14 uppercase text-xs flex flex-col items-center px-2 absolute right-0 top-0 z-50;
     }
 
     .product-container .badge {
@@ -152,9 +150,26 @@
     .product-thumbs .swiper-slide-thumb-active {
         @apply opacity-100 border-2 border-red-500;
     }
+
+    
 }
 
  
+input::-webkit-calendar-picker-indicator {
+              opacity: 100;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .swiper-pagination-bullet {
     background: red;
