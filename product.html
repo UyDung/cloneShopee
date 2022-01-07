@@ -149,10 +149,10 @@
 
         <!-- ! -->
         <div class="product flex flex-col w-full xl:px-32">
-            <div class="product-wrapper flex flex-col md:flex-row   lg:bg-white  ">
+            <div class="product-wrapper flex flex-col md:flex-row   md:bg-white  ">
                 <!-- 1 -->
-                <div class="product-slides flex flex-col  h-full  justify-between  p-4     w-full md:w-2/5 overflow-x-hidden flex-none ">
-                <!-- <div class="product-slides flex flex-col relative h-full  lg:h-full   w-full lg:w-2/5 overflow-x-hidden flex-none"> -->
+                <div class="product-slides flex flex-col  h-full  justify-between  py-4 px-2 lg:p-4    w-full md:w-2/5 overflow-x-hidden flex-none  ">
+               
                 <div class="product-slides-wrapper flex flex-col gap-3 relative   w-full overflow-x-hidden   ">
                          <div class="product-images">
                         <div class="swiper-wrapper w-full h-full">
@@ -177,13 +177,10 @@
                             <div class="swiper-slide">
                                 <img src="./images/product/main/7.jpeg" alt="" />
                             </div>
-                        </div>
-                        <div
-                            class="lg:hidden swiper-pagination-product text-sm flex justify-center py-1 whitespace-nowrap w-12 rounded-full bg-gray-200 absolute z-50 bottom-4 left-3/4"
-                        ></div>
+                        </div>                        
                         </div>
 
-                        <div class="product-thumbs relative hidden lg:flex">
+                        <div class="product-thumbs relative hidden md:flex">
                             <div class="swiper-wrapper h-full">
                                 <div class="swiper-slide">
                                     <img src="./images/product/main/1.jpeg" alt="" class="object-cover w-full h-full" />
@@ -217,7 +214,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                                 </svg>
                             </div>
-                            <div class="swiper-pagination-product"></div>
+                          
                         </div>
                   
                 </div>
@@ -234,10 +231,10 @@
                 </div>
 
                 <!-- 1 -->
-                <div class="product-content flex-auto  lg:px-9 flex flex-col  ">
-                    <div class="page-section flex flex-col bg-white py-4 pb-0">
+                <div class="product-content flex-auto pl-2 pr-4 lg:pl-4 lg:pr-8 flex flex-col  border border-red-500   ">
+                    <div class="page-section123 flex flex-col bg-white py-4 pb-0 border border-sky-500">
                         <!-- mobile -->
-                        <div class="product-info-mobile flex lg:hidden flex-col px-3">
+                        <div class="product-info-mobile flex md:hidden flex-col px-3">
                             <div class="flex gap-2 items-start">
                                 <div class="line-clamp-2 break-words leading-none">
                                     <svg class="inline" width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,8 +266,9 @@
                         </div>
 
                         <!-- desktop -->
-                        <div class="product-info-mobile hidden lg:flex flex-col">
+                        <div class="product-info-desktop hidden md:flex pb-2 flex-col ">
                             <div class="line-clamp-2">
+                                
                                 <svg class="inline" width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         fill-rule="evenodd"
@@ -285,14 +283,14 @@
                                         fill="white"
                                     ></path>
                                 </svg>
-                                <span class="text-gray-800 text-lg whitespace-normal"
+                                <span class="text-gray-800  text-sm md:text-base whitespace-normal w-full"
                                     >[Mã FMCGMALL giảm 8% đơn 250K] Kem dưỡng siêu cấp ấm căng mịn da L'Oreal Paris Revitalift Hyaluronic Acid 50ml
                                 </span>
                             </div>
                             <div class="product-review flex items-center justify-start gap-4 text-sm py-2">
                                 <a href="#" class="product-review-link flex items-center gap-2">
                                     <div
-                                        class="text-red-600 font-semibold text-lg flex flex-col items-center relative after:content-[''] after:border after:border-red-600 after:absolute after:-bottom-1 after:w-full after:h-0"
+                                        class="text-red-600 font-semibold text-lg flex flex-col items-center relative after:content-[''] after:border after:border-red-600 after:absolute after:-bottom-1 after:w-full after:bg-transparent"
                                     >
                                         4.9
                                     </div>
@@ -339,10 +337,11 @@
                                     2,9k <span class="font-normal">Đã Bán</span>
                                 </div>
                             </div>
+                           
                         </div>
 
                         <!-- mobile -->
-                        <div class="product-price px-3 text-red-600 lg:hidden block">
+                        <div class="product-price px-3 text-red-600 md:hidden block">
                             <div>
                                 <sup>đ</sup><span class="font-semibold text-base">289.000</span>
                                 <a href="#" class="inline text-xs font-semibold ml-2 px-1 text-red-600 border border-red-600 rounded-[1px]"
@@ -353,7 +352,7 @@
                         </div>
 
                         <!-- desktop -->
-                        <div class="product-price px-3 hidden lg:block lg:bg-gray-50  lg:pt-3 lg:mt-2">
+                        <div class="product-price px-3 hidden md:block md:bg-gray-50  md:pt-3  w-full">
                             <div class="current-price text-red-600 flex gap-4 items-center">
                                 <p class="line-through text-gray-400 text-sm"><sup>đ</sup>329.000</p>
                                 <p><sup>đ</sup> <span class="font-semibold text-base lg:text-3xl">289.000</span></p>
@@ -362,7 +361,7 @@
                         </div>
 
                         <!-- mobile -->
-                        <a href="#" class="product-noti-mobile flex lg:hidden items-center p-3 bg-red-50 gap-2 leading-4" target="_blank">
+                        <a href="#" class="product-noti-mobile flex md:hidden items-center p-3 bg-red-50 gap-2 leading-4" target="_blank">
                             <div class="flex-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
                                     <path
@@ -435,7 +434,7 @@
                         </a>
 
                         <!-- desktop -->
-                        <div href="#" class="product-noti-desktop hidden lg:flex items-center px-3 py-2 bg-red-50 lg:bg-gray-50  gap-2 ">
+                        <div href="#" class="product-noti-desktop hidden md:flex items-center px-3 py-2 bg-red-50 md:bg-gray-50  gap-2   w-full  ">
                             <div class="flex-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16" fill="none">
                                     <path
@@ -500,7 +499,7 @@
                             <div class="w-full z-50">
                                 <div class="flex items-center gap-2">
                                     <p class="text-red-500 font-sans">Gì Cũng Rẻ</p>
-                                    <div class="hidden lg:block">
+                                    <div class="hidden md:block">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             class="h-4 w-4 text-gray-500 peer"
@@ -558,14 +557,14 @@
                                 <p class="text-gray-500 text-xs">Giá tốt nhất so với các sản phẩm cùng loại trên Shopee!</p>
                             </div>
 
-                            <div class="text-gray-500 lg:hidden">
+                            <div class="text-gray-500 block md:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                 </svg>
                             </div>
                         </div>
 
-                        <div class="product-review flex lg:hidden items-center justify-between text-sm p-4">
+                        <div class="product-review flex md:hidden items-center justify-between text-sm p-4">
                             <a class="product-review-link flex gap-2">
                                 <div class="stars flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -615,7 +614,7 @@
                     </div>
 
                     <!-- mobile -->
-                    <div class="action-bar-section block lg:hidden bg-white p-3 py-4 mt-3">
+                    <div class="action-bar-section block md:hidden bg-white p-3 py-4 mt-3">
                         <div class="action-bar-wrapper flex items-center justify-between w-full gap-1">
                             <div class="text-gray-800 text-sm whitespace-nowrap">Mã giảm giá cho Shop</div>
                             <div class="action-bar-vouchers flex gap-2 flex-nowrap">
@@ -637,10 +636,11 @@
                     </div>
 
                     <!-- desktop  vouchers-->
-                    <div class="action-bar-section bg-white group p-3 py-5 hidden lg:flex items-center w-full relative">
+                    <div class="action-bar-section123 bg-white group p-3 py-5 hidden md:flex items-center w-full relative  border border-sky-500 ">
+                    
                         <div class="flex items-center">
-                            <div class="text-gray-500 text-base line-clamp-2 w-32 flex-none leading-none  ">Mã Giảm Giá Của Shop</div>
-                            <div class="action-bar-vouchers flex gap-2 flex-wrap">
+                            <div class="text-gray-500 text-base line-clamp-2 w-32 flex-none leading-none  border ">Mã Giảm Giá Của Shop</div>
+                            <div class="action-bar-vouchers flex gap-2 flex-wrap border border-sky-400 flex-auto">
                                 <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs whitespace-nowrap uppercase py-1">
                                     Giảm <sup>đ</sup>15k
                                 </div>
@@ -737,13 +737,13 @@
                     </div>
 
                     <!-- desktop deal sốc-->
-                    <div class="hidden lg:flex items-center w-full   p-3 -mt-2">
+                    <div class="hidden md:flex items-center w-full    p-3   ">
                         <div class="text-gray-600 text-base line-clamp-2 w-32 whitespace-normal  ">Deal Sốc</div>
                         <span class="text-red-600 bg-red-200   ">Mua kèm deal sốc</span>
                     </div>
 
                     <!-- desktop delivery -->
-                    <div class="delivery-desktop hidden lg:flex w-full  px-3 mt-1">
+                    <div class="delivery-desktop hidden md:flex w-full  px-3 py-2  ">
                         <div class="text-gray-600 text-base w-32 whitespace-nowrap">Vận chuyển</div>
                         <div class="shipping-delivery flex flex-col items-center relative gap-1">
                             <div class="flex items-center relative gap-2 w-full">
@@ -891,7 +891,7 @@
                     </div>
 
                     <!-- DESKTOP Amount sold -->
-                    <div class="sold-amount hidden lg:flex items-center w-full gap-1 p-3 mt-5">
+                    <div class="sold-amount hidden md:flex items-center   gap-1 p-3 mt-5  ">
                         <div class="w-32 flex-none whitespace-nowrap">Số Lượng</div>
                         <div class="flex items-center gap-3 ">
                             <div class="flex items-center  justify-between w-1/3 ">
@@ -904,19 +904,19 @@
                     </div>
 
                     <!-- DESKTOP button actions -->
-                    <div class="desktop-actions hidden lg:flex items-center gap-4 p-3">
-                        <button class="flex items-center gap-2 px-4 py-3 text-red-600 rounded-[1px] border border-red-600 bg-red-100 hover:bg-red-50 transition-all">
+                    <div class="desktop-actions hidden md:flex items-center gap-2 lg:gap-4 p-2 lg:p-3">
+                        <button class="flex items-center gap-2 px-2 lg:px-4 py-1 lg:py-3 text-red-600 rounded-[1px] border border-red-600 bg-red-100 hover:bg-red-50 transition-all">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
                             <span class="capitalize"> thêm vào giỏ hàng</span>
                         </button>
-                        <button class="text-white rounded-[1px] bg-red-600 px-4 py-3 capitalize hover:opacity-90 transition-all">mua ngay</button>
+                        <button class="text-white rounded-[1px] bg-red-600 px-2 lg:px-4 py-1 lg:py-3 capitalize hover:opacity-90 transition-all">mua ngay</button>
                     </div>
 
                    
                       <!-- DESKTOP bottom product -->                   
-                    <ul class="desktop-bottom-product border-t border-t-gray-200 bg-white hidden  py-2 mt-4 text-gray-700  gap-6 w-full lg:flex items-center justify-end   text-sm">
+                    <ul class="desktop-bottom-product   md:flex  border-t border-t-gray-200 bg-white hidden overflow-hidden py-2 mt-4 text-gray-700  gap-6 w-fullitems-center justify-end   text-sm">
                         <li class="flex items-center gap-1 whitespace-nowrap relative group cursor-help">
                             <img src="./images/shopee_mall/header/1.png" alt="" class="w-4 h-4" />
                             <span class="semibold">7 Ngày Miễn Phí Trả Hàng</span>
@@ -938,7 +938,7 @@
                    
 
                     <!-- mobile delivery -->
-                    <div class="product-shipping lg:hidden flex flex-col gap-2 bg-white p-3 py-4 mt-3">
+                    <div class="product-shipping md:hidden flex flex-col gap-2 bg-white p-3 py-4 mt-3">
                         <div class="shipping-delivery flex items-center gap-2">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -976,7 +976,7 @@
                         </div>
                     </div>
 
-                    <div class="mt-3 product-share p-3 lg:hidden bg-white">
+                    <div class="mt-3 product-share p-3 md:hidden bg-white">
                         <div class="w-16 leading-none py-0.5 bg-blue-900 text-white flex items-center font-semibold justify-center gap-1 rounded">
                             <span>f</span>
                             <span class="text-xs"> Chia sẻ</span>
