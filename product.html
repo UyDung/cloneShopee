@@ -149,6 +149,8 @@
 
         <!-- ! -->
         <div class="product flex flex-col w-full xl:px-32">
+
+            
             <div class="product-wrapper flex flex-col md:flex-row   md:bg-white  ">
                 <!-- 1 -->
                 <div class="product-slides flex flex-col  h-full  justify-between  py-4 px-2 lg:p-4    w-full md:w-2/5 overflow-x-hidden flex-none  ">
@@ -231,8 +233,7 @@
                 </div>
 
                 <!-- 1 -->
-                <div class="product-content flex-auto pl-2 pr-4 lg:pl-4 lg:pr-8 flex flex-col  border border-red-500   ">
-                    <div class="page-section123 flex flex-col bg-white py-4 pb-0 border border-sky-500">
+                <div class="product-content  flex-auto pl-2 pr-4 lg:pl-4 bg-white py-4 lg:pr-8 flex flex-col  ">
                         <!-- mobile -->
                         <div class="product-info-mobile flex md:hidden flex-col px-3">
                             <div class="flex gap-2 items-start">
@@ -267,7 +268,7 @@
 
                         <!-- desktop -->
                         <div class="product-info-desktop hidden md:flex pb-2 flex-col ">
-                            <div class="line-clamp-2">
+                            <div class="line-clamp-2 w-full">
                                 
                                 <svg class="inline" width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -283,11 +284,11 @@
                                         fill="white"
                                     ></path>
                                 </svg>
-                                <span class="text-gray-800  text-sm md:text-base whitespace-normal w-full"
+                                <span class="text-gray-800  text-sm md:text-base  w-full"
                                     >[Mã FMCGMALL giảm 8% đơn 250K] Kem dưỡng siêu cấp ấm căng mịn da L'Oreal Paris Revitalift Hyaluronic Acid 50ml
                                 </span>
                             </div>
-                            <div class="product-review flex items-center justify-start gap-4 text-sm py-2">
+                            <div class="product-review  flex items-center justify-start gap-4 text-sm py-2">
                                 <a href="#" class="product-review-link flex items-center gap-2">
                                     <div
                                         class="text-red-600 font-semibold text-lg flex flex-col items-center relative after:content-[''] after:border after:border-red-600 after:absolute after:-bottom-1 after:w-full after:bg-transparent"
@@ -359,7 +360,7 @@
                                 <p class="text-white font-bold bg-red-600 rounded-[1px] text-xs px-1">12% <span class="uppercase">Giảm</span></p>
                             </div>
                         </div>
-
+ 
                         <!-- mobile -->
                         <a href="#" class="product-noti-mobile flex md:hidden items-center p-3 bg-red-50 gap-2 leading-4" target="_blank">
                             <div class="flex-none">
@@ -564,6 +565,7 @@
                             </div>
                         </div>
 
+                        <!-- mobile -->
                         <div class="product-review flex md:hidden items-center justify-between text-sm p-4">
                             <a class="product-review-link flex gap-2">
                                 <div class="stars flex items-center">
@@ -611,7 +613,7 @@
                                 </svg>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
                     <!-- mobile -->
                     <div class="action-bar-section block md:hidden bg-white p-3 py-4 mt-3">
@@ -636,17 +638,17 @@
                     </div>
 
                     <!-- desktop  vouchers-->
-                    <div class="action-bar-section123 bg-white group p-3 py-5 hidden md:flex items-center w-full relative  border border-sky-500 ">
+                    <div class="action-bar-section123 bg-white group p-3 py-5 hidden md:flex items-center w-full relative ">
                     
-                        <div class="flex items-center">
-                            <div class="text-gray-500 text-base line-clamp-2 w-32 flex-none leading-none  border ">Mã Giảm Giá Của Shop</div>
-                            <div class="action-bar-vouchers flex gap-2 flex-wrap border border-sky-400 flex-auto">
-                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs whitespace-nowrap uppercase py-1">
+                        <div class="flex items-center  w-full ">
+                            <div class="text-gray-500 text-base line-clamp-2 w-32 flex-none leading-none ">Mã Giảm Giá Của Shop</div>
+                            <div class="action-bar-vouchers flex gap-2 flex-wrap  flex-auto">
+                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs  uppercase py-1">
                                     Giảm <sup>đ</sup>15k
                                 </div>
-                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs whitespace-nowrap uppercase py-1">8% Giảm</div>
-                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs whitespace-nowrap uppercase py-1">15% Giảm</div>
-                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs whitespace-nowrap uppercase py-1">10% Giảm</div>
+                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs  uppercase py-1">8% Giảm</div>
+                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs  uppercase py-1">15% Giảm</div>
+                                <div class="border px-2 font-semibold bg-red-200 text-red-600 text-xs  uppercase py-1">10% Giảm</div>
                             </div>
                         </div>
                         <div
@@ -807,10 +809,6 @@
                                         <p class="whitespace-nowrap">Vận Chuyển Tới</p>  
                                         <input type="text" list="address-picker"  placeholder="     Tìm   " class="flex-auto px-2 py-1 bg-gray-100 text-center outline-none ">
                                             <datalist id="address-picker">
-                                                 
-                                               
-                                                   <!-- <option value="Phường Khương Đình, Quận Thanh Xuân" class="">Phường Khương Đình, Quận Thanh Xuân</option>   -->
-                                                   
                                                    <option>An Giang</option>
                                                     <option>Bà rịa – Vũng tàu</option>
                                                     <option>Bắc Giang</option>
