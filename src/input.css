@@ -151,6 +151,9 @@
         @apply opacity-100 border-2 border-red-500;
     }
 
+    .feedback-thumbs-items .swiper-slide-thumb-active {
+        @apply opacity-100 border-2 border-red-500;
+    }
     
 }
 

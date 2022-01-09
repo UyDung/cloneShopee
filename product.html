@@ -155,25 +155,25 @@
                     <div class="product-slides-wrapper flex flex-col gap-3 relative w-full overflow-x-hidden">
                         <div class="product-images">
                             <div class="swiper-wrapper w-full h-full">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/1.jpeg" alt="" class="object-cover w-full h-full" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/2.jpeg" alt="" class="object-cover w-full h-full" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/3.jpeg" alt="" class="object-cover w-full h-full" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/4.jpeg" alt="" class="object-cover w-full h-full" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/5.jpeg" alt="" class="object-cover w-full h-full" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/6.jpeg" alt="" class="object-cover w-full h-full" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide  lg:shrink-0">
                                     <img src="./images/product/main/7.jpeg" alt="" />
                                 </div>
                             </div>
@@ -1594,41 +1594,288 @@
                         </div>
                     </div>
 
-                    <div class="shop-summary grid grid-cols-3 gap-2 w-2/3">
-                            <div class="flex items-center gap-3">
-                                <div class="text-gray-400 whitespace-nowrap">Đánh Giá</div>
-                                <div class="text-red-600 whitespace-nowrap">640,6k</div>
-                            </div>
-                             <div class="flex items-center gap-3">
+                    <div class="shop-summary flex items-center h-full  flex-wrap">
+                        <div class="flex flex-col  mr-14  ">   
+                                <div class="flex items-center   gap-3 ">
+                                    <div class="text-gray-400 whitespace-nowrap">Đánh Giá</div>
+                                    <div class="text-red-600 whitespace-nowrap font-semibold">640,6k</div>
+                                </div>
+                                <div class="flex items-center  gap-3 ">
+                                    <div class="text-gray-400 whitespace-nowrap">Sản Phẩm</div>
+                                    <div class="text-red-600 whitespace-nowrap font-semibold">165</div>
+                                </div>
+                        </div>
+                        <div class="flex flex-col  mr-14">
+                             <div class="flex items-center gap-3  ">
                                     <div class="text-gray-400 whitespace-nowrap">Tỉ Lệ Phản Hồi</div>
-                                    <div class="text-red-600 whitespace-nowrap">100%</div>
+                                    <div class="text-red-600 whitespace-nowrap font-semibold">100%</div>
                              </div>
-
-                            <div class="flex items-center gap-3">
-                                    <div class="text-gray-400 whitespace-nowrap">Tham Gia</div>
-                                    <div class="text-red-600 whitespace-nowrap">4 năm trước</div>
-                             </div>
-                           
-                    
-                            <div class="flex items-center gap-3">
-                                <div class="text-gray-400 whitespace-nowrap">Sản Phẩm</div>
-                                <div class="text-red-600 whitespace-nowrap">165</div>
-                            </div>
-
-                            <div class="flex items-center gap-3">
+                               <div class="flex items-center gap-3  ">
                                 <div class="text-gray-400 whitespace-nowrap">Thời Gian Phản Hồi</div>
-                                <div class="text-red-600 whitespace-nowrap">trong vài giờ</div>
+                                <div class="text-red-600 whitespace-nowrap font-semibold">Trong vài giờ</div>
                             </div>
-                            <div class="flex items-center gap-3">
+                        </div>
+
+                        <div class="flex flex-col  mr-0">
+                            <div class="flex items-center gap-3  ">
+                                    <div class="text-gray-400 whitespace-nowrap">Tham Gia</div>
+                                    <div class="text-red-600 whitespace-nowrap font-semibold">4 năm trước</div>
+                             </div> 
+                            <div class="flex items-center gap-3  ">
                                 <div class="text-gray-400 whitespace-nowrap">Người Theo Dõi</div>
-                                <div class="text-red-600 whitespace-nowrap">948,5k</div>
+                                <div class="text-red-600 whitespace-nowrap font-semibold">948,5k</div>
                             </div>
-                        
+                        </div>
                     </div>
                 </div>
                 <div class="shop-desktop-detail flex gap-4 w-full">
-                    <div class="shop-desktop-product-detail p-4 bg-white h-screen w-5/6"></div>
-                    <div class="shop-desktop-vouchers px-2 py-4 bg-white w-1/6 h-64"></div>
+                    <div class="shop-desktop-product-detail  flex flex-col flex-auto  space-y-4">
+                        <div class="flex flex-col bg-white space-y-8 py-8 px-6">
+                            <div class="product-detail-wrapper flex flex-col   ">
+                            <div class="product-detail-title uppercase text-gray-600 font-semibold bg-gray-50 p-4 py-2 text-lg">Chi tiết sản phẩm</div>
+                            <ul class="flex  flex-col w-full space-y-4 pt-4 pl-4">
+                                <li class="flex items-center">
+                                    <div class="text-gray-400 w-32 text-sm">Danh Mục</div>
+                                    <div class="flex-auto text-gray-700">
+                                        <a href="#" class="text-sky-700">Shopee</a> <span>> Beauty & Personal Care</span>    <span>> Skincare > Facial Móiturizer</span>
+                                        
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <div class="text-gray-400 w-32 text-sm">Thương hiệu</div>
+                                        <div class="flex-auto text-gray-700"><a href="#" class="text-sky-700">L'Oreal Paris</a></div>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="text-gray-400 w-32 text-sm">Công Thức</div>
+                                    <div class="flex-auto text-gray-700">Dạng Kem</div>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="text-gray-400 w-32 text-sm">Kho hàng</div>
+                                    <div class="flex-auto text-gray-700">584</div>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="text-gray-400 w-32 text-sm">Gửi từ</div>
+                                    <div class="flex-auto text-gray-700">Hà Nội</div>
+                                </li>
+                                
+                                
+                            </ul>
+                            </div>
+                            <div class="product-intro flex flex-col w-full   ">
+                                <div class="product-detail-title uppercase text-gray-600 font-semibold bg-gray-50 p-4 py-2 text-lg">Mô tả sản phẩm</div>
+                                <div class="text-gray-700 space-y-2  pl-4 pt-6"> 
+                                    
+                                    <div>• VÌ SAO BẠN SẼ THÍCH?</div>
+                                    <div>Kem dưỡng siêu cấp ẩm căng mịn da L'oreal Paris Revitalift 50ml với sự kết hợp không chỉ 1 mà đến 2 loại Hyaluronic Acid ưu việt sẽ mang đến giải pháp chăm sóc da hiệu quả, cho làn da căng mịn và sáng da tức thì. Với Revitalift da sẽ có sự thay đổi rõ rệt, mang đến vẻ ngoài rạng rỡ cho bạn. 
+                                    
+                                    </div>
+                                
+                                    <div>Xuất xứ: Trung Quốc </div>
+                                    <div>HSD: 3 năm kể từ ngày sản xuất NSX: Xem trên bao bì" 
+                                    </div>
+                                    <div>• ƯU ĐIỂM NỔI BẬT </div>
+                                    <div>ĐẶC ĐIỂM NỔI BẬT:  </div>
+                                    <div>● Thành phần không chỉ chứa 1 mà đến 2 loại Hyaluronic Acid:  </div>
+                                <div> ● Macro [HA]: Cấp ẩm tối đa cho bề mặt da căng mịn tức thì  </div>
+                                <div> ● Micro [HA]: Thẩm thấu sâu giúp căng đầy nếp nhăn và sáng da từ sâu bên trong </div>
+                                <div> • HIỆU QUẢ SỬ DỤNG </div>
+                                <div> Hiệu quả sáng rỡ tức thì:  </div>
+                                <div> ● 42% da sáng rạng rỡ tức thì  </div>
+                                    <div>● 23% căng mịn tức thì  </div>
+                                <div> ● 32% mịn màng tức thì </div>
+                                    <div>• HƯỚNG DẪN SỬ DỤNG </div>
+                                    <div>● Làm sạch da. Cân bằng với nước hoa hồng  </div>
+                                    <div>● Sử dụng tinh chất chấm đều vài giọt khắp mặt   </div>
+                                <div> ● Khóa lớp tinh chất bằng cách vỗ nhẹ kem dưỡng thấm vào da  </div>
+                                <div> ● Nhẹ nhàng thoa đề khắp mặt </div>
+                                <div> • THÔNG TIN THƯƠNG HIỆU </div>
+                                <div> Hơn 100 năm thành lập, L’Oréal là tập đoàn chuyên về mỹ phẩm và chăm sóc sắc đẹp lớn nhất thế giới. L’Oréal Paris đã có mặt tại hơn 120 quốc gia với các dòng sản phẩm về chăm sóc tóc, chăm sóc da và trang điểm dành cho đại chúng. Được xây dựng trên nền tảng khoa học, áp dụng những phát minh công nghệ mới nhất, các sản phẩm L’Oréal Paris có chất lượng cao cấp, đa dạng, dễ sử dụng, với mức giá phù hợp cho tất cả mọi người, đáp ứng nhiều nhu cầu làm đẹp.</div>
+                                <div> *L’Oréal Paris là nhãn hiệu mỹ phẩm hàng đầu tại Châu Âu được sản xuất tại nhiều nhà máy trên toàn thế giới như Trung Quốc, Mỹ, Indonesia… Dù được sản xuất ở đâu, các sản phẩm đều tuân theo quy trình kiểm soát chất lượng nghiêm ngặt và đồng đều của L’Oréal Toàn Cầu. Các sản phẩm chính hãng đều có tem nhãn tiếng Việt phía sau và nhập khẩu trực tiếp từ công ty TNHH L’Oréal Việt Nam nên các bạn hoàn toàn yên tâm về chất lượng sản phẩm.</div>
+                                    <div>**Kem dưỡng ban ngày cấp ẩm căng mịn và giảm nếp nhăn L'Oreal Paris Revitalift Hyaluronic Acid Plumping Cream day50ml </div>
+                                                        </div>
+                            </div>
+                        </div>
+                        <div class="product-feedback flex flex-col mt-3 bg-white px-6">
+                            <div class="text-gray-700 font-semibold uppercase text-lg py-4 ">đánh giá sản phẩm</div>
+                            <div class="flex items-center border rounded-sm bg-orange-50 p-8  space-y-2">
+                                <div class="flex flex-col items-center  space-y-1 text-red-600 text-lg  w-44  ">
+                                    <div class="font-semibold"><span class="text-xl">4.9</span> trên 5</div>
+                                    <div class="flex items-center text-red-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col flex-auto space-y-2">
+                                    <div class="flex items-center space-x-2">
+                                        <button class="text-red-600 bg-white border-2 border-red-600 rounded-sm px-6 py-1 whitespace-nowrap">Tất Cả</button>
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3 whitespace-nowrap">5 Sao (1,3k)</span>
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3 whitespace-nowrap">4 Sao (31)</span>
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3 whitespace-nowrap">3 Sao (12)</span>
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3 whitespace-nowrap">2 Sao (3)</span>
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3 whitespace-nowrap">1 Sao (5)</span>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3">Có Bình Luận (627) </span>
+                                        <span class="bg-white text-gray-900 border rounded-sm py-1 px-3">Có Hình Ảnh / Video (592)</span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-list flex flex-col ">
+                                <div class="feedback-item flex gap-2 p-4 border-b">                                
+                                    <div class="shrink w-8 h-8">
+                                        <img src="./images/product/feedback/avatar.jpeg" alt="" class="rounded-full">
+                                    </div>
+                                    <div class="flex flex-col space-y-2">
+                                        <div class="nick-name">xuantrang300495</div>
+                                        <div class="flex items-center gap-1 text-red-600">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                </svg>
+
+                                        </div>
+                                        <div class="py-2">Chưa sd nên chưa biết. Nhưng đã sd rất nhiều sp bên Loreal rất ưng 👍👍👍. Nên mình nghĩ này cũng ok lắm🥰</div>
+                                        <div class="tags flex flex-wrap  gap-2">
+                                            <span class="tag rounded-full border px-4 py-1 flex flex-col justify-center text-gray-500">Chất lượng sản phẩm tuyệt vời</span>
+                                            <span class="tag rounded-full border px-4 py-1 flex flex-col justify-center text-gray-500">Đóng gói sản phẩm rất đẹp và chắc chắn</span>
+                                            <span class="tag rounded-full border px-4 py-1 flex flex-col justify-center text-gray-500">Shop phục vụ rất tốt</span>
+                                            <span class="tag rounded-full border px-4 py-1 flex flex-col justify-center text-gray-500">Rất đáng tiền</span>
+                                            <span class="tag rounded-full border px-4 py-1 flex flex-col justify-center text-gray-500">Thời gian giao hàng rất nhanh</span>
+                                        </div>
+                                        <div class="feedback-thumbs-items  flex items-center h-20  gap-2">
+                                           <div class="swiper-wrapper">
+                                                <div class=" h-full w-20 hover:cursor-zoom-in swiper-slide"><img src="./images/product/feedback/comment2.jpg" class="object-cover h-full w-full" alt="" /></div>
+                                                <div class=" h-full w-20 hover:cursor-zoom-in swiper-slide"><img src="./images/product/feedback/comment2.jpg" class="object-cover h-full w-full" alt="" /></div>
+                                                <div class=" h-full w-20 hover:cursor-zoom-in swiper-slide"><img src="./images/product/feedback/comment2.jpg" class="object-cover h-full w-full" alt="" /></div>
+                                                <div class="h-full  w-20 hover:cursor-zoom-in swiper-slide"> <img src="./images/product/feedback/comment1.jpeg" alt="" class="object-cover h-full w-full" /></div> 
+                                            </div>
+                                          </div>
+                                         <div class="feedback-items-slides w-96    overflow-hidden relative  group ">
+                                             <div class="swiper-wrapper  ">
+                                                <div class="swiper-slide  "><img src="./images/product/feedback/comment2.jpg" class="object-cover h-full w-full px-10" alt="" /></div>
+                                                <div class="swiper-slide "><img src="./images/product/feedback/comment2.jpg" class="object-cover h-full w-full px-10" alt="" /></div>
+                                                <div class="swiper-slide "><img src="./images/product/feedback/comment2.jpg" class="object-cover h-full w-full px-10" alt="" /></div>
+                                                <div class="swiper-slide "> <img src="./images/product/feedback/comment1.jpeg" alt="" class="object-cover h-full w-full px-10" /></div> 
+                                             </div>
+                                             <div class="swiper-button-next   w-6 h-6 absolute right-6">
+                                                <svg
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     class="  h-4 w-4 flex justify-center items-center text-black"
+                                                     fill="none"
+                                                      viewBox="0 0 24 24"
+                                                     stroke="currentColor"
+                                                >
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                                </svg>
+                                             </div>
+                                             <div class="swiper-button-prev w-6 h-6 absolute left-6">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="  h-4 w-4 text-black"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    stroke="currentColor"
+                                                >
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                                </svg>
+                                             </div>
+                                         </div>
+                                        <div class="text-gray-500 text-xs">2022-01-06 9:29</div>
+                                        <div class="flex items-center justify-between gap-2 text-gray-500">
+                                           <div class="flex items-center">
+                                                <img src="./images/like-btn.svg" alt="" class="cursor-pointer p-1">
+                                                 <span>Hữu ích ?</span>
+                                           </div>
+                                           <div class="cursor-pointer relative">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400 peer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                                                </svg>
+                                                <div class="absolute bottom-0 translate-y-full right-0 border rounded-sm py-1 px-4 text-gray-700 bg-white shadow z-50  hidden peer-hover:block focus:block whitespace-nowrap">Báo cáo</div>
+                                           </div>
+                                        </div>
+                                    </div>
+                               </div>
+                              
+                            </div>
+                        </div>
+                         
+                    </div>
+                    <div class="shop-desktop-vouchers  bg-white w-64 pt-4 pb-3 px-3 h-96 space-y-4 flex flex-col ">
+                        <div class="text-gray-500">Mã giảm giá của Shop</div>
+                        <ul class="   w-full flex flex-col items-center gap-y-2 flex-auto overflow-y-scroll  ">
+                            <li class="flex items-center py-3 px-2 bg-red-100 gap-10 leading-normal">
+                                <div class="flex flex-col">
+                                    <div class="text-red-600 text-xs line-clamp-3">Giảm <sup>đ</sup>15k Đơn Tối Thiểu <sup>đ</sup>270k</div>
+                                    <div class="pt-2 text-gray-600 text-xs">HSD: 31.01.2022</div>
+                                </div>
+                                <div class="action flex flex-col justify-center">
+                                    <button class="text-white bg-red-600 rounded-sm py-2 px-4 hover:bg-red-700">Lưu</button>
+                                </div>
+                            </li>
+                            <li class="flex items-center py-3 px-2 bg-red-100 gap-10 leading-normal">
+                                <div class="flex flex-col">
+                                    <div class="text-red-600 text-xs line-clamp-3">Giảm 8% Đơn Tối Thiểu <sup>đ</sup>400k Giảm tối đa 150k Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, error!</div>
+                                    <div class="pt-2 text-gray-600 text-xs">HSD: 31.01.2022</div>
+                                </div>
+                                <div class="action flex flex-col justify-center">
+                                    <button class="text-white bg-red-600 rounded-sm py-2 px-4 hover:bg-red-700">Lưu</button>
+                                </div>
+                            </li>
+                            <li class="flex items-center py-3 px-2 bg-red-100 gap-10 leading-normal">
+                                <div class="flex flex-col">
+                                    <div class="text-red-600 text-xs line-clamp-3">Giảm <sup>đ</sup>15k Đơn Tối Thiểu <sup>đ</sup>270k</div>
+                                    <div class="pt-2 text-gray-600 text-xs">HSD: 31.01.2022</div>
+                                </div>
+                                <div class="action flex flex-col justify-center">
+                                    <button class="text-white bg-red-600 rounded-sm py-2 px-4 hover:bg-red-700">Lưu</button>
+                                </div>
+                            </li>
+                            <li class="flex items-center py-3 px-2 bg-red-100 gap-10 leading-normal">
+                                <div class="flex flex-col">
+                                    <div class="text-red-600 text-xs line-clamp-3">Giảm 8% Đơn Tối Thiểu <sup>đ</sup>400k Giảm tối đa 150k Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, error!</div>
+                                    <div class="pt-2 text-gray-600 text-xs">HSD: 31.01.2022</div>
+                                </div>
+                                <div class="action flex flex-col justify-center">
+                                    <button class="text-white bg-red-600 rounded-sm py-2 px-4 hover:bg-red-700">Lưu</button>
+                                </div>
+                            </li>
+                            <li class="flex items-center py-3 px-2 bg-red-100 gap-10 leading-normal">
+                                <div class="flex flex-col">
+                                    <div class="text-red-600 text-xs line-clamp-3">Giảm <sup>đ</sup>15k Đơn Tối Thiểu <sup>đ</sup>270k</div>
+                                    <div class="pt-2 text-gray-600 text-xs">HSD: 31.01.2022</div>
+                                </div>
+                                <div class="action flex flex-col justify-center">
+                                    <button class="text-white bg-red-600 rounded-sm py-2 px-4 hover:bg-red-700">Lưu</button>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

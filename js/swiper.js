@@ -246,3 +246,20 @@ const products = new Swiper(".product-images", {
     },
 });
  
+const feedbackThumbs = new Swiper(".feedback-thumbs-items", {
+    slidesPerView: "auto",
+    watchSlidesProgress: true,
+    spaceBetween: 10,
+});
+
+const feedbackList = new Swiper(".feedback-items-slides", {
+    slidesPerView: 1,    
+    autoHeight: true,
+    thumbs: {
+        swiper: feedbackThumbs
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
+});
