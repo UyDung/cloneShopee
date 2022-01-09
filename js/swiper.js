@@ -246,20 +246,29 @@ const products = new Swiper(".product-images", {
     },
 });
  
-const feedbackThumbs = new Swiper(".feedback-thumbs-items", {
+const ratingthumbs  = new Swiper(".feedback-thumbs-items", {
     slidesPerView: "auto",
     watchSlidesProgress: true,
     spaceBetween: 10,
 });
 
 const feedbackList = new Swiper(".feedback-items-slides", {
-    slidesPerView: 1,    
+    slidesPerView: 1,
     autoHeight: true,
     thumbs: {
-        swiper: feedbackThumbs
+        swiper: ratingthumbs, 
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    }
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+const shopProducts = new Swiper(".shop-more-product-list", {
+    slidesPerView: 6,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
