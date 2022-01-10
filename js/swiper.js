@@ -264,11 +264,15 @@ const feedbackList = new Swiper(".feedback-items-slides", {
     },
 });
 
-const shopProducts = new Swiper(".shop-more-product-list", {
+const shopProducts = new Swiper(".recommendation-product-list", {
     slidesPerView: 6,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    freeMode: {
+        enabled: true,
+        sticky: true,
     },
 });
