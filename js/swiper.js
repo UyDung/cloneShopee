@@ -64,13 +64,14 @@ const flashSale = new Swiper(".product-container", {
         1024: {
             slidesPerView: 6,
             spaceBetween: 10,
-            allowTouchMove: false
+            allowTouchMove: false,
+            slidesPerGroup: 6,
         },
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    }
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
 const topSearch = new Swiper(".top-search-container", {
@@ -84,12 +85,13 @@ const topSearch = new Swiper(".top-search-container", {
     breakpoints: {
         768: {
             slidesPerView: 4,
-            spaceBetween: 20
+            spaceBetween: 20,
         },
         1024: {
             slidesPerView: 6,
+            slidesPerGroup: 6,
             allowTouchMove: false,
-            spaceBetween: 30
+            spaceBetween: 30,
         },
     },
     navigation: {
@@ -150,15 +152,15 @@ const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
         type: "bullets",
         clickable: true,
     },
-    
 });
 
 const shopeeMallProducts = new Swiper(".shopee-mall-products", {
-    watchSlidesProgress: true,  
-    slidesPerView: 'auto',
+    watchSlidesProgress: true,
+    slidesPerView: "auto",
     breakpoints: {
         768: {
             slidesPerView: 4,
+            slidesPerGroup: 4,
             spaceBetween: 10,
         },
         1024: {
@@ -167,13 +169,13 @@ const shopeeMallProducts = new Swiper(".shopee-mall-products", {
                 fill: "column",
             },
             slidesPerView: 4,
+            slidesPerGroup: 4,
         },
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-     
 });
 
 const shopeeLiveList = new Swiper(".shopee-live-list", {
@@ -219,6 +221,7 @@ const categoryList = new Swiper(".category-list", {
     breakpoints: {
         1024: {
             slidesPerView: 10,
+            slidesPerGroup:4,
             allowTouchMove: false,
             
         }
@@ -266,6 +269,7 @@ const feedbackList = new Swiper(".feedback-items-slides", {
 
 const shopProducts = new Swiper(".recommendation-product-list", {
     slidesPerView: 6,
+    slidesPerGroup: 6,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
