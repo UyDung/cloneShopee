@@ -81,6 +81,7 @@ const topSearch = new Swiper(".top-search-container", {
     spaceBetween: 10,
     freeMode: {
         enabled: true,
+        sticky: true
     },
     breakpoints: {
         768: {
@@ -107,6 +108,7 @@ const topSearchMobile = new Swiper(".top-search-mobile-container", {
    
     freeMode: {
         enabled: true,
+        sticky: true
     },
     breakpoints: {
         768: {
@@ -128,6 +130,7 @@ const shopeeMallMobile = new Swiper(".shopee-mall-swiper-mobile", {
     },
     freeMode: {
         enabled: true,
+        sticky: true
     },
     slidesPerView: 1,
     watchSlidesProgress: true,
@@ -157,6 +160,10 @@ const shopeeMallLaptop = new Swiper(".shopee-mall-swiper-laptop", {
 const shopeeMallProducts = new Swiper(".shopee-mall-products", {
     watchSlidesProgress: true,
     slidesPerView: "auto",
+    freeMode: {
+        enabled: true,
+        sticky: true
+    },
     breakpoints: {
         768: {
             slidesPerView: 4,
@@ -186,6 +193,7 @@ const shopeeLiveList = new Swiper(".shopee-live-list", {
     slidesPerView: 'auto',
     freeMode: {
         enabled: true,
+        sticky: true
     },
     breakpoints: {
         768: {
@@ -198,9 +206,10 @@ const shopeeLiveList = new Swiper(".shopee-live-list", {
 });
 
 const favoritiesList = new Swiper(".favorities-list", {
-   
+    
      freeMode: {
-         enabled: true
+         enabled: true,
+        sticky: true
      }
 });
 
@@ -211,6 +220,7 @@ const categoryList = new Swiper(".category-list", {
     },
     freeMode: {
         enabled: true,
+        sticky: true
     },
     slidesPerView: "auto",
     watchSlidesProgress: true,
@@ -232,7 +242,10 @@ const categoryList = new Swiper(".category-list", {
 const productThumbs = new Swiper(".product-thumbs", {
     spaceBetween: 10,
     slidesPerView: 4,
-    freeMode: true,
+    freeMode: {
+        enabled: true,
+        sticky: true
+    },
     watchSlidesProgress: true,
     navigation: {
         nextEl: ".swiper-button-next",
