@@ -269,7 +269,7 @@ const feedbackList = new Swiper(".feedback-items-slides", {
 
 const shopProducts = new Swiper(".recommendation-product-list", {
     slidesPerView: 6,
-    slidesPerGroup: 6,
+    slidesPerGroup: 5,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
