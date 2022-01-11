@@ -239,7 +239,7 @@ const categoryList = new Swiper(".category-list", {
 });
 
 /////////////////////// 
-const productThumbs = new Swiper(".product-thumbs", {
+ const productThumbs = new Swiper(".product-thumbs", {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: {
@@ -260,6 +260,10 @@ const products = new Swiper(".product-images", {
     thumbs: {
         swiper: productThumbs,
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+    }
 });
  
 const ratingthumbs  = new Swiper(".feedback-thumbs-items", {

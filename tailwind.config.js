@@ -7,10 +7,10 @@ module.exports = {
         extend: {
             display: ["group-hover"]
         },
-        screens: {
-            xs: "320px",
-            ...defaultTheme.screens,
-        },
+        // screens: {
+        //     xs: "320px",
+        //     ...defaultTheme.screens,
+        // },
         fontSize: {
             least: ["10px", "12px"],
             xs: ["12px", "20px"],

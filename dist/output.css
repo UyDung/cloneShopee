@@ -444,12 +444,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-@media (min-width: 320px) {
-  .container {
-    max-width: 320px;
-  }
-}
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -889,6 +883,14 @@ img {
   }
 }
 
+.invisible {
+  visibility: hidden !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
 .absolute {
   position: absolute !important;
 }
@@ -948,6 +950,10 @@ img {
 
 .left-3 {
   left: 0.75rem !important;
+}
+
+.right-3 {
+  right: 0.75rem !important;
 }
 
 .right-10 {
@@ -1019,6 +1025,11 @@ img {
   margin-right: 2.5rem !important;
 }
 
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .my-2 {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
@@ -1052,12 +1063,12 @@ img {
   margin-left: 0.5rem !important;
 }
 
-.mt-4 {
-  margin-top: 1rem !important;
-}
-
 .ml-auto {
   margin-left: auto !important;
+}
+
+.mt-4 {
+  margin-top: 1rem !important;
 }
 
 .mt-3 {
@@ -1212,14 +1223,14 @@ img {
   height: 16rem !important;
 }
 
-.h-3\/4 {
-  height: 75% !important;
-}
-
 .h-fit {
   height: -webkit-fit-content !important;
   height: -moz-fit-content !important;
   height: fit-content !important;
+}
+
+.h-3\/4 {
+  height: 75% !important;
 }
 
 .h-14 {
@@ -1302,16 +1313,16 @@ img {
   width: 91.666667% !important;
 }
 
+.w-8 {
+  width: 2rem !important;
+}
+
 .w-5 {
   width: 1.25rem !important;
 }
 
 .w-7 {
   width: 1.75rem !important;
-}
-
-.w-8 {
-  width: 2rem !important;
 }
 
 .w-80 {
@@ -1348,10 +1359,6 @@ img {
 
 .min-w-\[1200px\] {
   min-width: 1200px !important;
-}
-
-.min-w-\[1280px\] {
-  min-width: 1280px !important;
 }
 
 .flex-auto {
@@ -1500,6 +1507,10 @@ img {
   gap: 1.5rem !important;
 }
 
+.gap-8 {
+  gap: 2rem !important;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem !important;
        column-gap: 0.5rem !important;
@@ -1573,6 +1584,10 @@ img {
 
 .overflow-x-hidden {
   overflow-x: hidden !important;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll !important;
 }
 
 .overflow-y-scroll {
@@ -1755,6 +1770,10 @@ img {
   background-color: transparent !important;
 }
 
+.bg-gray-700\/40 {
+  background-color: rgb(55 65 81 / 0.4) !important;
+}
+
 .bg-red-600 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity)) !important;
@@ -1778,6 +1797,10 @@ img {
 .bg-blue-900 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-gray-800\/60 {
+  background-color: rgb(31 41 55 / 0.6) !important;
 }
 
 .bg-sky-700 {
@@ -1882,14 +1905,14 @@ img {
   padding-right: 0.75rem !important;
 }
 
-.py-4 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
 .py-1 {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
+}
+
+.py-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .py-5 {
@@ -1900,6 +1923,11 @@ img {
 .py-1\.5 {
   padding-top: 0.375rem !important;
   padding-bottom: 0.375rem !important;
+}
+
+.py-6 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .py-0\.5 {
@@ -1925,11 +1953,6 @@ img {
 .px-10 {
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
-}
-
-.py-6 {
-  padding-top: 1.5rem !important;
-  padding-bottom: 1.5rem !important;
 }
 
 .py-3 {
@@ -1969,6 +1992,10 @@ img {
   padding-right: 1rem !important;
 }
 
+.pt-4 {
+  padding-top: 1rem !important;
+}
+
 .pt-6 {
   padding-top: 1.5rem !important;
 }
@@ -1983,10 +2010,6 @@ img {
 
 .pr-10 {
   padding-right: 2.5rem !important;
-}
-
-.pt-4 {
-  padding-top: 1rem !important;
 }
 
 .pl-4 {
@@ -2290,6 +2313,10 @@ input[type=number] {
 .swiper-button-prev::after,
 .swiper-rtl .swiper-button-next::after {
   content: "" !important;
+}
+
+.swiper-pagination-fraction {
+  left: auto;
 }
 
 .footer-vn-visa-png {
@@ -2771,6 +2798,10 @@ input[type=number] {
   outline-width: 0px !important;
 }
 
+.group:hover .group-hover\:visible {
+  visibility: visible !important;
+}
+
 .group:hover .group-hover\:bottom-0 {
   bottom: 0px !important;
 }
@@ -2890,10 +2921,6 @@ input[type=number] {
     width: 8rem !important;
   }
 
-  .md\:w-2\/5 {
-    width: 40% !important;
-  }
-
   .md\:w-12 {
     width: 3rem !important;
   }
@@ -2992,8 +3019,21 @@ input[type=number] {
     padding-right: 1rem !important;
   }
 
+  .md\:px-14 {
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+
   .md\:pt-2 {
     padding-top: 0.5rem !important;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem !important;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem !important;
   }
 
   .md\:pt-3 {
@@ -3073,10 +3113,6 @@ input[type=number] {
     background-color: rgb(234 88 12 / var(--tw-bg-opacity)) !important;
   }
 
-  .lg\:p-4 {
-    padding: 1rem !important;
-  }
-
   .lg\:p-3 {
     padding: 0.75rem !important;
   }
@@ -3096,14 +3132,6 @@ input[type=number] {
     padding-bottom: 0.75rem !important;
   }
 
-  .lg\:pl-4 {
-    padding-left: 1rem !important;
-  }
-
-  .lg\:pr-8 {
-    padding-right: 2rem !important;
-  }
-
   .lg\:text-3xl {
     font-size: 1.875rem !important;
     line-height: 2.25rem !important;
@@ -3111,9 +3139,56 @@ input[type=number] {
 }
 
 @media (min-width: 1280px) {
+  .xl\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .xl\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .xl\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .xl\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .xl\:container {
+      max-width: 1536px;
+    }
+  }
+
   .xl\:mx-40 {
     margin-left: 10rem !important;
     margin-right: 10rem !important;
+  }
+
+  .xl\:mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .xl\:flex {
+    display: flex !important;
+  }
+
+  .xl\:w-2\/5 {
+    width: 40% !important;
   }
 
   .xl\:px-32 {
@@ -3124,5 +3199,12 @@ input[type=number] {
   .xl\:px-40 {
     padding-left: 10rem !important;
     padding-right: 10rem !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-32 {
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
   }
 }

@@ -205,6 +205,10 @@ input[type=number] {
     content: "" !important;
 }
 
+.swiper-pagination-fraction {
+    left: auto;
+}
+
 .footer-vn-visa-png {
     width: 55px;
     height: 18px;
