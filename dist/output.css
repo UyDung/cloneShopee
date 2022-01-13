@@ -1232,6 +1232,10 @@ img {
   margin-right: 0.5rem !important;
 }
 
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
 .mr-14 {
   margin-right: 3.5rem !important;
 }
@@ -1242,10 +1246,6 @@ img {
 
 .mt-8 {
   margin-top: 2rem !important;
-}
-
-.mt-2 {
-  margin-top: 0.5rem !important;
 }
 
 .ml-4 {
@@ -1398,6 +1398,10 @@ img {
   height: 40px !important;
 }
 
+.h-14 {
+  height: 3.5rem !important;
+}
+
 .h-8 {
   height: 2rem !important;
 }
@@ -1482,6 +1486,10 @@ img {
 
 .h-12 {
   height: 3rem !important;
+}
+
+.h-14 {
+  height: 3.5rem !important;
 }
 
 .min-h-fit {
@@ -1718,6 +1726,14 @@ img {
   width: 16rem !important;
 }
 
+.w-2\/5 {
+  width: 40% !important;
+}
+
+.w-3\/5 {
+  width: 60% !important;
+}
+
 .min-w-\[1200px\] {
   min-width: 1200px !important;
 }
@@ -1845,6 +1861,10 @@ img {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
 .grid-rows-2 {
@@ -2169,6 +2189,10 @@ img {
   border-width: 2px !important;
 }
 
+.border-4 {
+  border-width: 4px !important;
+}
+
 .border {
   border-width: 1px !important;
 }
@@ -2240,6 +2264,11 @@ img {
 .border-gray-200 {
   --tw-border-opacity: 1 !important;
   border-color: rgb(229 231 235 / var(--tw-border-opacity)) !important;
+}
+
+.border-yellow-500 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity)) !important;
 }
 
 .border-gray-700 {
@@ -2847,6 +2876,10 @@ img {
 
 .pb-0 {
   padding-bottom: 0px !important;
+}
+
+.pb-4 {
+  padding-bottom: 1rem !important;
 }
 
 .pr-10 {
@@ -4580,40 +4613,6 @@ input[type=number] {
 }
 
 @media (min-width: 1280px) {
-  .xl\:container {
-    width: 100%;
-  }
-
-  @media (min-width: 640px) {
-    .xl\:container {
-      max-width: 640px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .xl\:container {
-      max-width: 768px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .xl\:container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .xl\:container {
-      max-width: 1280px;
-    }
-  }
-
-  @media (min-width: 1536px) {
-    .xl\:container {
-      max-width: 1536px;
-    }
-  }
-
   .xl\:mx-40 {
     margin-left: 10rem !important;
     margin-right: 10rem !important;
