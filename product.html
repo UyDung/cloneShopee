@@ -10,7 +10,7 @@
     </head>
     <body class="bg-gray-100 relative ">
         <!-- 1 header -->
-        <header class="mx-auto px-2 overflow-hidden     ">
+        <header class="mx-auto px-2 overflow-hidden   md:bg-orange-600 md:px-32">
             <!-- mobile nav -->
             <nav class="flex justify-around gap-4 md:hidden  fixed top-2 z-50 left-3 right-3 items-center  bg-transparent">
                 <div class="bg-gray-700/40 w-8 h-8 rounded-full flex justify-center items-center">
@@ -38,7 +38,7 @@
             <!-- mobile nav end -->
 
             <!-- laptop nav -->
-            <nav class="laptop-nav hidden md:flex justify-between items-center text-[13px] py-2 text-white">
+            <nav class="laptop-nav hidden  md:flex   justify-between items-center text-[13px] py-2 text-white">
                 <div class="left flex items-center gap-2">
                     <a href="#" class="transition-all hover:opacity-60 flex gap-2 items-center after:content-['|'] after:h-full after:text-gray-200"
                         >Kênh Người Bán</a
@@ -624,7 +624,7 @@
                     <!-- </div> -->
 
                     <!-- show on mobile -->
-                    <div class="flex justify-between items-center bg-white border-t text-xs whitespace-nowrap py-4  ">
+                    <div class="flex md:hidden justify-between items-center bg-white border-t text-xs whitespace-nowrap py-4  ">
                         <div class="flex items-center w-full  gap-1 justify-center">
                         <div class="text-red-600 flex flex-col justify-center w-4 h-4">
                             <img src="./images/product/return.png" alt="" class="object-cover w-full h-full" />
@@ -1110,7 +1110,7 @@
                                 </svg>
                            </div>
                            <div class="fixed z-50 peer-hover:visible invisible translate-y-full peer-hover:translate-y-0 transition-all  top-0 right-0 bottom-0 left-0 bg-gray-800/10">
-                                <div class="absolute bottom-0  left-0 right-0   -translate-y-1/2   z-50  bg-gray-50 bg-white flex flex-col items-center">
+                                <div class="absolute bottom-0  left-0 right-0   -translate-y-1/2   z-50    bg-white flex flex-col items-center">
                                     <div class="w-full p-4 flex flex-col items-center bg-white space-y-3">
 
                                 <div class="text-lg">Phí Vận Chuyển</div>
@@ -1342,43 +1342,353 @@
             </div>
 
             <!-- shop mobile -->
-            <div class="shop-mobile md:hidden flex flex-col">
-                <div class="mt-3 shop flex flex-col bg-white py-4 text-sm gap-4 px-3">
-                    <div class="shop-info flex items-center">
-                        <div class="shop-avatar relative w-14 h-14 flex-none flex justify-center items-center">
+                <div class="md:hidden flex flex-col bg-white  text-sm gap-2 px-3">
+                    <div class="shop-info flex items-center justify-between gap-2">
+                        <div class="shop-avatar relative w-20 h-20 flex-none flex justify-center items-center">
                             <img src="./images/product/main/shop/avatar.jpeg" alt="" class="w-9/12 h-9/12 rounded-full" />
                             <img src="./images/product/main/shop/logo.svg" alt="" class="bg-red-600 p-0.5 absolute bottom-2" />
                         </div>
-                        <div class="shop-name leading-5 h-full">
-                            <div class="text-gray-900">Lorealparis_officialstore</div>
-                            <span class="text-gray-500">Online 23 phút trước</span>
-                        </div>
-                        <button class="text-red-600 border border-red-600 whitespace-nowrap px-2">Xem Shop</button>
+                            <div class="shop-name leading-5 h-full">
+                               <div class="text-gray-900">Lorealparis_officialstore</div>
+                                <span class="text-gray-500 text-sm">Online 23 phút trước</span>
+                            </div>
+                            <button class="text-red-600 border border-red-600 px-3 font-semibold ml-auto outline-none  pb-0.5 rounded-sm">Xem Shop</button>
                     </div>
-                    <div class="shop-resum flex justify-around items-center">
-                        <div
-                            class="flex flex-col items-center after:content-[''] after:absolute after:border relative after:-right-5 after:border-gray-200 after:h-full"
-                        >
-                            <div class="text-red-700 font-semibold text-lg">155</div>
-                            <div class="text-gray-600">Sản phẩm</div>
-                        </div>
-                        <div
-                            class="flex flex-col items-center after:content-[''] after:absolute after:border relative after:-right-5 after:border-gray-200 after:h-full"
-                        >
-                            <div class="text-red-700 font-semibold text-lg">4.9</div>
-                            <div class="text-gray-600">Đánh giá</div>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <div class="text-red-700 font-semibold text-lg">100%</div>
-                            <div class="text-gray-600">Phản hồi Chat</div>
-                        </div>
+                    <div class="shop-resum flex  gap-4 items-center text-xs">
+                            <div class="flex gap-1">
+                                <div class="text-red-700 font-semibold">155</div>
+                                <div class="text-gray-600">Sản phẩm</div>
+                            </div>
+                            <div class="flex gap-1">
+                                <span class="text-red-700 font-semibold  ">4.9</span>
+                                <span class="text-gray-600">Đánh giá</span>  
+                            </div>
+                            <div class="flex gap-1">
+                                <span class="text-red-700 font-semibold  ">100%</span>
+                                <span class="text-gray-600">Phản hồi Chat</span>
+                            </div>                        
                     </div>
-                </div>
+                </div>                
 
-                <div class="product-detail flex flex-col mt-3 bg-white py-4 px-3 gap-4 text-sm">
+            <!-- show on mobile -->
+            <div class="other-products-shop bg-white flex w-full pt-4 flex-col relative   py-2  px-3 ">
+                            <div class="recommendation-header flex items-center justify-between  ">
+                                <div class="uppercase  text-sm text-gray-500">Các sản phẩm khác của shop</div>
+                                <div class="flex items-center text-red-700  text-xs">
+                                    <span>Xem Tất Cả</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="recommendation-product-list  overflow-x-hidden  group   pt-4  ">
+                                  <div class="swiper-wrapper ">
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 sale-percent absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                                 <div class="swiper-button-next -translate-y-1/2">
+                                   <svg xmlns="http://www.w3.org/2000/svg"  class="h-4 w-4 flex justify-center items-center text-gray-600" fill="none" viewBox="0 0 24 24"  stroke="currentColor"  >
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </div> 
+                            </div>
+            </div>
+            <!-- show on mobile -->
+            <div class="mobile md:hidden flex flex-col">
+                <div class="product-detail flex flex-col mt-3  bg-white py-4 px-3 gap-4 text-sm">
                     <div class="product-detail-title flex items-center gap-2">
                         <div class="tracking-tighter text-sm">Chi tiết sản phẩm</div>
-                        <div class="last-update flex items-center text-gray-800 text-sm">
+                        <div class="last-update flex items-center gap-1 text-gray-800 text-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
                                     stroke-linecap="round"
@@ -1387,15 +1697,15 @@
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                                 />
                             </svg>
-                            <span>7 tháng</span>
+                            <span class="text-gray-500 text-xs">8 tháng</span>
                         </div>
                     </div>
                     <hr />
-                    <div class="flex items-center">
+                    <div class="flex items-center text-gray-600">
                         <div class="label w-28">Kho</div>
                         <p>683</p>
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-between text-gray-600">
                         <div class="label w-28">Thương hiệu</div>
                         <p class="flex-auto">L'Oreal Paris</p>
                         <div class="text-gray-500">
@@ -1404,22 +1714,22 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-between text-gray-600">
                         <div class="label w-28">Công thức</div>
                         <p class="flex-auto">Dạng Kem</p>
                     </div>
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-between text-gray-600">
                         <div class="label w-28">Gửi từ</div>
                         <p class="flex-auto">TP. Hồ Chí Minh</p>
                     </div>
                     <hr />
-                    <div class="description-wrapper flex flex-col items-center">
-                        <div class="description line-clamp-5">
-                            VÌ SAO BẠN SẼ THÍCH? Kem dưỡng siêu cấp ẩm căng mịn da L'oreal Paris Revitalift 50ml với sự kết hợp không chỉ 1 mà đến 2
+                    <div class="description-wrapper relative   flex flex-col items-center">
+                        <div class="description  peer-focus:text-sky-800 peer-focus:line-clamp-none line-clamp-5">
+                            VÌ SAO BẠN SẼ THÍCH? <br>Kem dưỡng siêu cấp ẩm căng mịn da L'oreal Paris Revitalift 50ml với sự kết hợp không chỉ 1 mà đến 2
                             loại Hyaluronic Acid ưu việt sẽ mang đến giải pháp chăm sóc da hiệu quả, cho làn da căng mịn và sáng da tức thì. Với
-                            Revitalift da sẽ có sự thay đổi rõ rệt, mang đến vẻ ngoài rạng rỡ cho bạn. ĐẶC ĐIỂM NỔI BẬT: ● Thành phần không chỉ chứa 1
-                            mà đến 2 loại Hyaluronic Acid: ● Macro [HA]: Cấp ẩm tối đa cho bề mặt da căng mịn tức thì ● Micro [HA]: Thẩm thấu sâu giúp
-                            căng đầy nếp nhăn và sáng da từ sâu bên trong Xuất xứ: Trung Quốc HSD: 3 năm kể từ ngày sản xuất NSX: Xem trên bao bì" •
+                            Revitalift da sẽ có sự thay đổi rõ rệt, mang đến vẻ ngoài rạng rỡ cho bạn. <br>ĐẶC ĐIỂM NỔI BẬT: <br> ● Thành phần không chỉ chứa 1
+                            mà đến 2 loại Hyaluronic Acid: <br> ● Macro [HA]: Cấp ẩm tối đa cho bề mặt da căng mịn tức thì <br> ● Micro [HA]: Thẩm thấu sâu giúp
+                            căng đầy nếp nhăn và sáng da từ sâu bên trong Xuất xứ: Trung Quốc HSD: 3 năm kể từ ngày sản xuất NSX: Xem trên bao bì" <br>•
                             THÔNG TIN THƯƠNG HIỆU Hơn 100 năm thành lập, L’Oréal là tập đoàn chuyên về mỹ phẩm và chăm sóc sắc đẹp lớn nhất thế giới.
                             L’Oréal Paris đã có mặt tại hơn 120 quốc gia với các dòng sản phẩm về chăm sóc tóc, chăm sóc da và trang điểm dành cho đại
                             chúng. Được xây dựng trên nền tảng khoa học, áp dụng những phát minh công nghệ mới nhất, các sản phẩm L’Oréal Paris có
@@ -1427,11 +1737,11 @@
                             Paris là nhãn hiệu mỹ phẩm hàng đầu tại Châu Âu được sản xuất tại nhiều nhà máy trên toàn thế giới như Trung Quốc, Mỹ,
                             Indonesia… Dù được sản xuất ở đâu, các sản phẩm đều tuân theo quy trình kiểm soát chất lượng nghiêm ngặt và đồng đều của
                             L’Oréal Toàn Cầu. Các sản phẩm chính hãng đều có tem nhãn tiếng Việt phía sau và nhập khẩu trực tiếp từ công ty TNHH
-                            L’Oréal Việt Nam nên các bạn hoàn toàn yên tâm về chất lượng sản phẩm. • ƯU ĐIỂM NỔI BẬT ĐẶC ĐIỂM NỔI BẬT: ● Thành phần
-                            không chỉ chứa 1 mà đến 2 loại Hyaluronic Acid: ● Macro [HA]: Cấp ẩm tối đa cho bề mặt da căng mịn tức thì ● Micro [HA]:
-                            Thẩm thấu sâu giúp căng đầy nếp nhăn và sáng da từ sâu bên trong • HIỆU QUẢ SỬ DỤNG Hiệu quả sáng rỡ tức thì: ● 42% da
-                            sáng rạng rỡ tức thì ● 23% căng mịn tức thì ● 32% mịn màng tức thì • HƯỚNG DẪN SỬ DỤNG ● Làm sạch da. Cân bằng với nước
-                            hoa hồng ● Sử dụng tinh chất chấm đều vài giọt khắp mặt ● Khóa lớp tinh chất bằng cách vỗ nhẹ kem dưỡng thấm vào da ● Nhẹ
+                            L’Oréal Việt Nam nên các bạn hoàn toàn yên tâm về chất lượng sản phẩm. <br>• ƯU ĐIỂM NỔI BẬT ĐẶC ĐIỂM NỔI BẬT: <br>● Thành phần
+                            không chỉ chứa 1 mà đến 2 loại Hyaluronic Acid: <br>● Macro [HA]: Cấp ẩm tối đa cho bề mặt da căng mịn tức thì <br>● Micro [HA]:
+                            Thẩm thấu sâu giúp căng đầy nếp nhăn và sáng da từ sâu bên trong <br>• HIỆU QUẢ SỬ DỤNG Hiệu quả sáng rỡ tức thì: <br>● 42% da
+                            sáng rạng rỡ tức thì <br>● 23% căng mịn tức thì <br>● 32% mịn màng tức thì <br>• HƯỚNG DẪN SỬ DỤNG <br>● Làm sạch da. Cân bằng với nước
+                            hoa hồng <br>● Sử dụng tinh chất chấm đều vài giọt khắp mặt <br>● Khóa lớp tinh chất bằng cách vỗ nhẹ kem dưỡng thấm vào da <br>● Nhẹ
                             nhàng thoa đề khắp mặt • THÔNG TIN THƯƠNG HIỆU Hơn 100 năm thành lập, L’Oréal là tập đoàn chuyên về mỹ phẩm và chăm sóc
                             sắc đẹp lớn nhất thế giới. L’Oréal Paris đã có mặt tại hơn 120 quốc gia với các dòng sản phẩm về chăm sóc tóc, chăm sóc da
                             và trang điểm dành cho đại chúng. Được xây dựng trên nền tảng khoa học, áp dụng những phát minh công nghệ mới nhất, các
@@ -1441,20 +1751,21 @@
                             nghiêm ngặt và đồng đều của L’Oréal Toàn Cầu. Các sản phẩm chính hãng đều có tem nhãn tiếng Việt phía sau và nhập khẩu
                             trực tiếp từ công ty TNHH L’Oréal Việt Nam nên các bạn hoàn toàn yên tâm về chất lượng sản phẩm. **Kem dưỡng ban ngày cấp
                             ẩm căng mịn và giảm nếp nhăn L'Oreal Paris Revitalift Hyaluronic Acid Plumping Cream day50ml
-                        </div>
-                        <button class="flex items-center text-red-600 gap-2 justify-center font-semibold hover:bg-sky-700">
+                        </div>  
+                        <div class="bg-gradient-to-t from-white w-full absolute  bottom-0 -translate-y-1/2 h-[40px]"></div>
+                        <button class="flex peer items-center text-red-600 gap-2 justify-center font-semibold hover:bg-sky-700">
                             <span>Xem Thêm</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
+                      
                     </div>
                 </div>
-
                 <div class="product-feedback-wrapper text-sm">
                     <div class="product-feedback flex items-center mt-3 bg-white px-3 py-2 justify-between gap-4">
                         <div class="leading-6">
-                            <div class="product-feedback-title text-black uppercase font-semibold">Đánh giá sản phẩm</div>
+                            <div class="product-feedback-title text-black uppercase">Đánh giá sản phẩm</div>
                             <div class="flex items-center text-xs gap-2">
                                 <a class="product-review-link flex gap-1">
                                     <div class="stars flex items-center">
@@ -1518,9 +1829,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-red-600 font-semibold flex items-center text-sm">
+                        <div class="text-red-600 flex items-center text-sm">
                             <span class="whitespace-nowrap">Xem tất cả</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </div>
@@ -1535,12 +1846,11 @@
                             <div class="flex flex-col flex-auto">
                                 <div class="main-info flex justify-between items-center gap-4 text-gray-600">
                                     <div class="nick-name">l****5</div>
-                                    <div class="like-amount flex items-center ml-auto">
+                                    <div class="like-amount flex items-center ml-auto gap-1">
                                         <img src="./images/product/feedback/like.svg" alt="" />
                                         <span>0</span>
                                     </div>
-                                    <div class="view-detail">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -1548,7 +1858,6 @@
                                                 d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
                                             />
                                         </svg>
-                                    </div>
                                 </div>
 
                                 <div class="stars flex items-center">
@@ -1606,6 +1915,13 @@
 
                                 <div class="comment">
                                     <p>Đóng gói oke la, gộp mấy đơn shoppe mall giao 1 lần, quà tặng đầy đủ. Chất lượng thì chưa biết tn</p>
+                                    <div class="tag-feedback flex flex-wrap gap-2 pt-4">
+                                        <div class="tag-feedback-item">Chất lượng sản phẩm tuyệt vời</div>
+                                        <div class="tag-feedback-item">Đóng gói sản phẩm rất đẹp và chắc chắn</div>
+                                        <div class="tag-feedback-item">Shop phục vụ rất tốt</div>
+                                        <div class="tag-feedback-item">Rất đáng tiền</div>
+                                        <div class="tag-feedback-item">Thời gian giao hàng rất nhanh</div>
+                                    </div>
                                     <div class="mt-3 grid grid-rows-3 grid-cols-3 gap-1">
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
@@ -1618,20 +1934,19 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-2" />
+                        <hr class="my-2" /> 
                         <div class="product-feedback-item flex gap-2 px-3">
-                            <div class="feedback-avatar w-6 h-6 flex-none">
+                            <div class="feedback-avatar w-6 h-6 flex-none md:w-12 md:h-12">
                                 <img src="./images/product/feedback/avatar.jpeg" alt="" class="w-full h-full rounded-full" />
                             </div>
                             <div class="flex flex-col flex-auto">
                                 <div class="main-info flex justify-between items-center gap-4 text-gray-600">
                                     <div class="nick-name">l****5</div>
-                                    <div class="like-amount flex items-center ml-auto">
+                                    <div class="like-amount flex items-center ml-auto gap-1">
                                         <img src="./images/product/feedback/like.svg" alt="" />
                                         <span>0</span>
                                     </div>
-                                    <div class="view-detail">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -1639,31 +1954,55 @@
                                                 d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
                                             />
                                         </svg>
-                                    </div>
                                 </div>
 
                                 <div class="stars flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
@@ -1672,6 +2011,13 @@
 
                                 <div class="comment">
                                     <p>Đóng gói oke la, gộp mấy đơn shoppe mall giao 1 lần, quà tặng đầy đủ. Chất lượng thì chưa biết tn</p>
+                                    <div class="tag-feedback flex flex-wrap gap-2 pt-4">
+                                        <div class="tag-feedback-item">Chất lượng sản phẩm tuyệt vời</div>
+                                        <div class="tag-feedback-item">Đóng gói sản phẩm rất đẹp và chắc chắn</div>
+                                        <div class="tag-feedback-item">Shop phục vụ rất tốt</div>
+                                        <div class="tag-feedback-item">Rất đáng tiền</div>
+                                        <div class="tag-feedback-item">Thời gian giao hàng rất nhanh</div>
+                                    </div>
                                     <div class="mt-3 grid grid-rows-3 grid-cols-3 gap-1">
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
@@ -1684,20 +2030,19 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-2" />
+                        <hr class="my-2" /> 
                         <div class="product-feedback-item flex gap-2 px-3">
-                            <div class="feedback-avatar w-6 h-6 flex-none">
+                            <div class="feedback-avatar w-6 h-6 flex-none md:w-12 md:h-12">
                                 <img src="./images/product/feedback/avatar.jpeg" alt="" class="w-full h-full rounded-full" />
                             </div>
                             <div class="flex flex-col flex-auto">
                                 <div class="main-info flex justify-between items-center gap-4 text-gray-600">
                                     <div class="nick-name">l****5</div>
-                                    <div class="like-amount flex items-center ml-auto">
+                                    <div class="like-amount flex items-center ml-auto gap-1">
                                         <img src="./images/product/feedback/like.svg" alt="" />
                                         <span>0</span>
                                     </div>
-                                    <div class="view-detail">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -1705,31 +2050,55 @@
                                                 d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
                                             />
                                         </svg>
-                                    </div>
                                 </div>
 
                                 <div class="stars flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
@@ -1738,6 +2107,13 @@
 
                                 <div class="comment">
                                     <p>Đóng gói oke la, gộp mấy đơn shoppe mall giao 1 lần, quà tặng đầy đủ. Chất lượng thì chưa biết tn</p>
+                                    <div class="tag-feedback flex flex-wrap gap-2 pt-4">
+                                        <div class="tag-feedback-item">Chất lượng sản phẩm tuyệt vời</div>
+                                        <div class="tag-feedback-item">Đóng gói sản phẩm rất đẹp và chắc chắn</div>
+                                        <div class="tag-feedback-item">Shop phục vụ rất tốt</div>
+                                        <div class="tag-feedback-item">Rất đáng tiền</div>
+                                        <div class="tag-feedback-item">Thời gian giao hàng rất nhanh</div>
+                                    </div>
                                     <div class="mt-3 grid grid-rows-3 grid-cols-3 gap-1">
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
@@ -1750,20 +2126,19 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-2" />
+                        <hr class="my-2" /> 
                         <div class="product-feedback-item flex gap-2 px-3">
-                            <div class="feedback-avatar w-6 h-6 flex-none">
+                            <div class="feedback-avatar w-6 h-6 flex-none md:w-12 md:h-12">
                                 <img src="./images/product/feedback/avatar.jpeg" alt="" class="w-full h-full rounded-full" />
                             </div>
                             <div class="flex flex-col flex-auto">
                                 <div class="main-info flex justify-between items-center gap-4 text-gray-600">
                                     <div class="nick-name">l****5</div>
-                                    <div class="like-amount flex items-center ml-auto">
+                                    <div class="like-amount flex items-center ml-auto gap-1">
                                         <img src="./images/product/feedback/like.svg" alt="" />
                                         <span>0</span>
                                     </div>
-                                    <div class="view-detail">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path
                                                 stroke-linecap="round"
                                                 stroke-linejoin="round"
@@ -1771,31 +2146,55 @@
                                                 d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
                                             />
                                         </svg>
-                                    </div>
                                 </div>
 
                                 <div class="stars flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
                                     </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-500 h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
                                         <path
                                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
                                         />
@@ -1804,6 +2203,13 @@
 
                                 <div class="comment">
                                     <p>Đóng gói oke la, gộp mấy đơn shoppe mall giao 1 lần, quà tặng đầy đủ. Chất lượng thì chưa biết tn</p>
+                                    <div class="tag-feedback flex flex-wrap gap-2 pt-4">
+                                        <div class="tag-feedback-item">Chất lượng sản phẩm tuyệt vời</div>
+                                        <div class="tag-feedback-item">Đóng gói sản phẩm rất đẹp và chắc chắn</div>
+                                        <div class="tag-feedback-item">Shop phục vụ rất tốt</div>
+                                        <div class="tag-feedback-item">Rất đáng tiền</div>
+                                        <div class="tag-feedback-item">Thời gian giao hàng rất nhanh</div>
+                                    </div>
                                     <div class="mt-3 grid grid-rows-3 grid-cols-3 gap-1">
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
                                         <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
@@ -1816,11 +2222,764 @@
                                 </div>
                             </div>
                         </div>
-                        <hr class="my-2" />
+                        <hr class="my-2" /> 
+                        <div class="product-feedback-item flex gap-2 px-3">
+                            <div class="feedback-avatar w-6 h-6 flex-none md:w-12 md:h-12">
+                                <img src="./images/product/feedback/avatar.jpeg" alt="" class="w-full h-full rounded-full" />
+                            </div>
+                            <div class="flex flex-col flex-auto">
+                                <div class="main-info flex justify-between items-center gap-4 text-gray-600">
+                                    <div class="nick-name">l****5</div>
+                                    <div class="like-amount flex items-center ml-auto gap-1">
+                                        <img src="./images/product/feedback/like.svg" alt="" />
+                                        <span>0</span>
+                                    </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                                            />
+                                        </svg>
+                                </div>
+
+                                <div class="stars flex items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="text-yellow-500 md:text-red-500 h-4 w-4"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="comment">
+                                    <p>Đóng gói oke la, gộp mấy đơn shoppe mall giao 1 lần, quà tặng đầy đủ. Chất lượng thì chưa biết tn</p>
+                                    <div class="tag-feedback flex flex-wrap gap-2 pt-4">
+                                        <div class="tag-feedback-item">Chất lượng sản phẩm tuyệt vời</div>
+                                        <div class="tag-feedback-item">Đóng gói sản phẩm rất đẹp và chắc chắn</div>
+                                        <div class="tag-feedback-item">Shop phục vụ rất tốt</div>
+                                        <div class="tag-feedback-item">Rất đáng tiền</div>
+                                        <div class="tag-feedback-item">Thời gian giao hàng rất nhanh</div>
+                                    </div>
+                                    <div class="mt-3 grid grid-rows-3 grid-cols-3 gap-1">
+                                        <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
+                                        <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
+                                        <div class="h-24"><img src="./images/product/feedback/comment2.jpg" class="w-full h-full" alt="" /></div>
+                                        <div class="h-48 row-span-2 col-span-3 bg-sky-700">
+                                            <img src="./images/product/feedback/comment1.jpeg" alt="" class="w-full h-full object-cover" />
+                                        </div>
+                                    </div>
+                                    <span class="text-xs text-gray-500 mt-3">2021-12-27 11:09</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-2" /> 
+                    </div>
+                    <div class="w-full  bg-white pb-4 text-red-600 font-semibold flex justify-center items-center gap-1">
+                        <span>Xem Tất Cả (1.4K)</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
                     </div>
                     <!-- feedback list end -->
                 </div>
             </div>
+
+            <!-- show on mobile -->
+            <div class="recommendation-products-mobile bg-white flex md:hidden w-full flex-col relative mt-2  p-3  ">
+                            <div class="recommendation-header flex items-center justify-between  px-2">
+                                <div class="uppercase text-sm text-gray-400">Sản phẩm tương tự</div>
+                                <div class="flex items-center text-red-600 text-xs  ">
+                                    <span>Xem Tất Cả</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="recommendation-product-list  overflow-x-hidden  group   pt-4   ">
+                                  <div class="swiper-wrapper ">
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col w-36  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="swiper-slide flex flex-col  w-36 bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>  
+                               
+                               
+                            </div>
+            </div> 
+
+            <!-- show on mobile -->
+               <div class="recommendation-products flex md:hidden w-full flex-col relative mt-2 mb-2  p-2  ">
+                    <div class="uppercase text-sm text-gray-500">Có thể bạn cũng thích</div>
+
+                    <div class="recommendation-product-mobile place-content-center grid grid-cols-2 gap-2 bg-gray-100  overflow-x-hidden  group   py-4  ">
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col  bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="flex flex-col bg-white rounded-sm shadow">
+                                        <div class="images relative">
+                                            <img src="https://cf.shopee.vn/file/534d0d327cd370e647a7687615560889_tn" alt="" />
+                                            <div class="bg-red-600 text-white text-[8px] uppercase absolute top-0 left-0 w-20 leading-none p-1 rounded-r font-semibold">Xử lý đơn hàng bởi shopee</div>
+                                            <div class="bg-yellow-300 absolute flex flex-col items-center px-1 text-sm right-0 top-0 py-2
+                                                after:content-[''] after:absolute after:bottom-0 after:w-full after:h-4   after:border-r-2 after:border-l-2 after:border-b-2 
+                                                after:border-l-transparent after:border-r-transparent after:border-b-white after:z-50 
+                                            ">
+                                                <span class="text-red-600 text-least">15%</span>
+                                                <span class="uppercase text-white text-least">Giảm</span>
+                                            </div>
+                                            <div class="absolute bottom-0 left-0 z-10">
+                                                <img src="./images/product/shop-similar/1.png" alt="" class="object-cover" />
+                                            </div>
+                                        </div>
+                                        <div class="content flex flex-col h-fit  p-2  gap-2 overflow-hidden w-full">
+                                            <div class=" line-clamp-2 text-least text-gray-900   ">Kem dưỡng trắng da vitamin L'oreal Paris Lorem ipsum dolor sit amet.</div>
+                                            <div class="flex items-center gap-1 ">
+                                                <div class="bg-yellow-500 text-white text-least whitespace-nowrap  w-1/2 p-1">Giảm <span class="underline">đ</span>15k</div>
+                                                <div class="text-red-600 text-least border border-red-600 truncate w-1/2 p-1">Mua kèm Lorem ipsum dolor sit amet.</div>
+                                            </div>
+                                            <div class="flex items-center gap-1">
+                                                <div class="text-red-600 truncate"><sup>đ</sup> 169.000</div>
+                                                <div class="text-least text-gray-500 whitespace-nowrap">Đã bán 12,6k</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                    </div>
+                    <span class="text-red-600 text-sm font-semibold text-center h-16 w-full">Không có sản phẩm nào khác</span>
+                </div>
+                     
 
             <!-- shop desktop -->
             <div class="shop-desktop  hidden md:flex md:text-sm flex-col  mt-4    ">
@@ -3319,7 +4478,7 @@
             </div>
         </div>
 
-         <footer class="footer xl:container mx-auto overflow-x-hidden container ">
+         <footer class=" hidden md:block footer  container mx-auto overflow-x-hidden container ">
             <div class="border-t-4 border-t-red-600 border-b-2 bg-white flex items-center justify-between p-6   px-14 xl:px-32 ">
                 <div class="flex items-center w-full gap-4">
                     <div class="text-red-600 flex flex-col justify-center w-12 h-12">
@@ -3543,6 +4702,24 @@
             </div>
         </div>
              
+        </footer>
+
+        <footer class="footer-mobile shadow border h-14 border-4  z-50 border-yellow-500 fixed bottom-0 left-0 right-0 flex items-center">
+            <div class="left-cta flex bg-white w-1/2">
+                <button class="flex flex-col items-center text-xs text-gray-700 w-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                    </svg>
+                    <span>Chat ngay</span>
+                </button>
+                <button class="flex flex-col items-center text-xs text-gray-700 w-1/2">    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="whitespace-nowrap">Thêm vào Giỏ hàng</span>
+                </button>
+            </div>
+            <button class="w-1/2 py-2 text-white bg-red-500 h-full">Mua ngay</button>
         </footer>
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         <script src="./js/swiper.js"></script>
