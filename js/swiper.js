@@ -297,3 +297,20 @@ const shopProducts = new Swiper(".recommendation-product-list", {
         sticky: true,
     },
 });
+
+// /////////////////////
+// const mobileNav = document.querySelectedById('mobileNav');
+
+// $(window).scroll(function (e) {
+//     $(window).scroll(function (e) {
+       
+//         var isPositionFixed = mobileNav.css("position") == "fixed";
+//         if ($(this).scrollTop() > 200 && !isPositionFixed) {
+//             mobileNav.addClass("fixed top-2 lef-3 right-3")
+//         }
+//         if ($(this).scrollTop() < 200 && isPositionFixed) {
+//            mobileNav.addClass("static ");
+//         }
+//     });
+    
+// });

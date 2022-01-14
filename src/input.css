@@ -160,13 +160,12 @@
         @apply  hidden lg:flex absolute   m-0   w-6 h-6  top-1/2  translate-y-1/2 group-hover:scale-[2] z-30   left-0  -translate-x-1/2 shadow-md justify-center items-center rounded-full bg-white transition-all;
     }
     
-}
-
- 
+   
+} 
 
  
 input::-webkit-calendar-picker-indicator {
-              opacity: 100;
+    opacity: 100;
 }
 
 /* Chrome, Safari, Edge, Opera */

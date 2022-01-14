@@ -10,16 +10,16 @@
     </head>
     <body class="bg-gray-100 relative ">
         <!-- 1 header -->
-        <header class="mx-auto px-2 overflow-hidden   md:bg-orange-600 md:px-32">
+        <header class="mx-auto px-2 overflow-hidden  fixed left-0 right-0 top-0 z-40 md:relative md:bg-orange-600 md:px-32">
             <!-- mobile nav -->
-            <nav class="flex justify-around gap-4 md:hidden  fixed top-2 z-50 left-3 right-3 items-center  bg-transparent">
-                <div class="bg-gray-700/40 w-8 h-8 rounded-full flex justify-center items-center">
+            <nav id="mobileNav" class="flex justify-around gap-4 md:hidden  px-3 py-2  items-center  bg-transparent">
+                <div class="bg-gray-500/40 w-8 h-8 rounded-full flex justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
                 </div>
 
-                <div class="badge ml-auto bg-gray-700/40 w-8 h-8 rounded-full flex justify-center items-center">
+                <div class="badge ml-auto bg-gray-500/40 w-8 h-8 rounded-full flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-zinc-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
                                     stroke-linecap="round"
@@ -29,9 +29,9 @@
                                 />
                             </svg>
                 </div>  
-                <div class="user bg-gray-700/40 w-8 h-8 rounded-full flex justify-center items-center">
-                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                <div class="user bg-gray-500/40 w-8 h-8 rounded-full flex justify-center items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                     </svg>
                 </div>
             </nav>
@@ -625,32 +625,154 @@
 
                     <!-- show on mobile -->
                     <div class="flex md:hidden justify-between items-center bg-white border-t text-xs whitespace-nowrap py-4  ">
-                        <div class="flex items-center w-full  gap-1 justify-center">
-                        <div class="text-red-600 flex flex-col justify-center w-4 h-4">
-                            <img src="./images/product/return.png" alt="" class="object-cover w-full h-full" />
+                        <div class="flex peer items-center w-full  gap-1 justify-center">
+                            <div class="text-red-600 flex flex-col justify-end  w-5 h-5 ">
+                                <img src="./images/product/return.png" alt="" class="object-cover w-full h-full" />
+                            </div>
+                            <div class="text-gray-600  ">Miễn phí trả hàng</div>
                         </div>
-                        <div class="text-gray-600 flex flex-col">Miễn phí trả hàng</div>
+                        <!-- toogle div -->
+                        <div class="fixed  z-50 peer-hover:visible invisible translate-y-full peer-hover:translate-y-0 transition-all  top-0 right-0 bottom-0 left-0 bg-gray-800/10">
+                            <div class="bg-white whitespace-normal mt-auto absolute    z-50 bottom-0 right-0 left-0 flex flex-col items-center pt-4 gap-4 scroll-m-5 ">
+                                <strong class=" text-lg">Shopee Mall Assurance</strong>
+                                <div class="flex flex-col h-80  overflow-y-scroll gap-3 px-4">
+                                    <div class=" flex flex-col w-full gap-1">
+                                        <div class=" flex gap-2 items-center">
+                                            <img src="./images/product/return.png" alt="" class="object-cover w-4 h-4" />
+                                            <div class="text-base">Miễn phí trả hàng</div>
+                                        </div>
+                                        
+                                        <div class="flex ml-6 gap-2 text-gray-500 text-sm">
+                                                Ưu đãi miễn phí trả hàng trong 7 ngày để đảm bảo bạn hoàn toàn có thể yên tâm khi mua hàng ở Shopee Mall. Bạn sẽ được
+                                                hoàn lại 100% số tiền của đơn hàng nếu thỏa quy định về trả hàng/hoàn tiền của Shopee bằng cách gửi yêu cầu đến Shopee
+                                                trong 7 ngày kể từ ngày nhận được hàng
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full gap-1">
+                                        <div class="flex items-center flex-none gap-2">
+                                            <img src="./images/product/shipping.png" alt="" class="object-cover w-4 h-4" />
+                                             <div class="text-black text-base">Chính Hãng 100%</div>
+                                        </div>
+                                      <div class="flex ml-6 text-gray-500 text-sm ">
+                                            Cam kết 100% hàng chính hãng cho tất cả các sản phẩm từ Shopee Mall. Bạn sẽ được hoàn lại gấp đôi số tiền bạn đã thanh
+                                            toán cho sản phẩm thuộc Shopee Mall và được chứng minh là không chính hãng
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full gap-1">
+                                        <div class="flex items-center gap-2">
+                                            <img src="./images/product/save.png" alt="" class="w-4 h-4 object-cover" />
+                                             <div class="text-black text-base">Giao miễn phí</div>
+                                        </div>
+                                        <div class="text-gray-500 text-sm">
+                                            Miễn phí vận chuyển lên tới 40,000đ khi mua từ Shopee Mall với tổng thanh toán từ một Shop là 150,000đ
+                                        </div>
+                                  </div>
+                                </div>
+                                <button class="text-white bg-red-600 h-14 text-center w-full">Tiếp Tục Mua Hàng</button>
+                            </div>
+                        </div> 
+                      
+                        <div class="flex peer items-center w-full  gap-1 justify-center">
+                            <div class="text-red-600 flex flex-col justify-center w-5 h-5">
+                                <img src="./images/product/shipping.png" alt="" class="object-cover w-full h-full" />
+                            </div>
+                            <div class="text-gray-600">
+                                Chính hãng 100% 
+                            </div>
                         </div>
-                        <div class="flex items-center w-full  gap-1 justify-center">
-                        <div class="text-red-600 flex flex-col justify-center w-4 h-4">
-                            <img src="./images/product/shipping.png" alt="" class="object-cover w-full h-full" />
+                         <!-- toogle div -->
+                        <div class="fixed max-x-sm z-50 peer-hover:visible invisible translate-y-full peer-hover:translate-y-0 transition-all  top-0 right-0 bottom-0 left-0 bg-gray-800/10">
+                            <div class="bg-white whitespace-normal mt-auto absolute    z-50 bottom-0 right-0 left-0 flex flex-col items-center pt-4 gap-4 scroll-m-5 ">
+                                <strong class=" text-lg">Shopee Mall Assurance</strong>
+                                <div class="flex flex-col h-80  overflow-y-scroll gap-3 px-4">
+                                    <div class=" flex flex-col w-full gap-1">
+                                        <div class=" flex gap-2 items-center">
+                                            <img src="./images/product/return.png" alt="" class="object-cover w-4 h-4" />
+                                            <div class="text-base">Miễn phí trả hàng</div>
+                                        </div>
+                                        
+                                        <div class="flex ml-6 gap-2 text-gray-500 text-sm">
+                                                Ưu đãi miễn phí trả hàng trong 7 ngày để đảm bảo bạn hoàn toàn có thể yên tâm khi mua hàng ở Shopee Mall. Bạn sẽ được
+                                                hoàn lại 100% số tiền của đơn hàng nếu thỏa quy định về trả hàng/hoàn tiền của Shopee bằng cách gửi yêu cầu đến Shopee
+                                                trong 7 ngày kể từ ngày nhận được hàng
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full gap-1">
+                                        <div class="flex items-center flex-none gap-2">
+                                            <img src="./images/product/shipping.png" alt="" class="object-cover w-4 h-4" />
+                                             <div class="text-black text-base">Chính Hãng 100%</div>
+                                        </div>
+                                      <div class="flex ml-6 text-gray-500 text-sm ">
+                                            Cam kết 100% hàng chính hãng cho tất cả các sản phẩm từ Shopee Mall. Bạn sẽ được hoàn lại gấp đôi số tiền bạn đã thanh
+                                            toán cho sản phẩm thuộc Shopee Mall và được chứng minh là không chính hãng
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full gap-1">
+                                        <div class="flex items-center gap-2">
+                                            <img src="./images/product/save.png" alt="" class="w-4 h-4 object-cover" />
+                                             <div class="text-black text-base">Giao miễn phí</div>
+                                        </div>
+                                        <div class="text-gray-500 text-sm">
+                                            Miễn phí vận chuyển lên tới 40,000đ khi mua từ Shopee Mall với tổng thanh toán từ một Shop là 150,000đ
+                                        </div>
+                                  </div>
+                                </div>
+                                <button class="text-white bg-red-600 h-14 text-center w-full">Tiếp Tục Mua Hàng</button>
+                            </div>
+                        </div> 
+                        
+                        <div class="flex peer items-center w-full gap-1 justify-center">
+                            <div class="flex flex-col justify-center w-5 h-5">
+                                <img src="./images/product/save.png" alt="" class="object-cover w-full h-full" />
+                            </div>
+                            <div class="text-gray-600">
+                                Giao miễn phí
+                            </div>
                         </div>
-                        <div class="text-gray-600">
-                            Chính hãng 100% 
-                        </div>
-                        </div>
-                        <div class="flex items-center w-full gap-1 justify-center">
-                        <div class="flex flex-col justify-center w-4 h-4">
-                            <img src="./images/product/save.png" alt="" class="object-cover w-full h-full" />
-                        </div>
-                        <div class="text-gray-600">
-                            Giao miễn phí
-                        </div>
-                        </div>
+                          <!-- toogle div -->
+                        <div class="fixed  z-50 peer-hover:visible invisible translate-y-full peer-hover:translate-y-0 transition-all  top-0 right-0 bottom-0 left-0 bg-gray-800/10">
+                            <div class="bg-white whitespace-normal mt-auto absolute    z-50 bottom-0 right-0 left-0 flex flex-col items-center pt-4 gap-4 scroll-m-5 ">
+                                <strong class=" text-lg">Shopee Mall Assurance</strong>
+                                <div class="flex flex-col h-80  overflow-y-scroll gap-3 px-4">
+                                    <div class=" flex flex-col w-full gap-1">
+                                        <div class=" flex gap-2 items-center">
+                                            <img src="./images/product/return.png" alt="" class="object-cover w-4 h-4" />
+                                            <div class="text-base">Miễn phí trả hàng</div>
+                                        </div>
+                                        
+                                        <div class="flex ml-6 gap-2 text-gray-500 text-sm">
+                                                Ưu đãi miễn phí trả hàng trong 7 ngày để đảm bảo bạn hoàn toàn có thể yên tâm khi mua hàng ở Shopee Mall. Bạn sẽ được
+                                                hoàn lại 100% số tiền của đơn hàng nếu thỏa quy định về trả hàng/hoàn tiền của Shopee bằng cách gửi yêu cầu đến Shopee
+                                                trong 7 ngày kể từ ngày nhận được hàng
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full gap-1">
+                                        <div class="flex items-center flex-none gap-2">
+                                            <img src="./images/product/shipping.png" alt="" class="object-cover w-4 h-4" />
+                                             <div class="text-black text-base">Chính Hãng 100%</div>
+                                        </div>
+                                      <div class="flex ml-6 text-gray-500 text-sm ">
+                                            Cam kết 100% hàng chính hãng cho tất cả các sản phẩm từ Shopee Mall. Bạn sẽ được hoàn lại gấp đôi số tiền bạn đã thanh
+                                            toán cho sản phẩm thuộc Shopee Mall và được chứng minh là không chính hãng
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full gap-1">
+                                        <div class="flex items-center gap-2">
+                                            <img src="./images/product/save.png" alt="" class="w-4 h-4 object-cover" />
+                                             <div class="text-black text-base">Giao miễn phí</div>
+                                        </div>
+                                        <div class="text-gray-500 text-sm">
+                                            Miễn phí vận chuyển lên tới 40,000đ khi mua từ Shopee Mall với tổng thanh toán từ một Shop là 150,000đ
+                                        </div>
+                                  </div>
+                                </div>
+                                <button class="text-white bg-red-600 h-14 text-center w-full">Tiếp Tục Mua Hàng</button>
+                            </div>
+                        </div> 
                     </div>
                     <!-- mobile -->
                     <div class="action-bar-section relative block md:hidden bg-white p-3 py-4 mt-3 overflow-x-hidden">
-                        <div class="action-bar-wrapper flex items-center  w-full gap-1 justify-between gap-20">
+                        <div class="action-bar-wrapper peer flex items-center  w-full   justify-between gap-20">
                             <div class="text-gray-800 text-sm whitespace-nowrap">Mã giảm giá cho Shop</div>
                             <div class="action-bar-vouchers flex gap-2 flex-nowrap">
                                 <div class="border border-red-600 px-1 bg-white text-red-600 text-xs whitespace-nowrap">15% Giảm</div>
@@ -658,7 +780,7 @@
                                 <div class="border border-red-600 px-1 bg-white text-red-600 text-xs whitespace-nowrap ">15% Giảm</div>
                                 <div class="border border-red-600 px-1 bg-white text-red-600 text-xs whitespace-nowrap ">15% Giảm</div>
                             </div>
-                            <div class=" absolute bg-gradient-to-l from-white via-white/100 via-white/80 right-0 z-50 flex items-center justify-between   w-1/2">
+                            <div class=" absolute bg-gradient-to-l from-white   via-white/90 right-0 z-20 flex items-center justify-between   w-1/2">
                                 <div class="  w-2/3 h-5"> </div>
                                <div class="w-1/3 flex justify-around">
                                     <svg
@@ -671,8 +793,85 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                     </svg>
                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <!-- toogle div -->
+                        <div class="fixed z-50  peer-hover:visible invisible  peer-hover:translate-y-0 translate-y-full  transition-all top-0 right-0 bottom-0 left-0 bg-gray-800/10 ">
+                            <div class="bg-white whitespace-normal mt-auto absolute    z-50 bottom-0 right-0 left-0 flex flex-col items-center">
+                                <div class="p-4 flex flex-col items-center">
+                                    <strong class="text-lg">Mã giảm giá cho Shop</strong>
+                                    <div class="text-sm text-gray-500 text-center">
+                                        Tiết kiệm hơn khi áp dụng mã giảm giá của Shop. Liên hệ với Shop nếu gặp trục trặc về mã giảm giá do Shop tự tạo
+                                    </div>
+                                </div>
+                                <ul class="flex flex-col w-full px-2 h-80 overflow-y-scroll gap-3   ">
+                                    <li class="flex items-center pr-2  shadow border leading-normal">
+                                        <div class=" w-20 h-20 p-3 border-r flex-none flex justify-center items-center">
+                                            <img src="./images/product/main/shop/avatar.jpeg" alt="" class="rounded-full" />
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                        
+                                                <div class="text-gray-900 text-sm">Giảm <sup>đ</sup>15k</div>
+                                                <div class="text-gray-900 text-xs">Đơn Tối Thiểu <sup>đ</sup>270k</div>
+                                                <div class="border rounded-sm mt-2 w-fit border-red-700 text-red-700 bg-white text-xs px-1 whitespace-nowrap">Voucher khách hàng mới</div>
+                                                <div class="pt-2 text-gray-400 text-xs">Hạn Sử Dụng: 31.01.2022</div>
+                                        </div>
+                                        <div class="action flex flex-col justify-center ml-auto    border ">
+                                            <button class="text-white bg-red-600 rounded-sm px-2 py-1 hover:bg-red-700">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center pr-2  shadow border leading-normal">
+                                        <div class=" w-20 h-20 p-3 border-r flex-none flex justify-center items-center">
+                                            <img src="./images/product/main/shop/avatar.jpeg" alt="" class="rounded-full" />
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                        
+                                                <div class="text-gray-900 text-sm">Giảm <sup>đ</sup>10%</div>
+                                                <div class="text-gray-900 text-xs">Đơn tối thiểu  <sup>đ</sup>450k Giảm tối đã <sup>đ</sup>70k</div>
+                                                <div class="border rounded-sm mt-2  w-fit border-red-700 text-red-700 bg-white text-xs px-1 whitespace-nowrap">Voucher cho đơn hàng thứ 2</div>
+                                                <div class="pt-2 text-gray-500 text-xs">Hạn sử dụng: 31.01.2022</div>
+                                        </div>
+                                        <div class="action flex flex-col justify-center ml-auto    border ">
+                                            <button class="text-white bg-red-600 rounded-sm px-2 py-1 hover:bg-red-700">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center pr-2  shadow border leading-normal">
+                                        <div class=" w-20 h-20 p-3 border-r flex-none flex justify-center items-center">
+                                            <img src="./images/product/main/shop/avatar.jpeg" alt="" class="rounded-full" />
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                        
+                                                <div class="text-gray-900 text-sm">Giảm <sup>đ</sup>12%</div>
+                                                <div class="text-gray-900 text-xs">Đơn tối thiểu  <sup>đ</sup>529k Giảm tối đã <sup>đ</sup>80k</div>
+                                                <div class="border rounded-sm mt-2  w-fit border-red-700 text-red-700 bg-white text-xs px-1 whitespace-nowrap">Voucher cho đơn hàng thứ 3</div>
+                                                <div class="pt-2 text-gray-500 text-xs">Hạn sử dụng: 31.01.2022</div>
+                                        </div>
+                                        <div class="action flex flex-col justify-center ml-auto    border ">
+                                            <button class="text-white bg-red-600 rounded-sm px-2 py-1 hover:bg-red-700">Lưu</button>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-center pr-2  shadow border leading-normal">
+                                        <div class=" w-20 h-20 p-3 border-r flex-none flex justify-center items-center">
+                                            <img src="./images/product/main/shop/avatar.jpeg" alt="" class="rounded-full" />
+                                        </div>
+                                        <div class="flex flex-col px-2">
+                                        
+                                                <div class="text-gray-900 text-sm">Giảm <sup>đ</sup>12%</div>
+                                                <div class="text-gray-900 text-xs">Đơn tối thiểu  <sup>đ</sup>529k Giảm tối đã <sup>đ</sup>80k</div>
+                                                <div class=" rounded-sm mt-2  w-fit border-red-700   text-red-700 bg-white text-xs px-1 whitespace-nowrap"> </div>
+                                                <div class="pt-2 text-gray-500 text-xs">Hạn sử dụng: 31.01.2022</div>
+                                        </div>
+                                        <div class="action flex flex-col justify-center ml-auto    border ">
+                                            <button class="text-white bg-red-600 rounded-sm px-2 py-1 hover:bg-red-700">Lưu</button>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                </ul>
+
+                                <button class="text-white bg-red-600 h-14 text-center w-full font-semibold">Tắt</button>
+                            </div>
+                        </div>
                     </div>
                     <!-- mobile -->
                     <div class="buy-shock-deal-mobile   md:hidden flex  gap-4 pt-4 px-3 flex-col bg-white mt-4 text-sm ">
@@ -1341,7 +1540,7 @@
                 </div>
             </div>
 
-            <!-- shop mobile -->
+            <!-- show on mobile mobile -->
                 <div class="md:hidden flex flex-col bg-white  text-sm gap-2 px-3">
                     <div class="shop-info flex items-center justify-between gap-2">
                         <div class="shop-avatar relative w-20 h-20 flex-none flex justify-center items-center">
@@ -1368,8 +1567,8 @@
                                 <span class="text-gray-600">Phản hồi Chat</span>
                             </div>                        
                     </div>
-                </div>                
-
+                </div>           
+           
             <!-- show on mobile -->
             <div class="other-products-shop bg-white flex w-full pt-4 flex-col relative   py-2  px-3 ">
                             <div class="recommendation-header flex items-center justify-between  ">
@@ -1687,7 +1886,7 @@
             <div class="mobile md:hidden flex flex-col">
                 <div class="product-detail flex flex-col mt-3  bg-white py-4 px-3 gap-4 text-sm">
                     <div class="product-detail-title flex items-center gap-2">
-                        <div class="tracking-tighter text-sm">Chi tiết sản phẩm</div>
+                        <div class="tracking-tighter text-base">Chi tiết sản phẩm</div>
                         <div class="last-update flex items-center gap-1 text-gray-800 text-sm">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path
@@ -1723,8 +1922,15 @@
                         <p class="flex-auto">TP. Hồ Chí Minh</p>
                     </div>
                     <hr />
-                    <div class="description-wrapper relative   flex flex-col items-center">
-                        <div class="description  peer-focus:text-sky-800 peer-focus:line-clamp-none line-clamp-5">
+                    <div class="description-wrapper group relative   flex flex-col items-center pb-4">
+                         <a href="#des" class="peer absolute z-50 bottom-0 translate-y-2 flex  items-center text-red-600 gap-2 justify-center    ">
+                            <span>Xem Thêm</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a> 
+
+                        <div id="des"  class="description-more w-full peer h-fit hover:line-clamp-none line-clamp-5 peer-focus:line-clamp-none peer-hover:line-clamp-none peer-visisted:line-clam-none peer-active:line-clamp-none">
                             VÌ SAO BẠN SẼ THÍCH? <br>Kem dưỡng siêu cấp ẩm căng mịn da L'oreal Paris Revitalift 50ml với sự kết hợp không chỉ 1 mà đến 2
                             loại Hyaluronic Acid ưu việt sẽ mang đến giải pháp chăm sóc da hiệu quả, cho làn da căng mịn và sáng da tức thì. Với
                             Revitalift da sẽ có sự thay đổi rõ rệt, mang đến vẻ ngoài rạng rỡ cho bạn. <br>ĐẶC ĐIỂM NỔI BẬT: <br> ● Thành phần không chỉ chứa 1
@@ -1751,15 +1957,9 @@
                             nghiêm ngặt và đồng đều của L’Oréal Toàn Cầu. Các sản phẩm chính hãng đều có tem nhãn tiếng Việt phía sau và nhập khẩu
                             trực tiếp từ công ty TNHH L’Oréal Việt Nam nên các bạn hoàn toàn yên tâm về chất lượng sản phẩm. **Kem dưỡng ban ngày cấp
                             ẩm căng mịn và giảm nếp nhăn L'Oreal Paris Revitalift Hyaluronic Acid Plumping Cream day50ml
-                        </div>  
-                        <div class="bg-gradient-to-t from-white w-full absolute  bottom-0 -translate-y-1/2 h-[40px]"></div>
-                        <button class="flex peer items-center text-red-600 gap-2 justify-center font-semibold hover:bg-sky-700">
-                            <span>Xem Thêm</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                      
+                        </div>                         
+                        <div class=" bg-gradient-to-t from-white peer-hover:invisible absolute  z-40 bottom-4 left-0 right-0  h-[40px]"></div>
+                       
                     </div>
                 </div>
                 <div class="product-feedback-wrapper text-sm">
@@ -4704,16 +4904,16 @@
              
         </footer>
 
-        <footer class="footer-mobile md:hidden shadow   h-14 z-50  fixed bottom-0 left-0 right-0 flex items-center">
+        <footer class="footer-mobile md:hidden shadow   h-14 z-40  fixed bottom-0 left-0 right-0 flex items-center">
             <div class="left-cta flex bg-white w-1/2 h-full pr-1 items-center justify-between">
-                <button class="flex flex-col items-center justify-center  text-[12px] text-gray-700 w-1/2">
+                <button class="flex flex-col items-center justify-center  text-[11px] text-gray-700 w-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
                     </svg>
                     <span>Chat ngay</span>
                 </button>
                 <hr class="h-1/2 border-r border-gray-300 mx-1 "/>
-                <button class="flex flex-col items-center justify-center  text-[12px] text-gray-700 w-1/2">    
+                <button class="flex flex-col items-center justify-center  text-[11px] text-gray-700 w-1/2">    
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>

@@ -1,16 +1,13 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     content: ["./**/*.{html, js}"],
     important: true,
     theme: {
         extend: {
-            display: ["group-hover"]
+            display: ["group-hover"],            
         },
-        // screens: {
-        //     xs: "320px",
-        //     ...defaultTheme.screens,
-        // },
+
         fontSize: {
             least: ["10px", "12px"],
             xs: ["12px", "20px"],
@@ -20,7 +17,7 @@ module.exports = {
             xl: ["20px", "32px"],
             ...defaultTheme.fontSize,
         },
-        
+         
     },
     plugins: [require("@tailwindcss/line-clamp")],
 };
