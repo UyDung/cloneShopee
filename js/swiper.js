@@ -286,7 +286,7 @@ const feedbackList = new Swiper(".feedback-items-slides", {
 
 const shopProducts = new Swiper(".recommendation-product-list", {
     slidesPerView: 6,
-    slidesPerGroup: 5,
+
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -296,21 +296,18 @@ const shopProducts = new Swiper(".recommendation-product-list", {
         enabled: true,
         sticky: true,
     },
+    breakpoints: {
+        768: {
+            slidesPerGroup: 3,
+        },
+        1024: {
+            slidesPerGroup: 4,
+        },
+        1200: {
+            slidesPerGroup: 5,
+        },
+    },
 });
 
 // /////////////////////
-// const mobileNav = document.querySelectedById('mobileNav');
-
-// $(window).scroll(function (e) {
-//     $(window).scroll(function (e) {
-       
-//         var isPositionFixed = mobileNav.css("position") == "fixed";
-//         if ($(this).scrollTop() > 200 && !isPositionFixed) {
-//             mobileNav.addClass("fixed top-2 lef-3 right-3")
-//         }
-//         if ($(this).scrollTop() < 200 && isPositionFixed) {
-//            mobileNav.addClass("static ");
-//         }
-//     });
-    
-// });
+ 
